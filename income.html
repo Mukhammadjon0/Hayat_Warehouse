@@ -75,7 +75,7 @@
           </div>
           <div class="income-filter-input">
             <input type="text" />
-            <button>
+            <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
               <img src="/assets/icons/book.svg" alt="icon" />
             </button>
           </div>
@@ -148,6 +148,9 @@
           </div>
         </div>
       </div>
+
+      <!-- income first table starts ========== -->
+
       <div class="income-first-table">
         <table>
           <thead>
@@ -178,34 +181,306 @@
           </thead>
           <tbody>
             <tr>
-              <td style="width: 35px">
-                <img src="/assets/icons/row-left-mini.svg" alt="" />
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
               </td>
-              <td>
+              <td class="text-center">
                 <img src="/assets/icons/mail.svg" alt="icon" />
               </td>
-              <td>50000341</td>
-              <td>ВНУТРЕНИЙ ПРИХОД</td>
-              <td>01.02.2023</td>
-              <td>1</td>
-              <td>01.02.2023</td>
-              <td>1</td>
-              <td>01.02.2023</td>
-              <td>HAYAT MEDICAL MAIN</td>
-              <td>280 000.00</td>
-              <td>280 000.00</td>
-              <td>280 000.00</td>
-              <td>280 000.00</td>
-              <td>АДМИНИСТРАТОР</td>
-              <td>01.02.2023</td>
-              <td>HAYAT MEDICAL FILIAL</td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ВНУТРЕНИЙ ПРИХОД</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-end">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL MAIN</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-start">АДМИНИСТРАТОР</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL FILIAL</td>
+            </tr>
+            <tr>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-center">
+                <img src="/assets/icons/tick.svg" alt="icon" />
+              </td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ВНУТРЕНИЙ ПРИХОД</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-end">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL MAIN</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-start">АДМИНИСТРАТОР</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL FILIAL</td>
+            </tr>
+            <tr>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-center">
+                <img src="/assets/icons/tick.svg" alt="icon" />
+              </td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ВНУТРЕНИЙ ПРИХОД</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-end">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL MAIN</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-start">АДМИНИСТРАТОР</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL FILIAL</td>
+            </tr>
+            <tr>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-center">
+                <img src="/assets/icons/mail.svg" alt="icon" />
+              </td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ВНУТРЕНИЙ ПРИХОД</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-end">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL MAIN</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-start">АДМИНИСТРАТОР</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL FILIAL</td>
             </tr>
           </tbody>
+
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="text-end">4</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text-end">26 478 578.40</td>
+              <td class="text-end">26 478 578.40</td>
+              <td class="text-end">26 478 578.40</td>
+              <td class="text-end">26 478 578.40</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tfoot>
         </table>
       </div>
-      <div class="income-second-table"></div>
+      <!-- income first table ends ========== -->
+
+      <!-- income second table starts ================= -->
+      <div class="income-second-table">
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2"></th>
+              <th rowspan="2">ID</th>
+              <th rowspan="2">Наименование</th>
+              <th rowspan="2">Серия</th>
+              <th rowspan="2">Срок год.</th>
+              <th rowspan="2">Кол-во</th>
+              <th rowspan="2">Базовая Цена</th>
+              <th colspan="2">Приходная</th>
+              <th rowspan="2">Наценка с</th>
+              <th colspan="1">Со скидкой</th>
+              <th colspan="1">Приходная</th>
+              <th colspan="3">Розничная</th>
+              <th colspan="1"></th>
+            </tr>
+            <tr>
+              <th>Цена</th>
+              <th>Сумма</th>
+              <th>Сумма</th>
+              <th>Цена с НДС</th>
+              <th>%%%</th>
+              <th>Цена с НДС</th>
+              <th>Цена</th>
+              <th>Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ЦЕФИДОК 2,0%.C. INTERNATIONAL</td>
+              <td class="text-start">FSEA-005A</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">20</td>
+              <td class="text-end">1.00</td>
+              <td class="text-start">14 000.00</td>
+              <td class="text-start">280 000.00</td>
+              <td class="text-end">Приходная</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">14 000,00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-start">14 000,00</td>
+              <td class="text-start">14 000,00</td>
+              <td class="text-start">14 000,00</td>
+            </tr>
+            <tr>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ЦЕФИДОК 2,0%.C. INTERNATIONAL</td>
+              <td class="text-start">FSEA-005A</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">20</td>
+              <td class="text-end">1.00</td>
+              <td class="text-start">14 000.00</td>
+              <td class="text-start">280 000.00</td>
+              <td class="text-end">Приходная</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">14 000,00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-start">14 000,00</td>
+              <td class="text-start">14 000,00</td>
+              <td class="text-start">14 000,00</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="text-start">1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text-end">280 000.00</td>
+              <td></td>
+              <td class="text-end">280 000.00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
     </div>
+    <!-- income second table ends ================= -->
     <!-- income ends ======================= -->
+
+    <!-- office modal starts ================ -->
+    <div
+      class="modal fade w-100"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Выбор из справочника
+            </h1>
+            <button
+              class="bg-transparent border-0"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <img src="/assets/icons/close-circle.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body-top">
+              <img src="/assets/icons/search-normal.svg" alt="icon" />
+              <input
+                class="border-0"
+                type="text"
+                placeholder="Поиск по таблице"
+              />
+            </div>
+            <table>
+              <tr>
+                <th></th>
+                <th>Наименование</th>
+              </tr>
+              <tr>
+                <td style="width: 35px">
+                  <img src="/assets/icons/row-left-mini.svg" alt="" />
+                </td>
+                <td>--------</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat medical main</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial 2 операционной</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- office modal ends ========= -->
 
     <!-- script ============= -->
     <script

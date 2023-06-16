@@ -235,7 +235,7 @@ main {
 .main-right td {
   padding: 8px;
   text-align: left;
-  border: 1px solid rgb(176, 176, 176) !important;
+  outline: 1px solid rgb(176, 176, 176) !important;
 }
 .main-right td {
   font-weight: 400;
@@ -264,7 +264,66 @@ main {
   letter-spacing: 0.15px;
   color: rgba(0, 0, 0, 0.87);
 }
+
 /* main ends ================================== */
+
+/* office modal starts =============== */
+.modal {
+  --bs-modal-width: 1056px !important;
+  --bs-modal-header-border-width: 0 !important;
+  --bs-modal-footer-border-width: 0 !important;
+  --bs-modal-padding: 30px 20px !important;
+}
+.modal-body-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  outline: 1px solid rgb(176, 176, 176) !important;
+  padding: 9px;
+  gap: 13px;
+}
+.modal-body-top input {
+  outline: none;
+  width: 100%;
+}
+.modal-body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.modal-body th,
+.modal-body td {
+  padding: 8px;
+  text-align: left;
+  outline: 1px solid rgb(176, 176, 176) !important;
+}
+.modal-body td {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.87);
+}
+.modal-body tr:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+.modal-body tr td img {
+  display: none;
+}
+.modal-body tr:hover td img {
+  display: block;
+}
+
+.modal-body th {
+  background: #64b6f7;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+/* office modal ends =============== */
 
 /* navigation starts ======  */
 .navigation {
@@ -313,7 +372,7 @@ main {
 
 .medicines table tr th {
   text-align: center;
-  border: 1px solid rgb(176, 176, 176) !important;
+  outline: 1px solid rgb(176, 176, 176) !important;
 }
 
 .medicines th,
@@ -332,17 +391,21 @@ main {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.medicines tr:hover {
+.medicines table tbody tr:hover {
   background-color: #e0e0e0;
   cursor: pointer;
 }
 
-.medicines tr td img {
+.medicines table tbody tr td img {
   display: none;
+}
+.medicines table tbody tr:hover td img {
+  display: block;
 }
 
 .table-footer td {
   background-color: #f5f5f5 !important;
+  outline: 1px solid rgb(176, 176, 176) !important;
   position: sticky;
   bottom: 0;
 }
@@ -445,22 +508,99 @@ main {
   border-left: 1px solid rgb(176, 176, 176);
   padding: 8px 30px;
 }
-
+/* income first table starts ======================= */
+.income-first-table {
+  width: 100%;
+  height: 428px;
+  overflow-y: scroll;
+}
 .income-first-table table {
   width: 100%;
   border-collapse: collapse;
 }
-.income-first-table table thead tr tr {
-  border: 1px solid rgb(176, 176, 176);
+.income-first-table table thead {
+  top: 0;
+  position: sticky;
+  z-index: 2;
 }
 .income-first-table table thead tr th {
   text-align: center;
   vertical-align: middle;
-  border: 1px solid rgb(176, 176, 176) !important;
+  outline: 1px solid rgb(176, 176, 176) !important;
+  background-color: #64b6f7;
 }
 .income-first-table table tbody tr td {
   border: 1px solid rgb(176, 176, 176) !important;
+  padding: 6px;
 }
+.income-first-table table tfoot {
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+}
+.income-first-table table tfoot tr td {
+  background: #f5f5f5;
+  outline: 1px solid rgb(176, 176, 176) !important;
+  padding: 6px;
+}
+.income-first-table table tbody tr:hover {
+  background-color: #e0e0e0;
+}
+.income-first-table table tbody tr td .more-icon {
+  display: none;
+}
+.income-first-table table tbody tr:hover td .more-icon {
+  display: block;
+}
+/* income first table ends ======================= */
+
+/* income second table start ========================== */
+.income-second-table {
+  width: 100%;
+  height: 428px;
+  overflow-y: scroll;
+  margin-top: 20px;
+}
+.income-second-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.income-second-table table thead {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+.income-second-table table thead tr th {
+  text-align: center;
+  vertical-align: middle;
+  outline: 1px solid rgb(176, 176, 176) !important;
+  background-color: #64b6f7;
+}
+.income-second-table table tbody tr td {
+  border: 1px solid rgb(176, 176, 176) !important;
+  padding: 6px;
+}
+.income-second-table table tfoot {
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+}
+.income-second-table table tfoot tr td {
+  background: #f5f5f5;
+  outline: 1px solid rgb(176, 176, 176) !important;
+  padding: 6px;
+}
+.income-second-table table tbody tr:hover {
+  background-color: #e0e0e0;
+}
+.income-second-table table tbody tr td .more-icon {
+  display: none;
+}
+.income-second-table table tbody tr:hover td .more-icon {
+  display: block;
+}
+/* income second table ends ========================== */
+
 /* income ends ================== */
 
 @media screen and (min-width: 768px) and (max-width: 1187px) {

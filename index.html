@@ -79,7 +79,7 @@
           <label for="">Филиал</label>
           <div class="main-left-menu">
             <input type="text" />
-            <button>
+            <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
               <img src="/assets/icons/book.svg" alt="icon" />
             </button>
             <button>
@@ -178,6 +178,65 @@
         </table>
       </div>
     </main>
+    <!-- office modal starts ================ -->
+    <div
+      class="modal fade w-100"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Выбор из справочника
+            </h1>
+            <button
+              class="bg-transparent border-0"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <img src="/assets/icons/close-circle.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body-top">
+              <img src="/assets/icons/search-normal.svg" alt="icon" />
+              <input
+                class="border-0"
+                type="text"
+                placeholder="Поиск по таблице"
+              />
+            </div>
+            <table>
+              <tr>
+                <th></th>
+                <th>Наименование</th>
+              </tr>
+              <tr>
+                <td style="width: 35px">
+                  <img src="/assets/icons/row-left-mini.svg" alt="" />
+                </td>
+                <td>--------</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat medical main</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial 2 операционной</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- office modal ends ========= -->
     <!-- main ends ==== -->
 
     <!-- script bootstrap ==== -->
