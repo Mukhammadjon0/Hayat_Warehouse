@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header starts ==== -->
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <img src="/assets/icons/logo.svg" alt="logo" />
+        </div>
+        <div class="header-links">
+          <div class="header-link header-link-active">
+            <a href="">филиалы</a>
+          </div>
+          <div class="header-link">
+            <a href="">Отчёт</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Вадим Александров
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/login.html">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header ends === -->
+
+    <!-- navigation starts ====== -->
+    <div class="navigation">
+      <a href="/index.html">
+        <img src="/assets/icons/arrow-circle-left.svg" alt="icon" />
+        Реестр прихода - Приходные накладные
+      </a>
+    </div>
+    <!-- navigation ends ====== -->
+
+    <!-- income starts ======================= -->
+    <div class="income-main">
+      <div class="income-top">
+        <!-- income top left starts ================ -->
+        <div class="income-top-left">
+          <button>
+            <img src="/assets/icons/document-text.svg" alt="icon" />
+          </button>
+          <button>
+            <img src="/assets/icons/refresh-2.svg" alt="icon" />
+          </button>
+          <button>
+            <img src="/assets/icons/document.svg" alt="icon" />
+          </button>
+          <div class="income-check-input">
+            <input type="checkbox" />
+            <label for="">Отдел</label>
+          </div>
+          <div class="income-filter-input">
+            <input type="text" />
+            <button>
+              <img src="/assets/icons/book.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="income-check-input">
+            <input type="checkbox" />
+            <label for="">Введен</label>
+          </div>
+        </div>
+        <!-- income top left ends ================ -->
+
+        <!-- income top right starts ================ -->
+        <div class="income-top-right">
+          <input type="checkbox" />
+          <div class="form-floating">
+            <input
+              type="date"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="DATE"
+            />
+            <label for="floatingPassword">дата с</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="date"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="DATE"
+            />
+            <label for="floatingPassword">дата по</label>
+          </div>
+        </div>
+        <!-- income top right ends ================ -->
+      </div>
+      <div class="income-filter">
+        <div class="income-filter-inputs">
+          <div class="income-check-input">
+            <input type="checkbox" />
+            <label for="">Введен</label>
+          </div>
+          <div class="income-filter-input">
+            <input type="text" />
+            <button>
+              <img src="/assets/icons/book.svg" alt="icon" />
+            </button>
+          </div>
+        </div>
+        <div class="income-filter-inputs">
+          <div class="income-check-input">
+            <input type="checkbox" />
+            <label for="">Организация</label>
+          </div>
+          <div class="income-filter-input">
+            <input type="text" />
+            <button>
+              <img src="/assets/icons/book.svg" alt="icon" />
+            </button>
+          </div>
+        </div>
+        <div class="income-filter-inputs">
+          <div class="income-check-input">
+            <input type="checkbox" />
+            <label for="">Пользователь</label>
+          </div>
+          <div class="income-filter-input">
+            <input type="text" />
+            <button>
+              <img src="/assets/icons/book.svg" alt="icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="income-first-table">
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2"></th>
+              <th rowspan="2"></th>
+              <th rowspan="2">ID</th>
+              <th rowspan="2">Документ</th>
+              <th colspan="2">Счет фактура</th>
+              <th colspan="2">Накладная</th>
+              <th rowspan="2">Отсрочка</th>
+              <th rowspan="2">Поставщик</th>
+              <th colspan="4">Сумма</th>
+              <th rowspan="2">Пользователь</th>
+              <th rowspan="2">Дата ввода</th>
+              <th rowspan="2">Филиал</th>
+            </tr>
+            <tr>
+              <th>Дата</th>
+              <th>№</th>
+              <th>Дата</th>
+              <th>№</th>
+              <th>Прихода</th>
+              <th>Со скидкой</th>
+              <th>Розничная</th>
+              <th>Розничная 1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 35px">
+                <img src="/assets/icons/row-left-mini.svg" alt="" />
+              </td>
+              <td>
+                <img src="/assets/icons/mail.svg" alt="icon" />
+              </td>
+              <td>50000341</td>
+              <td>ВНУТРЕНИЙ ПРИХОД</td>
+              <td>01.02.2023</td>
+              <td>1</td>
+              <td>01.02.2023</td>
+              <td>1</td>
+              <td>01.02.2023</td>
+              <td>HAYAT MEDICAL MAIN</td>
+              <td>280 000.00</td>
+              <td>280 000.00</td>
+              <td>280 000.00</td>
+              <td>280 000.00</td>
+              <td>АДМИНИСТРАТОР</td>
+              <td>01.02.2023</td>
+              <td>HAYAT MEDICAL FILIAL</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="income-second-table"></div>
+    </div>
+    <!-- income ends ======================= -->
+
+    <!-- script ============= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

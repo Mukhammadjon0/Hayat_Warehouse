@@ -8,7 +8,7 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* login start ======= */
@@ -265,6 +265,203 @@ main {
   color: rgba(0, 0, 0, 0.87);
 }
 /* main ends ================================== */
+
+/* navigation starts ======  */
+.navigation {
+  width: 100%;
+  border-bottom: 1px solid rgb(176, 176, 176);
+  padding: 20px 30px;
+}
+.navigation a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+/* navigation ends ====== */
+
+/* medicines starts ====== */
+.medicines {
+  width: 100%;
+  padding: 10px;
+}
+.medicines-top {
+  height: 590px;
+  overflow-y: scroll;
+}
+.medicines-bottom {
+  height: 297px;
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+
+.medicines table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.medicines .table-head {
+  background: #64b6f7;
+  position: sticky;
+  top: 0;
+}
+
+.medicines table tr th {
+  text-align: center;
+  border: 1px solid rgb(176, 176, 176) !important;
+}
+
+.medicines th,
+.medicines td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid rgb(176, 176, 176) !important;
+}
+
+.medicines td {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.medicines tr:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.medicines tr td img {
+  display: none;
+}
+
+.table-footer td {
+  background-color: #f5f5f5 !important;
+  position: sticky;
+  bottom: 0;
+}
+/* medicines ends ====== */
+
+/* income starts ================== */
+.income-top {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(176, 176, 176) !important;
+}
+.income-top-left {
+  display: flex;
+  align-items: center;
+}
+.income-top-left button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 24px;
+}
+.income-check-input {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: 64px;
+}
+.income-filter-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.income-filter-input button {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+.income-filter-input input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(92, 92, 92, 0.23);
+}
+.income-top-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.income-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(176, 176, 176) !important;
+}
+.income-filter .income-check-input {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: 24px;
+}
+.income-filter .income-filter-input input {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(92, 92, 92, 0.23);
+}
+.income-filter-input button {
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+
+.income-filter .income-filter-inputs:nth-child(1) {
+  display: flex;
+  align-items: center;
+  padding: 8px 30px;
+}
+.income-filter .income-filter-inputs:nth-child(2) {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid rgb(176, 176, 176);
+  padding: 8px 30px;
+}
+.income-filter .income-filter-inputs:nth-child(3) {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid rgb(176, 176, 176);
+  padding: 8px 30px;
+}
+
+.income-first-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.income-first-table table thead tr tr {
+  border: 1px solid rgb(176, 176, 176);
+}
+.income-first-table table thead tr th {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid rgb(176, 176, 176) !important;
+}
+.income-first-table table tbody tr td {
+  border: 1px solid rgb(176, 176, 176) !important;
+}
+/* income ends ================== */
 
 @media screen and (min-width: 768px) and (max-width: 1187px) {
   /* login starts ==== */
