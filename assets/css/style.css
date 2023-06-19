@@ -232,11 +232,10 @@ table tbody tr:hover td .more-icon {
 /* main starts ===== */
 main {
   display: flex;
-  overflow-y: scroll;
 }
 .main-left {
   padding: 0 30px;
-  width: 65%;
+  width: 100%;
 }
 .main-left-input {
   margin-top: 30px;
