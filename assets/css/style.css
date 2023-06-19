@@ -3,12 +3,7 @@
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Inter";
   font-style: normal;
-}
-
-body {
-  /* overflow: hidden; */
 }
 
 /* login start ======= */
@@ -163,9 +158,9 @@ header {
 /* navbar starts ======= */
 nav {
   display: flex;
-  align-items: center;
-  padding: 8px 30px 0 30px;
-  gap: 25px;
+  /* align-items: center; */
+  padding: 8px 30px 8px 30px;
+  /* gap: 25px; */
   border-bottom: 1px solid rgb(176, 176, 176);
 }
 .nav-link {
@@ -188,6 +183,51 @@ nav {
   margin-bottom: 10px;
 }
 /* navbar ends =========================== */
+
+/* table starts ============================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+table thead tr th {
+  text-align: center;
+  vertical-align: middle;
+  outline: 1px solid rgb(176, 176, 176) !important;
+  background-color: #64b6f7;
+  font-size: 0.9rem;
+  padding: 4px;
+}
+table tbody tr td {
+  border: 1px solid rgb(176, 176, 176) !important;
+  padding: 6px;
+  font-size: 0.9rem;
+}
+table tfoot {
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+}
+table tfoot tr td {
+  background: #f5f5f5;
+  outline: 1px solid rgb(176, 176, 176) !important;
+  padding: 4px;
+  font-size: 0.9rem;
+}
+table tbody tr:hover {
+  background-color: #e0e0e0;
+}
+table tbody tr td .more-icon {
+  display: none;
+}
+table tbody tr:hover td .more-icon {
+  display: block;
+}
+/* table ends ============================ */
 
 /* main starts ===== */
 main {
@@ -220,51 +260,11 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.23);
   border-radius: 4px;
 }
-
 .main-right {
   width: 35%;
   height: 100vh;
   border: 1px solid rgb(176, 176, 176);
 }
-.main-right table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.main-right th,
-.main-right td {
-  padding: 8px;
-  text-align: left;
-  outline: 1px solid rgb(176, 176, 176) !important;
-}
-.main-right td {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.15px;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.87);
-}
-.main-right tr:hover {
-  background-color: #e0e0e0;
-  cursor: pointer;
-}
-.main-right tr td img {
-  display: none;
-}
-.main-right tr:hover td img {
-  display: block;
-}
-
-.main-right th {
-  background: #64b6f7;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.15px;
-  color: rgba(0, 0, 0, 0.87);
-}
-
 /* main ends ================================== */
 
 /* office modal starts =============== */
@@ -285,43 +285,6 @@ main {
 .modal-body-top input {
   outline: none;
   width: 100%;
-}
-.modal-body table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.modal-body th,
-.modal-body td {
-  padding: 8px;
-  text-align: left;
-  outline: 1px solid rgb(176, 176, 176) !important;
-}
-.modal-body td {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.15px;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.87);
-}
-.modal-body tr:hover {
-  background-color: #e0e0e0;
-  cursor: pointer;
-}
-.modal-body tr td img {
-  display: none;
-}
-.modal-body tr:hover td img {
-  display: block;
-}
-
-.modal-body th {
-  background: #64b6f7;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.15px;
-  color: rgba(0, 0, 0, 0.87);
 }
 /* office modal ends =============== */
 
@@ -357,57 +320,6 @@ main {
   height: 297px;
   overflow-y: scroll;
   margin-top: 10px;
-}
-
-.medicines table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.medicines .table-head {
-  background: #64b6f7;
-  position: sticky;
-  top: 0;
-}
-
-.medicines table tr th {
-  text-align: center;
-  outline: 1px solid rgb(176, 176, 176) !important;
-}
-
-.medicines th,
-.medicines td {
-  padding: 8px;
-  text-align: left;
-  border: 1px solid rgb(176, 176, 176) !important;
-}
-
-.medicines td {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.15px;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.medicines table tbody tr:hover {
-  background-color: #e0e0e0;
-  cursor: pointer;
-}
-
-.medicines table tbody tr td img {
-  display: none;
-}
-.medicines table tbody tr:hover td img {
-  display: block;
-}
-
-.table-footer td {
-  background-color: #f5f5f5 !important;
-  outline: 1px solid rgb(176, 176, 176) !important;
-  position: sticky;
-  bottom: 0;
 }
 /* medicines ends ====== */
 
@@ -514,44 +426,6 @@ main {
   height: 428px;
   overflow-y: scroll;
 }
-.income-first-table table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.income-first-table table thead {
-  top: 0;
-  position: sticky;
-  z-index: 2;
-}
-.income-first-table table thead tr th {
-  text-align: center;
-  vertical-align: middle;
-  outline: 1px solid rgb(176, 176, 176) !important;
-  background-color: #64b6f7;
-}
-.income-first-table table tbody tr td {
-  border: 1px solid rgb(176, 176, 176) !important;
-  padding: 6px;
-}
-.income-first-table table tfoot {
-  position: sticky;
-  width: 100%;
-  bottom: 0;
-}
-.income-first-table table tfoot tr td {
-  background: #f5f5f5;
-  outline: 1px solid rgb(176, 176, 176) !important;
-  padding: 6px;
-}
-.income-first-table table tbody tr:hover {
-  background-color: #e0e0e0;
-}
-.income-first-table table tbody tr td .more-icon {
-  display: none;
-}
-.income-first-table table tbody tr:hover td .more-icon {
-  display: block;
-}
 /* income first table ends ======================= */
 
 /* income second table start ========================== */
@@ -561,47 +435,39 @@ main {
   overflow-y: scroll;
   margin-top: 20px;
 }
-.income-second-table table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.income-second-table table thead {
-  top: 0;
-  position: sticky;
-  z-index: 2;
-}
-.income-second-table table thead tr th {
-  text-align: center;
-  vertical-align: middle;
-  outline: 1px solid rgb(176, 176, 176) !important;
-  background-color: #64b6f7;
-}
-.income-second-table table tbody tr td {
-  border: 1px solid rgb(176, 176, 176) !important;
-  padding: 6px;
-}
-.income-second-table table tfoot {
-  position: sticky;
-  width: 100%;
-  bottom: 0;
-}
-.income-second-table table tfoot tr td {
-  background: #f5f5f5;
-  outline: 1px solid rgb(176, 176, 176) !important;
-  padding: 6px;
-}
-.income-second-table table tbody tr:hover {
-  background-color: #e0e0e0;
-}
-.income-second-table table tbody tr td .more-icon {
-  display: none;
-}
-.income-second-table table tbody tr:hover td .more-icon {
-  display: block;
-}
-/* income second table ends ========================== */
-
 /* income ends ================== */
+
+/* report starts ========================= */
+.nav-bottom {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 18px;
+}
+.nav-bottom button {
+  padding: 14px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+.nav-bottom .border-center {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 2px;
+  height: 55px;
+}
+nav .print-btn {
+  display: flex;
+  align-items: center;
+  padding: 6px 22px 6px 16px;
+  width: 134px;
+  height: 56.5px;
+  line-height: 18px;
+  gap: 8px;
+  background: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+/* report ends ========================= */
 
 @media screen and (min-width: 768px) and (max-width: 1187px) {
   /* login starts ==== */

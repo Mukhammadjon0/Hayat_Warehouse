@@ -22,10 +22,10 @@
           </a>
         </div>
         <div class="header-links">
-          <div class="header-link header-link-active">
+          <div class="header-link">
             <a href="/index.html">филиалы</a>
           </div>
-          <div class="header-link">
+          <div class="header-link header-link-active">
             <a href="/report.html">Отчёт</a>
           </div>
         </div>
@@ -49,28 +49,63 @@
     <!-- header ends === -->
 
     <!-- navbar starts ===== -->
-    <nav class="gap-4">
-      <a href="/medicines.html" class="nav-link">
-        <img src="/assets/icons/briefcase-medical.svg" alt="icon" />
-        <p>
-          Реестр <br />
-          лекарств
-        </p>
-      </a>
-      <a href="/income.html" class="nav-link">
-        <img src="/assets/icons/arrow-down-to-square.svg" alt="icon" />
-        <p>
-          Реестр <br />
-          прихода
-        </p>
-      </a>
-      <a href="" class="nav-link">
-        <img src="/assets/icons/arrow-up-from-square.svg" alt="icon" />
-        <p>
-          Реестр <br />
-          расхода
-        </p>
-      </a>
+    <nav class="d-flex flex-column gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between gap-5 w-100"
+      >
+        <div class="form-floating w-100">
+          <select class="form-select w-100" id="floatingSelect">
+            <option value="1">МАЛО ОСТАЛОСЬ</option>
+            <option value="2">НЕГОДНИКИ</option>
+            <option value="3">ОСТАТКИ ТОВАРОВ НА ДАТУ</option>
+            <option value="4">ОСТАТКИ ТОВАРОВ НА ДАТУ I</option>
+            <option value="5">ОСТАТКИ ТОВАРОВ НА ДАТУ II</option>
+            <option value="6">ОТКА3Ы</option>
+          </select>
+          <label for="floatingSelect">Отчёт по</label>
+        </div>
+        <button class="print-btn disabled" style="padding: 17px 25px">
+          <img src="/assets/icons/printer.svg" alt="icon" />
+          Печать
+        </button>
+      </div>
+      <div class="nav-bottom">
+        <div class="form-floating">
+          <input
+            type="date"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="DATE"
+          />
+          <label for="floatingPassword">дата с</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="date"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="DATE"
+          />
+          <label for="floatingPassword">дата по</label>
+        </div>
+        <div class="border-center"></div>
+        <div class="form-floating w-100">
+          <select class="form-select w-100" id="floatingSelect">
+            <option>Hayat medical main</option>
+          </select>
+          <label for="floatingSelect">Организация</label>
+        </div>
+        <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+          <img src="/assets/icons/book.svg" alt="icon" />
+        </button>
+        <button
+          class="print-btn disabled"
+          style="padding: 17px 25px; margin-left: 30px"
+        >
+          <img src="/assets/icons/document-excel.svg" alt="icon" />
+          Экспорть в Excel
+        </button>
+      </div>
     </nav>
     <!-- navbar ends ===== -->
 
@@ -151,7 +186,6 @@
         </div>
       </div>
       <div class="main-right">
-        <!-- table starts ================================== -->
         <table>
           <thead>
             <tr>
@@ -208,7 +242,6 @@
             </tr>
           </tfoot>
         </table>
-        <!-- table ends ================================== -->
       </div>
     </main>
     <!-- office modal starts ================ -->
@@ -250,19 +283,10 @@
               </thead>
               <tbody>
                 <tr>
-                  <td style="width: 35px">
-                    <img
-                      class="more-icon"
-                      src="/assets/icons/row-left-mini.svg"
-                      alt=""
-                    />
-                  </td>
-                  <td>--------</td>
+                  <td style="width: 35px"></td>
+                  <td>...</td>
                 </tr>
-                <tr
-                  data-bs-target="#exampleModalToggle2"
-                  data-bs-toggle="modal"
-                >
+                <tr>
                   <td>
                     <img
                       class="more-icon"
@@ -272,10 +296,7 @@
                   </td>
                   <td>Hayat Medical filial</td>
                 </tr>
-                <tr
-                  data-bs-target="#exampleModalToggle2"
-                  data-bs-toggle="modal"
-                >
+                <tr>
                   <td>
                     <img
                       class="more-icon"
@@ -285,10 +306,7 @@
                   </td>
                   <td>Hayat medical main</td>
                 </tr>
-                <tr
-                  data-bs-target="#exampleModalToggle2"
-                  data-bs-toggle="modal"
-                >
+                <tr>
                   <td>
                     <img
                       class="more-icon"
