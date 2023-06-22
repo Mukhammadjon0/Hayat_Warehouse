@@ -1,3 +1,4 @@
+'use strict'
 const togglePassword = document.getElementById('togglePassword');
 const passwordInput = document.getElementById('floatingPassword');
 const loginButton = document.getElementById('loginButton');
@@ -8,6 +9,6 @@ togglePassword.addEventListener('click', function () {
 });
 
 
-loginButton.addEventListener('click', function () {
-    window.location.href = '/Main/index.html';
-});
+// loginButton.addEventListener('click', function () {
+//     window.location.href = '/Main/index.html';
+// });

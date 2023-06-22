@@ -202,6 +202,10 @@ table thead tr th {
   font-size: 0.9rem;
   padding: 4px;
 }
+table tbody {
+  /* overflow-y: scroll;
+  height: 520px; */
+}
 table tbody tr td {
   border: 1px solid rgb(176, 176, 176) !important;
   padding: 6px;
@@ -292,6 +296,9 @@ main {
   width: 100%;
   border-bottom: 1px solid rgb(176, 176, 176);
   padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .navigation a {
   font-weight: 400;
@@ -467,6 +474,301 @@ nav .print-btn {
   border-radius: 4px;
 }
 /* report ends ========================= */
+
+/* F apteka income register  starts ============================= */
+.navigation-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navigation-right label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.navigation-right input[type="checkbox"] {
+  margin-left: 20px;
+}
+.navigation-right button {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  color: #000000;
+}
+
+/* F apteka income register  ends ============================= */
+/* F apteka receipt invoice  starts ============================= */
+.receipt-invoice-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 30px;
+}
+.receipt-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.receipt-invoice-top input {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 6px 10px;
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 158px;
+}
+.receipt-invoice-top label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.invoice-filter {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  border-bottom: 1px solid rgb(176, 176, 176) !important;
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.invoice-filter .invoice-filter-inputs {
+  display: flex;
+  /* align-items: center; */
+  gap: 8px;
+}
+.invoice-filter-inputs button {
+  padding: 14px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+.organization-modal .modal {
+  --bs-modal-width: 800px !important;
+  --bs-modal-header-border-width: 0 !important;
+  --bs-modal-footer-border-width: 0 !important;
+  --bs-modal-padding: 30px 20px !important;
+}
+.organization-modal .modal button {
+  padding: 14px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+.modal-foot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px solid rgba(145, 145, 145, 0.23);
+  padding: 8px;
+  margin-top: 48px;
+}
+.modal-foot button:nth-child(1) {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 118px;
+  height: 36px;
+  background: #007dff;
+  box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 3px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.modal-foot button:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 36px;
+  background: #eeeeee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: black;
+}
+.navigation-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navigation-left button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 250px;
+  height: 40px;
+  background: #3397ff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.navigation-right-product {
+  display: flex;
+  align-items: center;
+}
+.navigation-right-product input {
+  width: 211px;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+.navigation-right-product button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 211px;
+  height: 40px;
+  background: #3397ff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-left: 28px;
+}
+#kartaProduct {
+  --bs-modal-width: 778px !important;
+  border-radius: 0 !important;
+  /* --bs-modal-margin: auto !important; */
+  /* --bs-modal-margin: 1.75rem; */
+  --bs-modal-margin: 1.75rem;
+  --bs-modal-margin: 0.5rem;
+}
+.Coming .modal {
+  --bs-modal-width: 778px !important;
+}
+.Coming .modal-detail .modal {
+  --bs-modal-width: 100% !important;
+  border-radius: 0 !important;
+  --bs-modal-margin: 0 !important;
+}
+.Coming .modal-detail .modal .modal-content {
+  border-radius: 0 !important;
+}
+.Coming .modal-detail .modal .modal-body {
+  display: flex;
+  padding: 0 !important;
+}
+
+.Coming .modal-detail .modal .modal-body .modal-body-left {
+  background: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 40%;
+  padding: 10px;
+}
+.Coming .modal-detail .modal-body .modal-body-right {
+  background-color: white;
+  width: 60%;
+}
+.modal-body-left table tbody tr {
+  display: flex;
+  /* align-items: center; */
+}
+.modal-body-left tbody tr:hover {
+  background-color: transparent;
+}
+.modal-body-left table tbody tr td {
+  border: none !important;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+#kartaProduct table tbody tr {
+  display: flex;
+  /* align-items: center; */
+}
+#kartaProduct tbody tr:hover {
+  background-color: transparent;
+}
+#kartaProduct table tbody tr td {
+  padding: 0 !important;
+  border: none !important;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.modal-body-left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: black;
+}
+
+.modal-body-left table tbody tr td input {
+  background-color: transparent;
+}
+.modal-body-left table tbody tr td button {
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+
+#kartaProduct table tbody tr td input {
+  background-color: transparent;
+}
+#kartaProduct table tbody tr td button {
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1187px) {
   /* login starts ==== */

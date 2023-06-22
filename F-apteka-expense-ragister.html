@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header starts ==== -->
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="/assets/icons/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link">
+            <a href="/F-apteka-income.html">Приход</a>
+          </div>
+          <div class="header-link header-link-active">
+            <a href="/F-apteka-expense.html">Расход</a>
+          </div>
+          <div class="header-link">
+            <a href="">Чеки</a>
+          </div>
+          <div class="header-link">
+            <a href="">Смена</a>
+          </div>
+          <div class="header-link">
+            <a href="">Отчет</a>
+          </div>
+          <div class="header-link">
+            <a href="">Перемещение</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Вадим Александров
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/login.html">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header ends === -->
+
+    <!-- navigation starts ====== -->
+    <div class="navigation">
+      <a href="F-apteka-expense.html">
+        <img src="/assets/icons/arrow-circle-left.svg" alt="icon" />
+        Приход - Реестр
+      </a>
+      <div class="navigation-right">
+        <button>
+          <img src="/assets/icons/file.svg" alt="icon" />
+          Новый
+        </button>
+        <button>
+          <img src="/assets/icons/file-pencil-alt.svg" alt="icon" />
+          Изменить
+        </button>
+        <button>
+          <img src="/assets/icons/check.svg" alt="icon" />
+          Активация
+        </button>
+        <input type="checkbox" />
+        <label for="">Тип</label>
+        <input type="checkbox" />
+        <label for="">V</label>
+        <input type="checkbox" />
+        <label for="">C</label>
+        <input
+          type="date"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="DATE"
+        />
+        <label for="">По</label>
+        <input
+          type="date"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="DATE"
+        />
+      </div>
+    </div>
+    <!-- navigation ends ====== -->
+
+    <!-- Consumption ======================== -->
+    <div class="Consumption">
+      <div class="Consumption-top">
+        <table>
+          <!-- table head starts ===== -->
+          <thead>
+            <tr class="table-head">
+              <th></th>
+              <th></th>
+              <th>№</th>
+              <th>ID</th>
+              <th>Дата</th>
+              <th>Документ</th>
+              <th>Организация</th>
+              <th>Предоплата</th>
+              <th>Дата oтсрочки</th>
+              <th>Сумма</th>
+              <th>Дета ввода</th>
+              <th>Пользователь</th>
+              <th>Примечание</th>
+              <th>Oтправлено</th>
+              <th>Подтверждён</th>
+            </tr>
+          </thead>
+          <!-- table head ends ===== -->
+
+          <!-- table body starts ========== -->
+          <tbody>
+            <tr class="table-body">
+              <td style="width: 35px">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img src="assets/icons/lock-alt.svg" alt="" />
+              </td>
+              <td style="text-align: end">0</td>
+              <td style="text-align: end">6080</td>
+              <td style="text-align: center">02.03.2023</td>
+              <td>ПЕРЕМЕЩЕНИЕ В АПТЕКУ</td>
+              <td>HAYAT MEDICAL FILIAL</td>
+              <td style="text-align: end">100</td>
+              <td>29.03.2023</td>
+              <td style="text-align: end">97 500.00</td>
+              <td>29.03.2023</td>
+              <td>АДМИНИСТРАТОР</td>
+              <td>Возврат</td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+            </tr>
+            <tr class="table-body">
+              <td style="width: 35px">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img src="assets/icons/lock-alt.svg" alt="" />
+              </td>
+              <td style="text-align: end">0</td>
+              <td style="text-align: end">6085</td>
+              <td style="text-align: center">02.03.2023</td>
+              <td>ПЕРЕМЕЩЕНИЕ В АПТЕКУ</td>
+              <td>HAYAT MEDICAL FILIAL</td>
+              <td style="text-align: end">100</td>
+              <td>29.03.2023</td>
+              <td style="text-align: end">18 480.00</td>
+              <td>29.03.2023</td>
+              <td>АДМИНИСТРАТОР</td>
+              <td>Возврат</td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+            </tr>
+          </tbody>
+
+          <!-- table body ends ======= -->
+
+          <!-- table footer starts ============ -->
+          <tfoot>
+            <tr class="table-footer">
+              <td style="width: 35px"></td>
+              <td></td>
+              <td style="text-align: end">2</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: end">115 900.00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: end"></td>
+              <td style="text-align: end"></td>
+            </tr>
+          </tfoot>
+
+          <!-- table footer ends ========= -->
+        </table>
+      </div>
+      <br>
+<!-- Consumption-bottom ============================================= -->
+      <div class="Consumption-bottom">
+        <table>
+          <!-- table head starts ======== -->
+          <thead>
+            <tr class="table-head">
+              <th></th>
+              <th>ID</th>
+              <th>Наименование</th>
+              <th>Серия</th>
+              <th>Срок годности</th>
+              <th>Количество</th>
+              <th>Базовая цена</th>
+              <th>Сумма</th>
+              <th>Пользователь</th>
+            </tr>
+          </thead>
+          <!-- table head ends ======== -->
+
+          <tbody>
+            <!-- table body starts ======================= -->
+            <tr class="table-body">
+              <td style="width: 35px">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td>38407</td>
+              <td>НОВОКАиН р.Р 05% 5МЛ АМП МЕ10/УЗКИМФАРМ УЗБЕКИСТАН</td>
+              <td>0841222</td>
+              <td>01. 01 2025</td>
+              <td style="text-align: end">5</td>
+              <td style="text-align: end">3 696.00</td>
+              <td style="text-align: end">18 480.00</td>
+              <td style="text-align: end">Администратор</td>
+            </tr>
+          </tbody>
+          <!-- table body ends ======================= -->
+
+          <!-- table footer starts ============= -->
+          <tfoot>
+            <tr class="table-footer">
+              <td style="width: 35px"></td>
+              <td></td>
+              <td>0</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: end">18 480.00</td>
+              <td style="text-align: end"></td>
+            </tr>
+          </tfoot>
+          <!-- table footer ends ============= -->
+        </table>
+      </div>
+    </div>
+    <!-- Consumption ends ======================== -->
+
+    <!-- office modal starts ================ -->
+    <div
+      class="modal fade w-100"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Выбор из справочника
+            </h1>
+            <button
+              class="bg-transparent border-0"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <img src="/assets/icons/close-circle.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body-top">
+              <img src="/assets/icons/search-normal.svg" alt="icon" />
+              <input
+                class="border-0"
+                type="text"
+                placeholder="Поиск по таблице"
+              />
+            </div>
+            <table>
+              <tr>
+                <th></th>
+                <th>Наименование</th>
+              </tr>
+              <tr>
+                <td style="width: 35px">
+                  <img src="/assets/icons/row-left-mini.svg" alt="" />
+                </td>
+                <td>--------</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat medical main</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial 2 операционной</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- office modal ends ========= -->
+
+    <!-- script ============= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

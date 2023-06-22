@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header starts ==== -->
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="F-apteka-invoice.html">
+            <img src="/assets/icons/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link header-link-active">
+            <a href="/F-apteka-invoice.html">Приход</a>
+          </div>
+          <div class="header-link">
+            <a href="/F-apteka-expense.html">Расход</a>
+          </div>
+          <div class="header-link">
+            <a href="">Чеки</a>
+          </div>
+          <div class="header-link">
+            <a href="">Смена</a>
+          </div>
+          <div class="header-link">
+            <a href="">Отчет</a>
+          </div>
+          <div class="header-link">
+            <a href="">Перемещение</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Вадим Александров
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/login.html">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header ends === -->
+
+    <!-- navigation starts ====== -->
+    <div class="navigation">
+      <a href="F-apteka-income.html">
+        <img src="/assets/icons/arrow-circle-left.svg" alt="icon" />
+        Приход - Приходная накладная
+      </a>
+    </div>
+    <!-- navigation ends ====== -->
+
+    <!-- receipt invoice starts ======================= -->
+    <div class="receipt-invoice-top">
+      <div class="receipt-date">
+        <label for="">Дата СФ</label>
+        <input type="date" />
+      </div>
+      <div class="receipt-date">
+        <label for="">№ СФ</label>
+        <input type="number" />
+      </div>
+      <div class="receipt-date">
+        <label for="">Дата</label>
+        <input type="date" />
+      </div>
+      <div class="receipt-date">
+        <label for="">№ накладной</label>
+        <input type="number" />
+      </div>
+      <div class="receipt-date">
+        <label for="">Отсрочка </label>
+        <input type="date" />
+      </div>
+      <div class="receipt-date">
+        <label for="">% Предоплаты</label>
+        <input type="date" />
+      </div>
+    </div>
+    <div class="invoice-filter">
+      <div class="invoice-filter-inputs">
+        <div class="form-floating input-group-sm">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder=""
+          />
+          <label for="floatingInput" class="fs-6">Документ</label>
+        </div>
+        <button  data-bs-target="#exampleModalToggle1" data-bs-toggle="modal">
+          <img src="/assets/icons/book.svg" alt="icon" />
+        </button>
+      </div>
+      <div class="invoice-filter-inputs">
+        <div class="form-floating input-group-sm">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder=""
+          />
+          <label for="floatingInput" class="fs-6">Организация</label>
+        </div>
+        <button data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+          <img src="/assets/icons/profile-2user.svg" alt="icon" />
+        </button>
+        <button data-bs-target="#exampleeModalToggle" data-bs-toggle="modal">
+          <img src="/assets/icons/profile-2user-add.svg" alt="icon" />
+        </button>
+      </div>
+      <div class="invoice-filter-inputs">
+        <div class="form-floating input-group-sm">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder=""
+          />
+          <label for="floatingInput" class="fs-6">Получатель</label>
+        </div>
+        <button>
+          <img src="/assets/icons/profile-2user.svg" alt="icon" />
+        </button>
+      </div>
+    </div>
+
+    <div class="d-flex gap-4" style="padding: 8px 30px">
+      <button class="d-flex bg-transparent border-0">
+        <a style="text-decoration: none; color: black;" href="F-apteka-income-product.html">
+          <img src="assets/icons/file-alt.svg" alt="icon" />
+          Подбор
+        </a>
+      </button>
+      <button class="d-flex bg-transparent border-0">
+        <img src="assets/icons/check.svg" alt="icon" />
+        Активация
+      </button>
+    </div>
+
+    <!-- manufacturer-1 modal starts ================ -->
+    <div class="modal fade w-100" id="exampleModalToggle1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Выбор из справочника - Производитель
+            </h1>
+            <button
+              class="bg-transparent border-0"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <img src="/assets/icons/close-circle.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body-top">
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Наименование</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                <td style="width: 35px">
+                  <img
+                      class="more-icon"
+                      src="/assets/icons/row-left-mini.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td>ВНУТРЕННИЙ ПРИХОД</td>
+                </tr>
+                <tr
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  <td>
+                    <img
+                      class="more-icon"
+                      src="/assets/icons/row-left-mini.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td>ВОЗВРАТ ОТ ПОКУПАТЕЛЯ</td>
+                </tr>
+                <tr
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  <td>
+                    <img
+                      class="more-icon"
+                      src="/assets/icons/row-left-mini.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td>ПРИХОДА НА СКЛАД</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- manufacturer-1 modal ends ========= -->
+
+    <!-- manufacturer-2 modal starts ================ -->
+    <div class="modal fade w-100" id="exampleModalToggle2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Выбор из справочника - Производитель
+            </h1>
+            <button
+              class="bg-transparent border-0"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <img src="/assets/icons/close-circle.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body-top">
+              <img src="/assets/icons/search-normal.svg" alt="icon" />
+              <input
+                class="border-0"
+                type="text"
+                placeholder="Поиск по таблице"
+              />
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Наименование</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 35px">
+                    <img
+                      class="more-icon"
+                      src="/assets/icons/row-left-mini.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td>--------</td>
+                </tr>
+                <tr
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  <td>
+                    <img
+                      class="more-icon"
+                      src="/assets/icons/row-left-mini.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td>2-ВАРИАНТ</td>
+                </tr>
+                <tr
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  <td>
+                    <img
+                      class="more-icon"
+                      src="/assets/icons/row-left-mini.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td>999</td>
+                </tr>
+                <tr
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  <td>
+                    <img
+                      class="more-icon"
+                      src="/assets/icons/row-left-mini.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td>А.B. - BIOKOM</td>
+                </tr>
+                <tr
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  <td>
+                    <img
+                      class="more-icon"
+                      src="/assets/icons/row-left-mini.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td>ACTY PHARMA</td>
+                </tr>
+                <tr
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  <td>
+                    <img
+                      class="more-icon"
+                      src="/assets/icons/row-left-mini.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td>ADITYA TRADING</td>
+                </tr>
+                <tr
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  <td>
+                    <img
+                      class="more-icon"
+                      src="/assets/icons/row-left-mini.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td>AERO PHARM GROUP</td>
+                </tr>
+                <tr
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                >
+                  <td>
+                    <img
+                      class="more-icon"
+                      src="/assets/icons/row-left-mini.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td>ALFA GIANT</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- manufacturer-2 modal ends ========= -->
+
+    <!-- Organization card starts ================ -->
+    <div class="organization-modal">
+
+    <div class="modal fade w-100" id="exampleeModalToggle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Карточка организации
+            </h1>
+            <button
+              class="bg-transparent border-0"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <img src="/assets/icons/close-circle.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="modal-body d-flex flex-column gap-2">
+            <div class="d-flex gap-3">
+              <input
+                type="number"
+                class="form-control w-25"
+                placeholder="0"
+                aria-label="0"
+                aria-describedby="basic-addon1"
+              />
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Наименование</label>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Полное наименование</label>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Адрес</label>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">МФО</label>
+              </div>
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Банк</label>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <div class="form-floating w-100">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Расчётный счёт</label>
+              </div>
+              <div class="form-floating w-100">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">ИНН</label>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <div class="form-floating w-100">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Телефон</label>
+              </div>
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Факс</label>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <div class="form-floating w-100">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">E-Mail</label>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">ОКОНХ</label>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Область</label>
+              </div>
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Район</label>
+              </div>
+              <button>
+                <img src="/assets/icons/book.svg" alt="icon" />
+              </button>
+            </div>
+            <div class="d-flex gap-3">
+              <div class="form-floating w-100">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Отсрочка</label>
+              </div>
+              <div class="form-floating w-100">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Предоплата</label>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Поставщик
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Покупатель                
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Страховка                
+                </label>
+              </div>
+              
+            </div>
+            <div class="modal-foot">
+              <div class="d-flex gap-2">
+                <button>Сохранить</button>
+                <button data-bs-dismiss="modal">Отмена</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Organization card ends ========= -->
+
+      <!-- invoice first table starts ========== -->
+
+      <div class="invoice-first-table">
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2"></th>
+              <th rowspan="2"></th>
+              <th rowspan="2">ID</th>
+              <th rowspan="2">Документ</th>
+              <th colspan="2">Счет фактура</th>
+              <th colspan="2">Накладная</th>
+              <th rowspan="2">Отсрочка</th>
+              <th rowspan="2">Поставщик</th>
+              <th colspan="4">Сумма</th>
+              <th rowspan="2">Пользователь</th>
+              <th rowspan="2">Дата ввода</th>
+              <th rowspan="2">Филиал</th>
+            </tr>
+            <tr>
+              <th>Дата</th>
+              <th>№</th>
+              <th>Дата</th>
+              <th>№</th>
+              <th>Прихода</th>
+              <th>Со скидкой</th>
+              <th>Розничная</th>
+              <th>Розничная 1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-center">
+                <img src="/assets/icons/mail.svg" alt="icon" />
+              </td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ВНУТРЕНИЙ ПРИХОД</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-end">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL MAIN</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-start">АДМИНИСТРАТОР</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL FILIAL</td>
+            </tr>
+            <tr>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-center">
+                <img src="/assets/icons/tick.svg" alt="icon" />
+              </td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ВНУТРЕНИЙ ПРИХОД</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-end">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL MAIN</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-start">АДМИНИСТРАТОР</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL FILIAL</td>
+            </tr>
+            <tr>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-center">
+                <img src="/assets/icons/tick.svg" alt="icon" />
+              </td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ВНУТРЕНИЙ ПРИХОД</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-end">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL MAIN</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-start">АДМИНИСТРАТОР</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL FILIAL</td>
+            </tr>
+            <tr>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-center">
+                <img src="/assets/icons/mail.svg" alt="icon" />
+              </td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ВНУТРЕНИЙ ПРИХОД</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-end">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL MAIN</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-start">АДМИНИСТРАТОР</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL FILIAL</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="text-end">4</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text-end">26 478 578.40</td>
+              <td class="text-end">26 478 578.40</td>
+              <td class="text-end">26 478 578.40</td>
+              <td class="text-end">26 478 578.40</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <!-- invoice first table ends ========== -->
+
+      <!-- invoice second table starts ================= -->
+      <div class="invoice-second-table">
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2"></th>
+              <th rowspan="2">ID</th>
+              <th rowspan="2">Наименование</th>
+              <th rowspan="2">Серия</th>
+              <th rowspan="2">Срок год.</th>
+              <th rowspan="2">Кол-во</th>
+              <th rowspan="2">Базовая Цена</th>
+              <th colspan="2">Приходная</th>
+              <th rowspan="2">Наценка с</th>
+              <th colspan="1">Со скидкой</th>
+              <th colspan="1">Приходная</th>
+              <th colspan="3">Розничная</th>
+              <th colspan="1"></th>
+            </tr>
+            <tr>
+              <th>Цена</th>
+              <th>Сумма</th>
+              <th>Сумма</th>
+              <th>Цена с НДС</th>
+              <th>%%%</th>
+              <th>Цена с НДС</th>
+              <th>Цена</th>
+              <th>Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ЦЕФИДОК 2,0%.C. INTERNATIONAL</td>
+              <td class="text-start">FSEA-005A</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">20</td>
+              <td class="text-end">1.00</td>
+              <td class="text-start">14 000.00</td>
+              <td class="text-start">280 000.00</td>
+              <td class="text-end">Приходная</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">14 000,00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-start">14 000,00</td>
+              <td class="text-start">14 000,00</td>
+              <td class="text-start">14 000,00</td>
+            </tr>
+            <tr>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ЦЕФИДОК 2,0%.C. INTERNATIONAL</td>
+              <td class="text-start">FSEA-005A</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">20</td>
+              <td class="text-end">1.00</td>
+              <td class="text-start">14 000.00</td>
+              <td class="text-start">280 000.00</td>
+              <td class="text-end">Приходная</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">14 000,00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-start">14 000,00</td>
+              <td class="text-start">14 000,00</td>
+              <td class="text-start">14 000,00</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="text-start">1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text-end">280 000.00</td>
+              <td></td>
+              <td class="text-end">280 000.00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <!-- invoice second table ends ================= -->
+    <!-- invoice ends ======================= -->
+
+    <!-- office modal starts ================ -->
+    <div
+      class="modal fade w-100"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Выбор из справочника
+            </h1>
+            <button
+              class="bg-transparent border-0"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <img src="/assets/icons/close-circle.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body-top">
+              <img src="/assets/icons/search-normal.svg" alt="icon" />
+              <input
+                class="border-0"
+                type="text"
+                placeholder="Поиск по таблице"
+              />
+            </div>
+            <table>
+              <tr>
+                <th></th>
+                <th>Наименование</th>
+              </tr>
+              <tr>
+                <td style="width: 35px">
+                  <img src="/assets/icons/row-left-mini.svg" alt="" />
+                </td>
+                <td>--------</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat medical main</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial 2 операционной</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- office modal ends ========= -->
+
+    <!-- script ============= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

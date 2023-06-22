@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header starts ==== -->
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="F-apteka-invoice.html">
+            <img src="/assets/icons/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link header-link-active">
+            <a href="/F-apteka-invoice.html">Приход</a>
+          </div>
+          <div class="header-link">
+            <a href="/F-apteka-expense.html">Расход</a>
+          </div>
+          <div class="header-link">
+            <a href="">Розничная торговля</a>
+          </div>
+          <div class="header-link">
+            <a href="">Деньги</a>
+          </div>
+          <div class="header-link">
+            <a href="">Смена</a>
+          </div>
+          <div class="header-link">
+            <a href="">Цены</a>
+          </div>
+          <div class="header-link">
+            <a href="">Справочная</a>
+          </div>
+          <div class="header-link">
+            <a href="">Отчет</a>
+          </div>
+          <div class="header-link">
+            <a href="">Почта</a>
+          </div>
+          <div class="header-link">
+            <a href="">Настройки</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Вадим Александров
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/login.html">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header ends === -->
+
+    <!-- navigation starts ====== -->
+    <div class="navigation">
+      <div class="navigation-left">
+        <a href="/F-apteka-receipt-invoice.html">
+          <img src="/assets/icons/arrow-circle-left.svg" alt="icon" />
+          Подбор товара (Приход)
+        </a>
+        <button data-bs-target="#kartaProduct" data-bs-toggle="modal">
+          <img src="assets/icons/square-Medical.svg" alt="icon" />
+          Добавить новый товар
+        </button>
+      </div>
+      <div class="navigation-right-product">
+        <label for="">Штрих код</label>
+        <input type="text" />
+        <button>
+          <img src="assets/icons/arrow-left.svg" alt="icon" />
+          Сохранит и выйти
+        </button>
+      </div>
+    </div>
+    <!-- navigation ends ====== -->
+
+    <!-- table starts -->
+    <!-- Coming ======================== -->
+    <div class="Coming">
+      <div class="Coming-top">
+        <table>
+          <!-- table head starts ===== -->
+          <thead>
+            <tr class="table-head">
+              <th></th>
+              <th>Код</th>
+              <th>Наименование</th>
+              <th>Производитель</th>
+              <th>Ед. измер</th>
+              <th>Кол-уп</th>
+              <th>Штриx код</th>
+              <th>Рецепт</th>
+              <th>Справ</th>
+              <th>MX</th>
+              <th>Fom.uz</th>
+              <th>Группа FOM.uz</th>
+              <th>Фикс.</th>
+            </tr>
+          </thead>
+          <!-- table head ends ===== -->
+
+          <!-- table body starts ========== -->
+          <tbody>
+            <tr
+              class="table-body"
+              data-bs-target="#exampleModalToggle1"
+              data-bs-toggle="modal"
+            >
+              <td style="width: 35px">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td style="text-align: end">2046</td>
+              <td>5-НОК 50МГ ТАБ N=50</td>
+              <td>ЛЕК Д.Д, СЛОВЕНИЯ</td>
+              <td>уп</td>
+              <td style="text-align: end">50</td>
+              <td>2990010048</td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>0.00</td>
+            </tr>
+            <tr
+              class="table-body"
+              data-bs-target="#exampleModalToggle1"
+              data-bs-toggle="modal"
+            >
+              <td style="width: 35px">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td style="text-align: end">2066</td>
+              <td>ФУРОСЕМИД Р.Р 10МГ/МЛ 2МЛ АМП NE1O</td>
+              <td>ДАЛЬХИМФАРМ, РОССИЯ</td>
+              <td>40</td>
+              <td style="text-align: end">10</td>
+              <td>3836957097</td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>0.00</td>
+            </tr>
+            <tr
+              class="table-body"
+              data-bs-target="#exampleModalToggle1"
+              data-bs-toggle="modal"
+            >
+              <td style="width: 35px">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td style="text-align: end">2081</td>
+              <td>АКТОВЕГИН 40МГ/5МЛ АМП N°5</td>
+              <td>ТАКЕ ЛА ЯРОСЛАВЛ РОССИЯ</td>
+              <td>уп</td>
+              <td style="text-align: end">23</td>
+              <td>4602824025</td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>0.00</td>
+            </tr>
+            <tr
+              class="table-body"
+              data-bs-target="#exampleModalToggle1"
+              data-bs-toggle="modal"
+            >
+              <td style="width: 35px">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td style="text-align: end">2081</td>
+              <td>АКТОВЕГИН 40МГ/5МЛ АМП N°5</td>
+              <td>ТАКЕ ЛА ЯРОСЛАВЛ РОССИЯ</td>
+              <td>уп</td>
+              <td style="text-align: end">23</td>
+              <td>8680199093</td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>0.00</td>
+            </tr>
+            <tr
+              class="table-body"
+              data-bs-target="#exampleModalToggle1"
+              data-bs-toggle="modal"
+            >
+              <td style="width: 35px">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td style="text-align: end">2104</td>
+              <td>АЛОЭ ЭКСТРАКТ ЖИДКИЙ Р.Р 1МЛ АМП N°10</td>
+              <td>БИОФАРМ, ГРУЗИЯ</td>
+              <td>уп</td>
+              <td style="text-align: end">6</td>
+              <td>2990010051</td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>НДС</td>
+              <td>Накладки лактационны</td>
+              <td>Накладки для груди</td>
+              <td>0.00</td>
+            </tr>
+            <tr
+              class="table-body"
+              data-bs-target="#exampleModalToggle1"
+              data-bs-toggle="modal"
+            >
+              <td style="width: 35px">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td style="text-align: end">2104</td>
+              <td>АЛОЭ ЭКСТРАКТ ЖИДКИЙ Р.Р 1МЛ АМП N°10</td>
+              <td>БИОФАРМ, ГРУЗИЯ</td>
+              <td>уп</td>
+              <td style="text-align: end">6</td>
+              <td>2990010051</td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>НДС</td>
+              <td>Накладки лактационны</td>
+              <td>Накладки для груди</td>
+              <td>0.00</td>
+            </tr>
+            <tr
+              class="table-body"
+              data-bs-target="#exampleModalToggle1"
+              data-bs-toggle="modal"
+            >
+              <td style="width: 35px">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td style="text-align: end">2104</td>
+              <td>АЛОЭ ЭКСТРАКТ ЖИДКИЙ Р.Р 1МЛ АМП N°10</td>
+              <td>БИОФАРМ, ГРУЗИЯ</td>
+              <td>уп</td>
+              <td style="text-align: end">6</td>
+              <td>2990010048</td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>0.00</td>
+            </tr>
+            <tr
+              class="table-body"
+              data-bs-target="#exampleModalToggle1"
+              data-bs-toggle="modal"
+            >
+              <td style="width: 35px">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td style="text-align: end">2120</td>
+              <td>1 ШПРИЦ 1МЛ GRAND\CHANGZHOU HUALIAN HEALTH, КИТАЙ</td>
+              <td>РОТАФАРМ, ВЕЛИКОБРИТАНИЯ</td>
+              <td>уп</td>
+              <td style="text-align: end">3</td>
+              <td>2990010048</td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td></td>
+              <td>Шприц инсулиновый</td>
+              <td>Шприцы</td>
+              <td>0.00</td>
+            </tr>
+          </tbody>
+
+          <!-- table body ends ======= -->
+
+          <!-- table footer starts ============ -->
+          <tfoot>
+            <tr class="table-footer">
+              <td style="width: 35px"></td>
+              <td></td>
+              <td style="text-align: end"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: end"></td>
+              <td></td>
+              <td style="text-align: end"></td>
+              <td style="text-align: end"></td>
+            </tr>
+          </tfoot>
+          <!-- table footer ends ========= -->
+        </table>
+      </div>
+
+      <!-- table ends -->
+
+      <!-- add kartochka product starts ================ -->
+      <div class="add-product">
+        <div class="modal-detail">
+          <div class="modal fade w-100" id="kartaProduct" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                    Товар
+                  </h1>
+                  <button
+                    class="bg-transparent border-0"
+                    type="button"
+                    data-bs-dismiss="modal"
+                  >
+                    <img src="/assets/icons/close-circle.svg" alt="icon" />
+                  </button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                  <div class="p-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <input type="text" class="form-control bg-transparent" />
+                      <button
+                        style="
+                          padding: 8px;
+                          border-radius: 4px;
+                          border: none;
+                          background-color: rgba(0, 0, 0, 0.1);
+                          border: 1px solid rgba(0, 0, 0, 0.23);
+                        "
+                      >
+                        <img src="/assets/icons/book.svg" alt="" />
+                      </button>
+                    </div>
+
+                    <table class="mt-1">
+                      <tbody class="d-flex flex-column gap-1">
+                        <tr class="d-flex gap-2 align-items-center">
+                          <td style="width: 25%">Торговое название</td>
+                          <td style="width: 74%">
+                            <input type="text" class="form-control" />
+                          </td>
+                          <td rowspan="3" style="width: 6%">
+                            <button>
+                              <img src="/assets/icons/book.svg" alt="" />
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="w-25">Кол-во</td>
+                          <td>
+                            <input type="text" class="form-control" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="w-25">Цена базовая</td>
+                          <td>
+                            <input type="text" class="form-control" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="w-25"></td>
+                          <td class="d-flex justify-content-end">
+                            <button class="d-flex gap-3">
+                              <img
+                                src="assets/icons/calculator.svg"
+                                alt="icon"
+                              />
+                              Расчет
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- add kartochka product ends =====================================  -->
+
+      <!-- kartochka product starts ================ -->
+      <div class="modal-detail">
+        <div
+          class="modal fade w-100"
+          id="exampleModalToggle1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered h-100">
+            <div class="modal-content h-100">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                  Товар
+                </h1>
+                <button
+                  class="bg-transparent border-0"
+                  type="button"
+                  data-bs-dismiss="modal"
+                >
+                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="modal-body-left">
+                  <div class="border border-1 text-body-tertiary p-2 h-75">
+                    <input
+                      type="text"
+                      class="form-control bg-transparent"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-default"
+                    />
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td class="w-25">Тип наценки</td>
+                          <td>
+                            <input type="text" class="form-control" />
+                            <button>
+                              <img src="/assets/icons/book.svg" alt="" />
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="w-25">Кол-во</td>
+                          <td>
+                            <input
+                              type="number"
+                              class="form-control text-end"
+                            />
+                            <label for="">+</label>
+                            <input
+                              type="number"
+                              class="form-control text-end"
+                            />
+                            <label for="">/</label>
+                            <input
+                              type="number"
+                              class="form-control text-end"
+                            />
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                Инвентаризация
+                              </label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="w-25">Цена базовая</td>
+                          <td>
+                            <input type="text" class="form-control" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="w-25"></td>
+                          <td class="d-flex justify-content-end">
+                            <button class="d-flex gap-3">
+                              <img
+                                src="assets/icons/calculator.svg"
+                                alt="icon"
+                              />
+                              Расчет
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="border border-1 text-body-tertiary p-2 mt-2">
+                    <p class="m-0">Дополнительно</p>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div class="d-flex gap-1 align-items-center">
+                        <label for="">Серия</label>
+                        <input
+                          type="text"
+                          class="form-control bg-transparent"
+                        />
+                      </div>
+                      <div class="d-flex gap-1 align-items-center">
+                        <label for="">Срок годности</label>
+                        <input
+                          type="date"
+                          class="form-control bg-transparent"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-foot mt-2">
+                    <div class="d-flex gap-2">
+                      <button>Сохранить</button>
+                      <button data-bs-dismiss="modal">Отмена</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-body-right">
+                  <!-- detail table ===== -->
+                  <table>
+                    <!-- table head starts ======== -->
+                    <thead>
+                      <tr class="table-head">
+                        <th rowspan="2"></th>
+                        <th rowspan="2">Поставщик</th>
+                        <th rowspan="2">Дата</th>
+                        <th rowspan="2">Срок ГОДНОСТИ</th>
+                        <th rowspan="2">Серия</th>
+                        <th colspan="1">Цена</th>
+                        <th rowspan="2">%%% 1</th>
+                        <th colspan="1">Цена</th>
+                        <th rowspan="2">Приход</th>
+                        <th rowspan="2">Остаток</th>
+                        <th rowspan="2">Ориг</th>
+                        <th rowspan="2">ПЦ</th>
+                        <th rowspan="2">Дата последнего расхода</th>
+                        <th rowspan="2">Дни</th>
+                        <th rowspan="2">Расxод</th>
+                      </tr>
+
+                      <tr>
+                        <th>Прихода</th>
+                        <th>Продажи 1</th>
+                      </tr>
+                    </thead>
+                    <!-- table head ends ======== -->
+
+                    <tbody>
+                      <!-- table body starts ======================= -->
+                      <tr class="table-body">
+                        <td style="width: 35px">
+                          <img
+                            class="more-icon"
+                            src="/assets/icons/row-left-mini.svg"
+                            alt=""
+                          />
+                        </td>
+                        <td>БМП ГРОУП</td>
+                        <td>27.05.2022</td>
+                        <td>01.05.2025</td>
+                        <td>004</td>
+                        <td style="text-align: end">550.000</td>
+                        <td style="text-align: end">0.00</td>
+                        <td style="text-align: end">550.000</td>
+                        <td style="text-align: end">800.000</td>
+                        <td style="text-align: end">0.000</td>
+                        <td style="text-align: end">1</td>
+                        <td style="text-align: end">
+                          <input type="checkbox" name="" id="" />
+                        </td>
+                        <td style="text-align: end">19.08.2022</td>
+                        <td style="text-align: end">84</td>
+                        <td style="text-align: end">1800</td>
+                      </tr>
+                      <tr class="table-body">
+                        <td style="width: 35px">
+                          <img
+                            class="more-icon"
+                            src="/assets/icons/row-left-mini.svg"
+                            alt=""
+                          />
+                        </td>
+                        <td>БМП ГРОУП</td>
+                        <td>27.05.2022</td>
+                        <td>01.05.2025</td>
+                        <td>004</td>
+                        <td style="text-align: end">550.000</td>
+                        <td style="text-align: end">0.00</td>
+                        <td style="text-align: end">550.000</td>
+                        <td style="text-align: end">800.000</td>
+                        <td style="text-align: end">0.000</td>
+                        <td style="text-align: end">1</td>
+                        <td style="text-align: end">
+                          <input type="checkbox" name="" id="" />
+                        </td>
+                        <td style="text-align: end">19.08.2022</td>
+                        <td style="text-align: end">84</td>
+                        <td style="text-align: end">1800</td>
+                      </tr>
+                    </tbody>
+                    <!-- table body ends ======================= -->
+                  </table>
+                  <!-- detail table ===== -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- kartochka product ends ========= -->
+
+      <div class="Consumption-bottom">
+        <table>
+          <!-- table head starts ======== -->
+          <thead>
+            <tr class="table-head">
+              <th></th>
+              <th>ID</th>
+              <th>Наименование</th>
+              <th>Серия</th>
+              <th>Срок годности</th>
+              <th>Количество</th>
+              <th>Базовая цена</th>
+              <th>Сумма</th>
+              <th>Пользователь</th>
+            </tr>
+          </thead>
+          <!-- table head ends ======== -->
+
+          <tbody>
+            <!-- table body starts ======================= -->
+            <tr class="table-body">
+              <td style="width: 35px">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: end"></td>
+              <td style="text-align: end"></td>
+              <td style="text-align: end"></td>
+              <td style="text-align: end"></td>
+            </tr>
+          </tbody>
+          <!-- table body ends ======================= -->
+
+          <!-- table footer starts ============= -->
+          <tfoot>
+            <tr class="table-footer">
+              <td style="width: 35px"></td>
+              <td></td>
+              <td>0</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: end">0</td>
+              <td style="text-align: end"></td>
+            </tr>
+          </tfoot>
+          <!-- table footer ends ============= -->
+        </table>
+      </div>
+    </div>
+    <!-- Consumption ends ======================== -->
+
+    <!-- office modal starts ================ -->
+    <div
+      class="modal fade w-100"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Выбор из справочника
+            </h1>
+            <button
+              class="bg-transparent border-0"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <img src="/assets/icons/close-circle.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body-top">
+              <img src="/assets/icons/search-normal.svg" alt="icon" />
+              <input
+                class="border-0"
+                type="text"
+                placeholder="Поиск по таблице"
+              />
+            </div>
+            <table>
+              <tr>
+                <th></th>
+                <th>Наименование</th>
+              </tr>
+              <tr>
+                <td style="width: 35px">
+                  <img src="/assets/icons/row-left-mini.svg" alt="" />
+                </td>
+                <td>--------</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat medical main</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial 2 операционной</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- office modal ends ========= -->
+
+    <!-- product detail  starts  ============================================ -->
+    <div
+      class="detail-modal fade w-100"
+      id="detailModalToggle"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Выбор из справочника
+            </h1>
+            <button
+              class="bg-transparent border-0"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <img src="/assets/icons/close-circle.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body-top">
+              <img src="/assets/icons/search-normal.svg" alt="icon" />
+              <input
+                class="border-0"
+                type="text"
+                placeholder="Поиск по таблице"
+              />
+            </div>
+            <table>
+              <tr>
+                <th></th>
+                <th>Наименование</th>
+              </tr>
+              <tr>
+                <td style="width: 35px">
+                  <img src="/assets/icons/row-left-mini.svg" alt="" />
+                </td>
+                <td>--------</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat medical main</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial 2 операционной</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- product detail  ends  ============================================ -->
+
+    <!-- script ============= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
