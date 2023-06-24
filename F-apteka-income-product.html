@@ -410,63 +410,166 @@
                         id="flexCheckDefault"
                       />
                       <label class="form-check-label" for="flexCheckDefault">
-                        Default checkbox
+                        Лекарства
                       </label>
                     </div>
-                    <div class="d-flex gap-2">
-                      <input type="text" class="form-control bg-transparent" />
-                      <button
-                        style="
-                          padding: 8px;
-                          border-radius: 4px;
-                          border: none;
-                          background-color: rgba(0, 0, 0, 0.1);
-                          border: 1px solid rgba(0, 0, 0, 0.23);
-                        "
-                      >
-                        <img src="/assets/icons/book.svg" alt="" />
+                    <div class="add-product-modal">
+                      <input type="text" class="form-control" />
+                      <button>
+                        <img src="assets/icons/book.svg" alt="icon" />
                       </button>
+                      <label for=""> Торговое название</label>
+                      <input class="prod-name-inp form-control" type="text" />
+                      <button class="prod-name-btn">
+                        <img src="assets/icons/tick-circle.svg" alt="" />
+                      </button>
+                      <label for="">Дозировка</label>
+                      <input type="text" class="dosage-inp form-control" />
+                      <label class="Ф-вып-lab" for="">Ф-вып.</label>
+                      <input type="text" class="Ф-вып form-control" />
+                      <label for="" class="prod-number-lab">Номером</label>
+                      <input type="text" class="dosage-inp form-control" />
+                      <label for="" class="Ф-вып-lab">Ед-изм.</label>
+                      <input type="text" class="Ф-вып form-control" />
+                      <label for="">Производитель</label>
+                      <input type="text" class="Производитель form-control" />
+                      <button data-bs-target="manufacturer">
+                        <img src="assets/icons/book.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="assets/icons/document-text.svg" alt="icon" />
+                      </button>
+                      <label for="">Обязательный ассортимент</label>
+                      <input type="text" class="Производитель form-control" />
+                      <button>
+                        <img src="assets/icons/book.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="assets/icons/x-mark.svg" alt="icon" />
+                      </button>
+                      <label for="">Категория</label>
+                      <input type="text" class="Категория form-control" />
+                      <button>
+                        <img src="assets/icons/book.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="assets/icons/document-text.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="assets/icons/x-mark.svg" alt="icon" />
+                      </button>
+                      <label for="">В сводном прайсе</label>
+                      <input type="text" class="Производитель form-control" />
+                      <button>
+                        <img src="assets/icons/book.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="assets/icons/x-mark.svg" alt="icon" />
+                      </button>
+                      <label for="">Fom.uz</label>
+                      <input type="text" class="Производитель form-control" />
+                      <button>
+                        <img src="assets/icons/book.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="assets/icons/x-mark.svg" alt="icon" />
+                      </button>
+                      <label for="">Международное название</label>
+                      <input type="text" class="Категория form-control" />
+                      <button>
+                        <img src="assets/icons/book.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="assets/icons/document-text.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="assets/icons/x-mark.svg" alt="icon" />
+                      </button>
+                      <label for="">Группа Fom.uz</label>
+                      <input type="text" class="Производитель form-control" />
+                      <button>
+                        <img src="assets/icons/book.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="assets/icons/x-mark.svg" alt="icon" />
+                      </button>
+                      <label for="">Группа</label>
+                      <input type="text" class="prod-name-inp form-control" />
+                      <button class="Группа-btn">
+                        <img src="assets/icons/book.svg" alt="icon" />
+                      </button>
+                      <label for="">Группа</label>
+                      <input type="text" class="prod-name-inp form-control" />
+                      <label for="">Штрих-код</label>
+                      <input type="text" class="Категория form-control" />
+                      <button>
+                        <img src="assets/icons/barcode.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="assets/icons/barcode-add.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="assets/icons/book2.svg" alt="icon" />
+                      </button>
+                      <label for="">Место хранения</label>
+                      <input type="text" class="mesto-inp form-control" />
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Рецептурный
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Справочная
+                        </label>
+                      </div>
                     </div>
-
-                    <table class="mt-1">
-                      <tbody class="d-flex flex-column gap-1">
-                        <tr class="d-flex gap-2 align-items-center">
-                          <td style="width: 25%">Торговое название</td>
-                          <td style="width: 74%">
-                            <input type="text" class="form-control" />
+                    <table class="mt-4">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Штрихкод</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">
+                            <input type="checkbox" />
                           </td>
-                          <td rowspan="3" style="width: 6%">
-                            <button>
-                              <img src="/assets/icons/book.svg" alt="" />
-                            </button>
-                          </td>
+                          <td></td>
                         </tr>
                         <tr>
-                          <td class="w-25">Кол-во</td>
-                          <td>
-                            <input type="text" class="form-control" />
+                          <td class="text-center">
+                            <input type="checkbox" />
                           </td>
-                        </tr>
-                        <tr>
-                          <td class="w-25">Цена базовая</td>
-                          <td>
-                            <input type="text" class="form-control" />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="w-25"></td>
-                          <td class="d-flex justify-content-end">
-                            <button class="d-flex gap-3">
-                              <img
-                                src="assets/icons/calculator.svg"
-                                alt="icon"
-                              />
-                              Расчет
-                            </button>
-                          </td>
+                          <td></td>
                         </tr>
                       </tbody>
+                      <tfoot>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tfoot>
                     </table>
+                  </div>
+                  <div class="modal-foot">
+                    <div class="d-flex gap-2">
+                      <button>Сохранить</button>
+                      <button data-bs-dismiss="modal">Отмена</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -475,6 +578,154 @@
         </div>
       </div>
       <!-- add kartochka product ends =====================================  -->
+
+      <!-- manufacturer-2 modal starts ================ -->
+      <div class="modal fade w-100" id="manufacturer" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                Выбор из справочника - Производитель
+              </h1>
+              <button
+                class="bg-transparent border-0"
+                type="button"
+                data-bs-dismiss="modal"
+              >
+                <img src="/assets/icons/close-circle.svg" alt="icon" />
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-body-top">
+                <img src="/assets/icons/search-normal.svg" alt="icon" />
+                <input
+                  class="border-0"
+                  type="text"
+                  placeholder="Поиск по таблице"
+                />
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Наименование</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="width: 35px">
+                      <img
+                        class="more-icon"
+                        src="/assets/icons/row-left-mini.svg"
+                        alt=""
+                      />
+                    </td>
+                    <td>--------</td>
+                  </tr>
+                  <tr
+                    data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal"
+                  >
+                    <td>
+                      <img
+                        class="more-icon"
+                        src="/assets/icons/row-left-mini.svg"
+                        alt=""
+                      />
+                    </td>
+                    <td>2-ВАРИАНТ</td>
+                  </tr>
+                  <tr
+                    data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal"
+                  >
+                    <td>
+                      <img
+                        class="more-icon"
+                        src="/assets/icons/row-left-mini.svg"
+                        alt=""
+                      />
+                    </td>
+                    <td>999</td>
+                  </tr>
+                  <tr
+                    data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal"
+                  >
+                    <td>
+                      <img
+                        class="more-icon"
+                        src="/assets/icons/row-left-mini.svg"
+                        alt=""
+                      />
+                    </td>
+                    <td>А.B. - BIOKOM</td>
+                  </tr>
+                  <tr
+                    data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal"
+                  >
+                    <td>
+                      <img
+                        class="more-icon"
+                        src="/assets/icons/row-left-mini.svg"
+                        alt=""
+                      />
+                    </td>
+                    <td>ACTY PHARMA</td>
+                  </tr>
+                  <tr
+                    data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal"
+                  >
+                    <td>
+                      <img
+                        class="more-icon"
+                        src="/assets/icons/row-left-mini.svg"
+                        alt=""
+                      />
+                    </td>
+                    <td>ADITYA TRADING</td>
+                  </tr>
+                  <tr
+                    data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal"
+                  >
+                    <td>
+                      <img
+                        class="more-icon"
+                        src="/assets/icons/row-left-mini.svg"
+                        alt=""
+                      />
+                    </td>
+                    <td>AERO PHARM GROUP</td>
+                  </tr>
+                  <tr
+                    data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal"
+                  >
+                    <td>
+                      <img
+                        class="more-icon"
+                        src="/assets/icons/row-left-mini.svg"
+                        alt=""
+                      />
+                    </td>
+                    <td>ALFA GIANT</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- manufacturer-2 modal ends ========= -->
 
       <!-- kartochka product starts ================ -->
       <div class="modal-detail">
