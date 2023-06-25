@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="body">
+    <!-- header starts ==== -->
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="">
+            <img src="/assets/icons/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link">
+            <a href="">Реестр прихода</a>
+          </div>
+          <div class="header-link header-link-active">
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                Чеки
+              </a>
+              <ul class="dropdown-menu p-4">
+                <h5 class="mb-4">Чеки</h5>
+                <li class="mb-3 p-0">
+                  <a
+                    class="dropdown-item text-black fw-normal p-0"
+                    href="F-kassa-new-checks.html"
+                    ><img src="assets/icons/receipt-alt-1.svg" alt="icon" />
+                    Новый чек</a
+                  >
+                </li>
+                <li class="p-0">
+                  <a
+                    class="dropdown-item text-black fw-normal p-0"
+                    href="F-kassa-all-checks.html"
+                    ><img src="assets/icons/receipt-alt-3.svg" alt="icon" /> Все
+                    чеки</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-link">
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                Смена
+              </a>
+              <ul class="dropdown-menu p-4">
+                <h5 class="mb-4">Смена</h5>
+                <li class="mb-3 p-0">
+                  <button
+                    data-bs-target="#reportToggle"
+                    data-bs-toggle="modal"
+                    class="dropdown-item text-black fw-normal p-0"
+                  >
+                    <img src="assets/icons/square-user-chart.svg" alt="icon" />
+                    Отчёт
+                  </button>
+                </li>
+                <li class="mb-3 p-0">
+                  <button
+                  data-bs-target="#exampleModalToggle112"
+                    data-bs-toggle="modal"
+                    class="dropdown-item text-black fw-normal p-0"
+                    ><img
+                      src="assets/icons/door-open.svg"
+                      alt="icon"
+                    />Открыть</button
+                  >
+                </li>
+                <li class="p-0">
+                  <button
+                    class="dropdown-item text-black fw-normal p-0"
+                    ><img
+                      src="assets/icons/door-closed.svg"
+                      alt="icon"
+                    />Закрыть</button
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-link">
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                Перемещение
+              </a>
+              <ul class="dropdown-menu p-4">
+                <h5 class="mb-4">Перемещение</h5>
+                <li class="mb-3 p-0">
+                  <button
+                  data-bs-target="#exampleModalToggle1122"
+                  data-bs-toggle="modal"
+                    class="dropdown-item text-black fw-normal p-0"
+                    ><img src="assets/icons/folder-arrow-left.svg" alt="icon" />
+                    Возврат на склад</button
+                  >
+                </li>
+                <li class="mb-3 p-0">
+                  <button
+                    class="dropdown-item text-black fw-normal p-0"
+                    ><img
+                      src="assets/icons/diagram-next.svg"
+                      alt="icon"
+                    />Возврат для филиала</button
+                  >
+                </li>
+                <li class="p-0">
+                  <button
+                    class="dropdown-item text-black fw-normal p-0"
+                    ><img
+                      src="assets/icons/file-minus-alt.svg"
+                      alt="icon"
+                    />Возврат для списания</button
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+          АДМИНИСТРАТОР СМЕНА  №411
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/login.html">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header ends === -->
+
+    <!-- navigation starts ====== -->
+    <div class="navigation d-block">
+      <section class="d-flex justify-content-between">
+        <a href="F-kassa-new-checks.html">
+          <img src="/assets/icons/arrow-circle-left.svg" alt="icon" />
+          Реестр прихода - Приходные накладные
+        </a>
+        <section>
+          <button>
+            <img src="/assets/icons/mail-arrow-right.svg" alt="icon" />
+            отправить
+          </button>
+          <button data-bs-target="#exampleModalToggle11" data-bs-toggle="modal">
+            <img src="/assets/icons/pen-square.svg" alt="icon" />
+            редактировать
+          </button>
+          <button>
+            <img src="/assets/icons/close-circle.svg" alt="icon" />
+            удалить
+          </button>
+        </section>
+        <div class="income-top-right">
+          <div class="form-floating">
+            <input
+              type="date"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="DATE"
+            />
+            <label for="floatingPassword">дата с</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="date"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="DATE"
+            />
+            <label for="floatingPassword">дата по</label>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- navigation ends ====== -->
+
+    <!-- income starts ======================= -->
+    <div class="income-main">
+      <!-- income first table starts ========== -->
+
+      <div class="income-second-table">
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2"></th>
+              <th rowspan="2"></th>
+              <th rowspan="2" style="width: 10px">№</th>
+              <th rowspan="2">Дата</th>
+              <th rowspan="2">Документ</th>
+              <th rowspan="2">Организация</th>
+              <th rowspan="2">Сумма</th>
+              <th colspan="6">Оплата</th>
+              <th rowspan="2">Дата ввода</th>
+              <th rowspan="2">Смена</th>
+              <th rowspan="2">Пользователь</th>
+            </tr>
+            <tr>
+              <th>Итого</th>
+              <th>Наличные</th>
+              <th>Моб. Опл.</th>
+              <th>Det</th>
+              <th>Click</th>
+              <th>OnLIne</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover-tr-orange">
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/document-text.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-end">1958</td>
+              <td class="text-start">27.03.2023</td>
+              <td class="text-start">РОЗНЕЧНАЯ ПРОДАЖА</td>
+              <td class="text-start">ЧАСТНОЕ ЛИЦО</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-start">27.03.2023 10:34:03</td>
+              <td class="text-end">411</td>
+              <td class="text-start">АДМИНИСТРАТ</td>
+            </tr>
+            <tr class="hover-tr-orange">
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/document-text.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-end">1958</td>
+              <td class="text-start">27.03.2023</td>
+              <td class="text-start">РОЗНЕЧНАЯ ПРОДАЖА</td>
+              <td class="text-start">ЧАСТНОЕ ЛИЦО</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-start">27.03.2023 10:34:03</td>
+              <td class="text-end">411</td>
+              <td class="text-start">АДМИНИСТРАТ</td>
+            </tr>
+
+            <tr class="s">
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+              <td class="text-start">50000341</td>
+              <td class="text-start">ЦЕФИДОК 2,0%.C. INTERNATIONAL</td>
+              <td class="text-start">FSEA-005A</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">20</td>
+              <td class="text-end">1.00</td>
+              <td class="text-start">14 000.00</td>
+              <td class="text-start">280 000.00</td>
+              <td class="text-end">Приходная</td>
+              <td class="text-end">280 000.00</td>
+              <td class="text-end">14 000,00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-start">14 000,00</td>
+              <td class="text-start">14 000,00</td>
+              <td class="text-start">14 000,00</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="text-start">1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text-end">00</td>
+              <td class="text-end">00</td>
+              <td class="text-end">00</td>
+              <td class="text-end">00</td>
+              <td class="text-end">00</td>
+              <td class="text-end">00</td>
+              <td class="text-end">00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex p-2 gap-1">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Ф.И.0.</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">Категория</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">Примечание</label>
+          </div>
+        </div>
+        <div class="d-flex p-2 gap-1">
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Сумма</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">Скидка</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">К оплате</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="income-first-table">
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2"></th>
+              <th rowspan="2">ID</th>
+              <th rowspan="2">Наименование</th>
+              <th rowspan="2">Серия</th>
+              <th rowspan="2">Кол-во</th>
+              <th colspan="1">Цена</th>
+              <th colspan="1">Сумма</th>
+              <th rowspan="2">Дата ввода</th>
+              <th rowspan="2">Пользователь</th>
+            </tr>
+            <tr>
+              <th>Со скидкой</th>
+              <th>Со скидкой</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 35px" class="text-center">
+                <img src="/assets/icons/row-left-mini.svg" alt="" />
+              </td>
+
+              <td class="text-start"></td>
+              <td class="text-start"></td>
+              <td class="text-start"></td>
+              <td
+                style="background-color: rgba(127, 255, 212, 0.427)"
+                class="text-start"
+              ></td>
+              <td
+                style="background-color: rgba(0, 247, 255, 0.327)"
+                class="text-start"
+              ></td>
+              <td
+                style="background-color: rgba(255, 251, 0, 0.49)"
+                class="text-end"
+              ></td>
+              <td class="text-start"></td>
+              <td class="text-start"></td>
+            </tr>
+            <tr class="s">
+              <td style="width: 35px" class="text-center">
+                <img
+                  class="more-icon"
+                  src="/assets/icons/row-left-mini.svg"
+                  alt=""
+                />
+              </td>
+
+              <td class="text-start">50000341</td>
+              <td class="text-start">ВНУТРЕНИЙ ПРИХОД</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-end">1</td>
+              <td class="text-start">01.02.2023</td>
+              <td class="text-start">HAYAT MEDICAL MAIN</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td class="text-start">0</td>
+              <td class="text-end"></td>
+              <td class="text-end"></td>
+              <td class="text-end"></td>
+              <td class="text-end"></td>
+              <td class="text-end">0.00</td>
+              <td class="text-end"></td>
+              <td class="text-end"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <!-- income second table ends ================= -->
+    <!-- income ends ======================= -->
+
+    <!-- office modal starts ================ -->
+    <div
+      class="modal fade w-100"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Выбор из справочника
+            </h1>
+            <button
+              class="bg-transparent border-0"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <img src="/assets/icons/close-circle.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body-top">
+              <img src="/assets/icons/search-normal.svg" alt="icon" />
+              <input
+                class="border-0"
+                type="text"
+                placeholder="Поиск по таблице"
+              />
+            </div>
+            <table>
+              <tr>
+                <th></th>
+                <th>Наименование</th>
+              </tr>
+              <tr>
+                <td style="width: 35px">
+                  <img src="/assets/icons/row-left-mini.svg" alt="" />
+                </td>
+                <td>--------</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat medical main</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial 2 операционной</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- office modal ends ========= -->
+
+    <!-- confirm modal starts -->
+    <div class="confirm-checks">
+      <div class="modal-detail">
+        <div
+          class="modal fade w-100"
+          id="exampleModalToggle11"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                  Confirm
+                </h1>
+                <button
+                  class="bg-transparent border-0"
+                  type="button"
+                  data-bs-dismiss="modal"
+                >
+                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+                </button>
+              </div>
+              <div class="modal-body d-flex flex-column">
+                <h4>Вы точно хотите откорректировать этот чек?</h4>
+              </div>
+              <div class="modal-foot">
+                <div class="d-flex gap-2">
+                  <button>Откорректировать</button>
+                  <button data-bs-dismiss="modal">Отмена</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- confirm modal ends -->
+
+    <!-- confirm modal 2 starts -->
+    <div class="confirm-checks-2">
+      <div class="modal-detail">
+        <div
+          class="modal fade w-100"
+          id="exampleModalToggle112"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                  Confirm
+                </h1>
+                <button
+                  class="bg-transparent border-0"
+                  type="button"
+                  data-bs-dismiss="modal"
+                >
+                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+                </button>
+              </div>
+              <div class="modal-body d-flex flex-column">
+                <h4>ВЫ ТОЧНО ХОТИТЕ ОТКРЫТЬ СМЕНУ ???</h4>
+              </div>
+              <div class="modal-foot">
+                <div class="d-flex gap-2">
+                  <button>Да</button>
+                  <button data-bs-dismiss="modal">Нет</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- confirm modal 2 ends -->
+
+
+    <!-- return modal  starts -->
+    <div class="return-modal">
+      <div class="modal-detail">
+        <div
+          class="modal fade w-100"
+          id="exampleModalToggle1122"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                  Возврат на склад
+                </h1>
+                <button
+                  class="bg-transparent border-0"
+                  type="button"
+                  data-bs-dismiss="modal"
+                >
+                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+                </button>
+              </div>
+              <div class="modal-body d-flex flex-column">
+                <h1>280 000,00</h1>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="text">
+                  <label for="floatingInput">Название филиала</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingPassword" placeholder="text">
+                  <label for="floatingPassword">Примечание</label>
+                </div>
+              </div>
+              <div class="modal-foot">
+                <div class="d-flex gap-2">
+                  <button>Возврат</button>
+                  <button data-bs-dismiss="modal">Отмена</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- return modal ends -->
+
+    <!-- report modal starts ================ -->
+    <div class="report-modal">
+      <div
+        class="modal fade w-100"
+        id="reportToggle"
+        aria-hidden="true"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                Отчёт
+              </h1>
+              <button
+                class="bg-transparent border-0"
+                type="button"
+                data-bs-dismiss="modal"
+              >
+                <img src="/assets/icons/close-circle.svg" alt="icon" />
+              </button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Наименование</th>
+                    <th>Сумма</th>
+                  </tr>
+                  <tr>
+                </thead>
+                <tbody>
+
+                  <td style="width: 35px">
+                    <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+                  </td>
+                  <td>РОЗНЕЧНАЯ ПРОДАЖА</td>
+                  <td class="text-end">0.00</td>
+                </tr>
+                <tr
+                  data-bs-target="#reportToggle"
+                  data-bs-toggle="modal"
+                >
+                  <td><img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                  <td>Итого продаж</td>
+                  <td class="text-end">0.00</td>
+                </tr>
+                <tr
+                  data-bs-target="#reportToggle"
+                  data-bs-toggle="modal"
+                >
+                  <td><img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                  <td>Итого оплаты</td>
+                  <td class="text-end">0.00</td>
+
+                </tr>
+                <tr
+                  data-bs-target="#reportToggle"
+                  data-bs-toggle="modal"
+                >
+                  <td><img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                  <td>Итого оплата долгов</td>
+                  <td class="text-end">0.00</td>
+
+                </tr>
+                <tr
+                  data-bs-target="#reportToggle"
+                  data-bs-toggle="modal"
+                >
+                  <td><img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                  <td>Скидки</td>
+                  <td class="text-end">0.00</td>
+
+                </tr>
+                <tr
+                  data-bs-target="#reportToggle"
+                  data-bs-toggle="modal"
+                >
+                  <td><img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                  <td>Продажи</td>
+                  <td class="text-end">0.00</td>
+
+                </tr>
+                <tr
+                  data-bs-target="#reportToggle"
+                  data-bs-toggle="modal"
+                >
+                  <td><img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                  <td>НДС</td>
+                  <td class="text-end">0.00</td>
+
+                </tr>
+              </tbody>
+              </table>
+              <div class="d-flex justify-content-between p-2 mt-4">
+                <button class="bottom-btn"> <img src="assets/icons/refresh-ccw-alt-3.svg" alt="icon">Обновить</button>
+                <button  data-bs-target="#reportToggle"
+                data-bs-toggle="modal" class="bottom-btn"> 
+                <img src="/assets/icons/close-circle.svg" alt="icon">
+                Выход
+              </button>
+              </div>
+            </div>
+    </div>
+  </div>
+  </div>
+  </div>
+    <!-- report modal ends ========= -->
+
+    <!-- script ============= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

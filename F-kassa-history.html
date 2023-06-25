@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="body">
+    <!-- header starts ==== -->
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="">
+            <img src="/assets/icons/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link">
+            <a href="">Реестр прихода</a>
+          </div>
+          <div class="header-link header-link-active">
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                Чеки
+              </a>
+              <ul class="dropdown-menu p-4">
+                <h5 class="mb-4">Чеки</h5>
+                <li class="mb-3 p-0">
+                  <a
+                    class="dropdown-item text-black fw-normal p-0"
+                    href="F-kassa-new-checks.html"
+                    ><img src="assets/icons/receipt-alt-1.svg" alt="icon" />
+                    Новый чек</a
+                  >
+                </li>
+                <li class="p-0">
+                  <a
+                    class="dropdown-item text-black fw-normal p-0"
+                    href="F-kassa-all-checks.html"
+                    ><img src="assets/icons/receipt-alt-3.svg" alt="icon" /> Все
+                    чеки</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-link">
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                Смена
+              </a>
+              <ul class="dropdown-menu p-4">
+                <h5 class="mb-4">Смена</h5>
+                <li class="mb-3 p-0">
+                  <button
+                    data-bs-target="#reportToggle"
+                    data-bs-toggle="modal"
+                    class="dropdown-item text-black fw-normal p-0"
+                  >
+                    <img src="assets/icons/square-user-chart.svg" alt="icon" />
+                    Отчёт
+                  </button>
+                </li>
+                <li class="mb-3 p-0">
+                  <button
+                  data-bs-target="#exampleModalToggle112"
+                    data-bs-toggle="modal"
+                    class="dropdown-item text-black fw-normal p-0"
+                    ><img
+                      src="assets/icons/door-open.svg"
+                      alt="icon"
+                    />Открыть</button
+                  >
+                </li>
+                <li class="p-0">
+                  <button
+                    class="dropdown-item text-black fw-normal p-0"
+                    ><img
+                      src="assets/icons/door-closed.svg"
+                      alt="icon"
+                    />Закрыть</button
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-link">
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                Перемещение
+              </a>
+              <ul class="dropdown-menu p-4">
+                <h5 class="mb-4">Перемещение</h5>
+                <li class="mb-3 p-0">
+                  <button
+                  data-bs-target="#exampleModalToggle1122"
+                  data-bs-toggle="modal"
+                    class="dropdown-item text-black fw-normal p-0"
+                    ><img src="assets/icons/folder-arrow-left.svg" alt="icon" />
+                    Возврат на склад</button
+                  >
+                </li>
+                <li class="mb-3 p-0">
+                  <button
+                    class="dropdown-item text-black fw-normal p-0"
+                    ><img
+                      src="assets/icons/diagram-next.svg"
+                      alt="icon"
+                    />Возврат для филиала</button
+                  >
+                </li>
+                <li class="p-0">
+                  <button
+                    class="dropdown-item text-black fw-normal p-0"
+                    ><img
+                      src="assets/icons/file-minus-alt.svg"
+                      alt="icon"
+                    />Возврат для списания</button
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+          АДМИНИСТРАТОР СМЕНА  №411
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/login.html">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header ends === -->
+
+    <!-- history main starts ========================-->
+    <nav class="d-flex justify-content-between">
+  <div class="nav nav-underline gap-5" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Приход</button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Расход</button>
+    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Продажи</button>
+    <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history" type="button" role="tab" aria-controls="nav-history" aria-selected="false">Группировка</button>
+  </div>
+  <div class="d-flex align-items-center gap-4">
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Период с
+        </label>
+      </div>
+      
+    <div class="form-floating" style="width: 130px;">
+        <input
+          type="date"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="data"
+        />
+        <label for="floatingPassword">Дата с</label>
+      </div>
+      <div class="form-floating" style="width: 130px;">
+        <input
+          type="date"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="data"
+        />
+        <label for="floatingPassword">Дата до</label>
+      </div>
+      <button class="border border-1 border-secondary p-2 rounded-1"><img src="assets/icons/tick-circle.svg" alt="icon"></button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <!-- Приход ===================================== -->
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+    <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Дата</th>
+            <th>Документ</th>
+            <th>Организация</th>
+            <th>№</th>
+            <th>Наименование</th>
+            <th>Кол-во</th>
+            <th>Кол-во</th>
+            <th>Цена</th>
+            <th>Сумма</th>
+            <th>Дата ввода</th> 
+            <th>Пользователь</th> 
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr class="s">
+            <td style="width: 35px" class="text-center">
+              <img
+                class="more-icon"
+                src="/assets/icons/row-left-mini.svg"
+                alt=""
+              />
+            </td>
+
+            <td class="text-start">0</td>
+            <td class="text-start">ВН</td>
+            <td class="text-start">1.</td>
+            <td class="text-start">1</td>
+            <td class="text-start">0</td>
+            <td class="text-end"></td>
+            <td class="text-start">23</td>
+            <td class="text-start"></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td class="text-start"></td>
+            <td class="text-start"></td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+            <td class="text-end">7790</td>
+            <td class="text-end"></td>
+            <td class="text-end">21 680 295.00</td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+          </tr>
+        </tfoot>
+      </table>
+  </div>
+  <!-- Расход ====================================== -->
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+    <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Дата</th>
+            <th>Документ</th>
+            <th>Организация</th>
+            <th>№</th>
+            <th>Наименование</th>
+            <th>Кол-во</th>
+            <th>Кол-во</th>
+            <th>Цена</th>
+            <th>Сумма</th>
+            <th>Дата ввода</th> 
+            <th>Пользователь</th> 
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr class="s">
+            <td style="width: 35px" class="text-center">
+              <img
+                class="more-icon"
+                src="/assets/icons/row-left-mini.svg"
+                alt=""
+              />
+            </td>
+
+            <td class="text-start">0</td>
+            <td class="text-start">ВН</td>
+            <td class="text-start">1.</td>
+            <td class="text-start">1</td>
+            <td class="text-start">0</td>
+            <td class="text-end"></td>
+            <td class="text-start">23</td>
+            <td class="text-start"></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td class="text-start"></td>
+            <td class="text-start"></td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+            <td class="text-end">7790</td>
+            <td class="text-end"></td>
+            <td class="text-end">21 680 295.00</td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+          </tr>
+        </tfoot>
+      </table>
+  </div>
+  <!-- Продажи ========================================== -->
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0"><table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Дата</th>
+        <th>Документ</th>
+        <th>Организация</th>
+        <th>№</th>
+        <th>Наименование</th>
+        <th>Кол-во</th>
+        <th>Кол-во</th>
+        <th>Цена</th>
+        <th>Сумма</th>
+        <th>Дата ввода</th> 
+        <th>Пользователь</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="width: 35px" class="text-center">
+          <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+        </td>
+        <td class="text-start">
+            25.02.2023
+        </td>
+        <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+        <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+        <td
+          class="text-end"
+        >1037</td>
+        <td
+          class="text-center"
+        >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+        <td
+          class="text-start"
+        >45</td>
+        <td class="text-end">45</td>
+        <td class="text-end">2 337.00</td>
+        <td class="text-end">105 165,00</td>
+        <td class="text-end">25.02.2023 10:06:</td>
+        <td class="text-center">АДМИНИСТРАТО</td>
+      </tr>
+      <tr>
+        <td style="width: 35px" class="text-center">
+          <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+        </td>
+        <td class="text-start">
+            25.02.2023
+        </td>
+        <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+        <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+        <td
+          class="text-end"
+        >1037</td>
+        <td
+          class="text-center"
+        >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+        <td
+          class="text-start"
+        >45</td>
+        <td class="text-end">45</td>
+        <td class="text-end">2 337.00</td>
+        <td class="text-end">105 165,00</td>
+        <td class="text-end">25.02.2023 10:06:</td>
+        <td class="text-center">АДМИНИСТРАТО</td>
+      </tr>
+      <tr>
+        <td style="width: 35px" class="text-center">
+          <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+        </td>
+        <td class="text-start">
+            25.02.2023
+        </td>
+        <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+        <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+        <td
+          class="text-end"
+        >1037</td>
+        <td
+          class="text-center"
+        >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+        <td
+          class="text-start"
+        >45</td>
+        <td class="text-end">45</td>
+        <td class="text-end">2 337.00</td>
+        <td class="text-end">105 165,00</td>
+        <td class="text-end">25.02.2023 10:06:</td>
+        <td class="text-center">АДМИНИСТРАТО</td>
+      </tr>
+      <tr>
+        <td style="width: 35px" class="text-center">
+          <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+        </td>
+        <td class="text-start">
+            25.02.2023
+        </td>
+        <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+        <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+        <td
+          class="text-end"
+        >1037</td>
+        <td
+          class="text-center"
+        >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+        <td
+          class="text-start"
+        >45</td>
+        <td class="text-end">45</td>
+        <td class="text-end">2 337.00</td>
+        <td class="text-end">105 165,00</td>
+        <td class="text-end">25.02.2023 10:06:</td>
+        <td class="text-center">АДМИНИСТРАТО</td>
+      </tr>
+      <tr>
+        <td style="width: 35px" class="text-center">
+          <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+        </td>
+        <td class="text-start">
+            25.02.2023
+        </td>
+        <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+        <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+        <td
+          class="text-end"
+        >1037</td>
+        <td
+          class="text-center"
+        >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+        <td
+          class="text-start"
+        >45</td>
+        <td class="text-end">45</td>
+        <td class="text-end">2 337.00</td>
+        <td class="text-end">105 165,00</td>
+        <td class="text-end">25.02.2023 10:06:</td>
+        <td class="text-center">АДМИНИСТРАТО</td>
+      </tr>
+      <tr class="s">
+        <td style="width: 35px" class="text-center">
+          <img
+            class="more-icon"
+            src="/assets/icons/row-left-mini.svg"
+            alt=""
+          />
+        </td>
+
+        <td class="text-start">0</td>
+        <td class="text-start">ВН</td>
+        <td class="text-start">1.</td>
+        <td class="text-start">1</td>
+        <td class="text-start">0</td>
+        <td class="text-end"></td>
+        <td class="text-start">23</td>
+        <td class="text-start"></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td class="text-start"></td>
+        <td class="text-start"></td>
+        <td class="text-end"></td>
+        <td class="text-end"></td>
+        <td class="text-end"></td>
+        <td class="text-end"></td>
+        <td class="text-end">7790</td>
+        <td class="text-end"></td>
+        <td class="text-end">21 680 295.00</td>
+        <td class="text-end"></td>
+        <td class="text-end"></td>
+      </tr>
+    </tfoot>
+  </table></div>
+  <!-- Группировка ================================== -->
+  <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab" tabindex="0">
+    <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Дата</th>
+            <th>Документ</th>
+            <th>Организация</th>
+            <th>№</th>
+            <th>Наименование</th>
+            <th>Кол-во</th>
+            <th>Кол-во</th>
+            <th>Цена</th>
+            <th>Сумма</th>
+            <th>Дата ввода</th> 
+            <th>Пользователь</th> 
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr>
+            <td style="width: 35px" class="text-center">
+              <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+            </td>
+            <td class="text-start">
+                25.02.2023
+            </td>
+            <td class="text-start">БЕСПЛАТНЫЙ РЕЦЕПТ</td>
+            <td class="text-start">ПОСЛЕ ОПЕРАЦИОННАЯ</td>
+            <td
+              class="text-end"
+            >1037</td>
+            <td
+              class="text-center"
+            >СИСТЕМА ИНФУЗИОННАЯ ALLIANCENALLIANCE ME</td>
+            <td
+              class="text-start"
+            >45</td>
+            <td class="text-end">45</td>
+            <td class="text-end">2 337.00</td>
+            <td class="text-end">105 165,00</td>
+            <td class="text-end">25.02.2023 10:06:</td>
+            <td class="text-center">АДМИНИСТРАТО</td>
+          </tr>
+          <tr class="s">
+            <td style="width: 35px" class="text-center">
+              <img
+                class="more-icon"
+                src="/assets/icons/row-left-mini.svg"
+                alt=""
+              />
+            </td>
+
+            <td class="text-start">0</td>
+            <td class="text-start">ВН</td>
+            <td class="text-start">1.</td>
+            <td class="text-start">1</td>
+            <td class="text-start">0</td>
+            <td class="text-end"></td>
+            <td class="text-start">23</td>
+            <td class="text-start"></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td class="text-start"></td>
+            <td class="text-start"></td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+            <td class="text-end">7790</td>
+            <td class="text-end"></td>
+            <td class="text-end">21 680 295.00</td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+          </tr>
+        </tfoot>
+      </table>
+  </div>
+</div>
+    <!-- history main ends =================================-->
+
+    <!-- office modal starts ================ -->
+    <div
+      class="modal fade w-100"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Выбор из справочника
+            </h1>
+            <button
+              class="bg-transparent border-0"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              <img src="/assets/icons/close-circle.svg" alt="icon" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body-top">
+              <img src="/assets/icons/search-normal.svg" alt="icon" />
+              <input
+                class="border-0"
+                type="text"
+                placeholder="Поиск по таблице"
+              />
+            </div>
+            <table>
+              <tr>
+                <th></th>
+                <th>Наименование</th>
+              </tr>
+              <tr>
+                <td style="width: 35px">
+                  <img src="/assets/icons/row-left-mini.svg" alt="" />
+                </td>
+                <td>--------</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat medical main</td>
+              </tr>
+              <tr data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <td><img src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                <td>Hayat Medical filial 2 операционной</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- office modal ends ========= -->
+
+    <!-- confirm modal starts -->
+    <div class="confirm-checks">
+      <div class="modal-detail">
+        <div
+          class="modal fade w-100"
+          id="exampleModalToggle11"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                  Confirm
+                </h1>
+                <button
+                  class="bg-transparent border-0"
+                  type="button"
+                  data-bs-dismiss="modal"
+                >
+                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+                </button>
+              </div>
+              <div class="modal-body d-flex flex-column">
+                <h4>Вы точно хотите откорректировать этот чек?</h4>
+              </div>
+              <div class="modal-foot">
+                <div class="d-flex gap-2">
+                  <button>Откорректировать</button>
+                  <button data-bs-dismiss="modal">Отмена</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- confirm modal ends -->
+
+    <!-- confirm modal 2 starts -->
+    <div class="confirm-checks-2">
+      <div class="modal-detail">
+        <div
+          class="modal fade w-100"
+          id="exampleModalToggle112"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                  Confirm
+                </h1>
+                <button
+                  class="bg-transparent border-0"
+                  type="button"
+                  data-bs-dismiss="modal"
+                >
+                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+                </button>
+              </div>
+              <div class="modal-body d-flex flex-column">
+                <h4>ВЫ ТОЧНО ХОТИТЕ ОТКРЫТЬ СМЕНУ ???</h4>
+              </div>
+              <div class="modal-foot">
+                <div class="d-flex gap-2">
+                  <button>Да</button>
+                  <button data-bs-dismiss="modal">Нет</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- confirm modal 2 ends -->
+
+
+    <!-- return modal  starts -->
+    <div class="return-modal">
+      <div class="modal-detail">
+        <div
+          class="modal fade w-100"
+          id="exampleModalToggle1122"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                  Возврат на склад
+                </h1>
+                <button
+                  class="bg-transparent border-0"
+                  type="button"
+                  data-bs-dismiss="modal"
+                >
+                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+                </button>
+              </div>
+              <div class="modal-body d-flex flex-column">
+                <h1>280 000,00</h1>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="text">
+                  <label for="floatingInput">Название филиала</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingPassword" placeholder="text">
+                  <label for="floatingPassword">Примечание</label>
+                </div>
+              </div>
+              <div class="modal-foot">
+                <div class="d-flex gap-2">
+                  <button>Возврат</button>
+                  <button data-bs-dismiss="modal">Отмена</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- return modal ends -->
+
+    <!-- report modal starts ================ -->
+    <div class="report-modal">
+      <div
+        class="modal fade w-100"
+        id="reportToggle"
+        aria-hidden="true"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                Отчёт
+              </h1>
+              <button
+                class="bg-transparent border-0"
+                type="button"
+                data-bs-dismiss="modal"
+              >
+                <img src="/assets/icons/close-circle.svg" alt="icon" />
+              </button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Наименование</th>
+                    <th>Сумма</th>
+                  </tr>
+                  <tr>
+                </thead>
+                <tbody>
+
+                  <td style="width: 35px">
+                    <img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" />
+                  </td>
+                  <td>РОЗНЕЧНАЯ ПРОДАЖА</td>
+                  <td class="text-end">0.00</td>
+                </tr>
+                <tr
+                  data-bs-target="#reportToggle"
+                  data-bs-toggle="modal"
+                >
+                  <td><img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                  <td>Итого продаж</td>
+                  <td class="text-end">0.00</td>
+                </tr>
+                <tr
+                  data-bs-target="#reportToggle"
+                  data-bs-toggle="modal"
+                >
+                  <td><img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                  <td>Итого оплаты</td>
+                  <td class="text-end">0.00</td>
+
+                </tr>
+                <tr
+                  data-bs-target="#reportToggle"
+                  data-bs-toggle="modal"
+                >
+                  <td><img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                  <td>Итого оплата долгов</td>
+                  <td class="text-end">0.00</td>
+
+                </tr>
+                <tr
+                  data-bs-target="#reportToggle"
+                  data-bs-toggle="modal"
+                >
+                  <td><img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                  <td>Скидки</td>
+                  <td class="text-end">0.00</td>
+
+                </tr>
+                <tr
+                  data-bs-target="#reportToggle"
+                  data-bs-toggle="modal"
+                >
+                  <td><img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                  <td>Продажи</td>
+                  <td class="text-end">0.00</td>
+
+                </tr>
+                <tr
+                  data-bs-target="#reportToggle"
+                  data-bs-toggle="modal"
+                >
+                  <td><img class="more-icon" src="/assets/icons/row-left-mini.svg" alt="" /></td>
+                  <td>НДС</td>
+                  <td class="text-end">0.00</td>
+                </tr>
+              </tbody>
+              </table>
+              <div class="d-flex justify-content-between p-2 mt-4">
+                <button class="bottom-btn"> <img src="assets/icons/refresh-ccw-alt-3.svg" alt="icon">Обновить</button>
+                <button  data-bs-target="#reportToggle"
+                data-bs-toggle="modal" class="bottom-btn"> 
+                <img src="/assets/icons/close-circle.svg" alt="icon">
+                Выход
+              </button>
+              </div>
+            </div>
+    </div>
+  </div>
+  </div>
+  </div>
+    <!-- report modal ends ========= -->
+
+    <!-- script ============= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
