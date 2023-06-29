@@ -12,3 +12,4 @@ togglePassword.addEventListener('click', function () {
 // loginButton.addEventListener('click', function () {
 //     window.location.href = '/Main/index.html';
 // });
+
