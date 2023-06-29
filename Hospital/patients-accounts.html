@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../assets/css/style.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+   <title>Hayat Medical</title>
+</head>
+
+<body>
+
+   <!-- header starts ==== -->
+   <header>
+      <div class="header-left">
+         <div class="logo">
+            <a href="./index.html">
+               <img src="/assets/icons/logo.svg" alt="logo" />
+            </a>
+         </div>
+         <div class="header-links">
+            <div class="header-link">
+               <a href="">Регистрация</a>
+            </div>
+            <div class="header-link header-link-active">
+               <a href="./patients-my-patients.html">Пациенты</a>
+            </div>
+            <div class="header-link ">
+               <a href="">События</a>
+            </div>
+            <div class="header-link">
+               <a href="">Диспетчеризация</a>
+            </div>
+            <div class="header-link">
+               <a href="">Лаборатория</a>
+            </div>
+            <div class="header-link">
+               <a href="">Касса</a>
+            </div>
+         </div>
+      </div>
+      <div class="header-right">
+         <div class="dropdown">
+            <button class="dropdown-toggle profile-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Mухиддинов
+            </button>
+            <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
+            </ul>
+         </div>
+      </div>
+   </header>
+
+   <!-- patients tabs-->
+   <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+         <a href="./patients-my-patients.html">
+            <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+               role="tab" aria-controls="home-tab-pane" aria-selected="true">
+               Мои пациенты
+            </button>
+         </a>
+      </li>
+      <li class="nav-item" role="presentation">
+         <a href="./patients-accounts.html">
+            <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+               type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+               Счета
+            </button>
+         </a>
+      </li>
+      <li class="nav-item" role="presentation">
+         <a href="">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+               type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+               Поиск пациентов
+            </button>
+         </a>
+      </li>
+   </ul>
+
+   <!-- account patient filter -->
+   <div class="account-patient__filter-box">
+      <div class="form-check">
+         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+         <label class="form-check-label" for="flexCheckDefault">
+            Зачёт авансовых платежей
+         </label>
+      </div>
+
+      <div class="account-patient__filter">
+         <p class="account-patient__filter__title">
+            <strong>Фильтрация по статусу счёта:</strong>
+         </p>
+
+         <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+               Создан
+            </label>
+         </div>
+
+         <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+               Оплачен
+            </label>
+         </div>
+
+         <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+               Распечатан
+            </label>
+         </div>
+
+         <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+               Отменен
+            </label>
+         </div>
+
+         <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+               Ожидает онлайн оплаты
+            </label>
+         </div>
+      </div>
+   </div>
+
+   <div class="account-patient__input-box">
+      <input class="form-control" type="text" placeholder="Пациент (ФИО)">
+      <input class="form-control" type="text" placeholder="Номер ИБ">
+      <input class="form-control" type="text" placeholder="Номер счёта">
+
+      <button type="button" class="btn btn-primary account-patient__search-btn">Поиск</button>
+      <button type="button" class="btn btn-primary account-patient__close-btn">Очистить фильтр</button>
+   </div>
+
+   <div class="account-patient__btn-box">
+      <button class="btn account-patient__btn">Распечатать</button>
+      <button class="btn account-patient__btn">Отменить</button>
+
+      <div class="btn-group">
+         <button type="button" class="btn btn-color dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Оплатить
+         </button>
+         <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+               <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+         </ul>
+      </div>
+
+      <button class="btn account-patient__btn">Чек зачёта аванса</button>
+      <button class="btn account-patient__btn">Отменить оплату</button>
+      <button class="btn account-patient__btn account-patient__btn--active">Выбор колонок</button>
+      <button class="patients-my-patients__search-btn">Excel</button>
+   </div>
+
+   <!-- script ============= -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+   <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

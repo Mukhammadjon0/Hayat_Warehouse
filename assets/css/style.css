@@ -1232,3 +1232,115 @@ input[type="number"] {
   letter-spacing: 0.15px;
   color: rgba(0, 0, 0, 0.54);
 }
+
+/* ====== Account patients ======= */
+.account-patient__filter-box {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background: var(--background, #F5F5F5);
+}
+
+.form-check-label {
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.form-check-input:checked~.form-check-label {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.account-patient__filter {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  justify-content: space-between;
+  margin-left: 30px;
+  align-items: center;
+}
+
+.account-patient__filter__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.account-patient__input-box {
+  display: flex;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.account-patient__input-box input {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.account-patient__search-btn {
+  padding-left: 30px !important;
+  background-image: url('../icons/search-normal-white.svg');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 18px 18px;
+}
+
+.account-patient__close-btn {
+  padding-left: 30px !important;
+  background-image: url('../icons/xmark.svg');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 18px 18px;
+}
+
+.account-patient__btn-box {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.account-patient__btn {
+  display: block !important;
+  background: #F5F5F5 !important;
+  font-size: 14px !important;
+  font-family: 'Roboto' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: 0.15px !important;
+  color: rgba(0, 0, 0, 0.38) !important;
+}
+
+.account-patient__btn--active {
+  background: #2196F3 !important;
+  color: #fff !important;
+}
+
+.btn-color {
+  background: #2196F3;
+  border: none;
+  color: #fff;
+}
