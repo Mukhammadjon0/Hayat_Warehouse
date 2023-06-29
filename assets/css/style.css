@@ -889,7 +889,7 @@ input[type="number"] {
   height: calc(var(--vh, 1vh) * 23);
 }
 
-.navigation>section>section>button {
+.navigation > section > section > button {
   padding: 10px;
   background: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.23);
@@ -899,7 +899,7 @@ input[type="number"] {
   margin-left: 15px;
 }
 
-.navigation>section>section>button>img {
+.navigation > section > section > button > img {
   margin-right: 8px;
   width: 30px;
 }
@@ -931,7 +931,7 @@ input[type="number"] {
   justify-content: space-between;
 }
 
-.navigation>section {
+.navigation > section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1132,10 +1132,67 @@ input[type="number"] {
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
-
 /* menu select modal ====== */
-@media screen and (min-width: 768px) and (max-width: 1187px) {
+/* inscurence-modal starts ======== */
+.insurence-modal .modal {
+  --bs-modal-width: 778px !important;
+}
 
+.insurence-modal .modal-foot button:nth-child(1) {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 118px;
+  height: 36px;
+  background: #007dff;
+  box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 3px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.insurence-modal .modal-foot button:nth-child(2) {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 118px;
+  height: 36px;
+  background: #007dff;
+  box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 3px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.insurence-modal .modal-foot button:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 36px;
+  background: #eeeeee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: black;
+}
+/* inscurence-modal starts ======== */
+/* number-modal ===================-- */
+.number-modal .modal {
+  --bs-modal-width: 710px !important;
+}
+/* number-modal ===================-- */
+@media screen and (min-width: 768px) and (max-width: 1187px) {
   /* login starts ==== */
   .login-right {
     display: none;
@@ -1143,7 +1200,6 @@ input[type="number"] {
 
   /* login ends ==== */
 }
-
 
 /* =================MY PATIENTS=================== */
 .nav-tabs {
@@ -1184,7 +1240,7 @@ input[type="number"] {
   max-width: 85%;
   padding: 6px;
   padding-left: 40px;
-  background-image: url('../icons/search-normal.svg');
+  background-image: url("../icons/search-normal.svg");
   background-repeat: no-repeat;
   background-position: 10px center;
   background-size: 20px 20px;
@@ -1192,7 +1248,7 @@ input[type="number"] {
   border-radius: 4px;
   border: 1px solid var(--border, rgba(0, 0, 0, 0.23));
   font-size: 14px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -1205,15 +1261,15 @@ input[type="number"] {
   padding: 6px 16px;
   padding-left: 40px;
   border-radius: 4px;
-  background: #2196F3;
+  background: #2196f3;
   border: none;
   font-size: 14px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
   color: #fff;
-  background-image: url('../icons/document-excel-2.svg');
+  background-image: url("../icons/document-excel-2.svg");
   background-repeat: no-repeat;
   background-size: 18px 18px;
   background-position: 16px center;
@@ -1225,7 +1281,7 @@ input[type="number"] {
   margin-top: 10px;
   padding-left: 20px;
   font-size: 14px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
