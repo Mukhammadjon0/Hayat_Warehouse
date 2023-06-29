@@ -126,6 +126,7 @@
               class="table-body"
               data-bs-target="#exampleModalToggle1"
               data-bs-toggle="modal"
+              id="income-prod"
             >
               <td style="width: 35px">
                 <img
@@ -152,6 +153,7 @@
               <td>0.00</td>
             </tr>
             <tr
+              id="income-prod"
               class="table-body"
               data-bs-target="#exampleModalToggle1"
               data-bs-toggle="modal"
@@ -181,6 +183,7 @@
               <td>0.00</td>
             </tr>
             <tr
+              id="income-prod"
               class="table-body"
               data-bs-target="#exampleModalToggle1"
               data-bs-toggle="modal"
@@ -210,6 +213,7 @@
               <td>0.00</td>
             </tr>
             <tr
+              id="income-prod"
               class="table-body"
               data-bs-target="#exampleModalToggle1"
               data-bs-toggle="modal"
@@ -239,6 +243,7 @@
               <td>0.00</td>
             </tr>
             <tr
+              id="income-prod"
               class="table-body"
               data-bs-target="#exampleModalToggle1"
               data-bs-toggle="modal"
@@ -268,6 +273,7 @@
               <td>0.00</td>
             </tr>
             <tr
+              id="income-prod"
               class="table-body"
               data-bs-target="#exampleModalToggle1"
               data-bs-toggle="modal"
@@ -297,6 +303,7 @@
               <td>0.00</td>
             </tr>
             <tr
+              id="income-prod"
               class="table-body"
               data-bs-target="#exampleModalToggle1"
               data-bs-toggle="modal"
@@ -326,6 +333,7 @@
               <td>0.00</td>
             </tr>
             <tr
+              id="income-prod"
               class="table-body"
               data-bs-target="#exampleModalToggle1"
               data-bs-toggle="modal"
@@ -1364,19 +1372,146 @@
         </div>
       </div>
     </div>
-    <!-- ========================================================= -->
+    <!-- menu context starts ========================================================= -->
     <div id="contextMenu" class="context-menu" style="display: none">
       <ul>
-        <li><a href="#">Element-1</a></li>
-        <li><a href="#">Element-2</a></li>
-        <li><a href="#">Element-3</a></li>
-        <li><a href="#">Element-4</a></li>
-        <li><a href="#">Element-5</a></li>
-        <li><a href="#">Element-6</a></li>
-        <li><a href="#">Element-7</a></li>
+        <li>
+          <button
+            class="bg-transparent border-0 border w-100 text-start"
+            data-bs-target="#exampleModalToggle1234"
+            data-bs-toggle="modal"
+          >
+            Выбрать
+          </button>
+        </li>
+        <li>
+          <button
+            class="bg-transparent border-0 border w-100 text-start"
+            data-bs-target="#kartaProduct"
+            data-bs-toggle="modal"
+          >
+            Новый
+          </button>
+        </li>
+        <li><a href="#">Обновить</a></li>
+        <li><a href="#">Штрихкод</a></li>
+        <li><a href="#">Фильтр</a></li>
+        <li><a href="#">Изменить</a></li>
       </ul>
     </div>
-    <!-- ========================================================= -->
+    <!-- menu context ends ========================================================= -->
+
+    <!-- menu Выбрать modal starts ========== -->
+    <div class="menu-select-modal">
+      <div
+        class="modal fade w-100"
+        id="exampleModalToggle1234"
+        aria-hidden="true"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                Товар
+              </h1>
+              <button
+                class="bg-transparent border-0"
+                type="button"
+                data-bs-dismiss="modal"
+              >
+                <img src="/assets/icons/close-circle.svg" alt="icon" />
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-body-left">
+                <div class="border border-1 text-body-tertiary p-2 h-75">
+                  <div class="d-flex gap-3">
+                    <input
+                      type="text"
+                      class="form-control bg-transparent"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-default"
+                    />
+                    <button class="d-flex gap-">
+                      <img src="/assets/icons/pen-line.svg" alt="icon" />
+                      Изменить
+                    </button>
+                  </div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="w-25">Кол-во</td>
+                        <td>
+                          <input type="number" class="form-control text-end" />
+                          <label for="">+</label>
+                          <input type="number" class="form-control text-end" />
+                          <label for="">/</label>
+                          <input type="number" class="form-control text-end" />
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Инвентаризация
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="w-25">Цена базовая</td>
+                        <td>
+                          <input type="text" class="form-control" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="w-25"></td>
+                        <td class="d-flex justify-content-end">
+                          <button class="d-flex gap-3">
+                            <img
+                              src="/assets/icons/calculator.svg"
+                              alt="icon"
+                            />
+                            Расчет
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="border border-1 text-body-tertiary p-2 mt-2">
+                  <p class="m-0">Дополнительно</p>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="d-flex gap-1 align-items-center">
+                      <label for="">Серия</label>
+                      <input type="text" class="form-control bg-transparent" />
+                    </div>
+                    <div class="d-flex gap-1 align-items-center">
+                      <label for="">Срок годности</label>
+                      <input type="date" class="form-control bg-transparent" />
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-foot mt-2">
+                  <div class="d-flex gap-2">
+                    <button>Сохранить</button>
+                    <button data-bs-dismiss="modal">Отмена</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- menu Выбрать modal ends ========== -->
 
     <!-- product detail  ends  ============================================ -->
 

@@ -1073,23 +1073,21 @@ input[type="number"] {
 /* =============================================== */
 .context-menu {
   position: absolute;
-  text-align: center;
-  background: lightgray;
-  border: 1px solid black;
+  /* text-align: center; */
+  background: var(--background, #f5f5f5);
   z-index: 999;
 }
 
 .context-menu ul {
   padding: 0px;
   margin: 0px;
-  min-width: 150px;
+  min-width: 250px;
   list-style: none;
 }
 
 .context-menu ul li {
-  padding-bottom: 7px;
-  padding-top: 7px;
-  border: 1px solid black;
+  padding: 5px 10px;
+  /* border: 1px solid black; */
 }
 
 .context-menu ul li a {
@@ -1098,10 +1096,44 @@ input[type="number"] {
 }
 
 .context-menu ul li:hover {
-  background: darkgray;
+  background: #3397ff;
 }
 
 /* =============================================== */
+
+/* menu select modal ====== */
+.menu-select-modal .modal {
+  --bs-modal-width: 700px !important;
+}
+.menu-select-modal .modal table tbody tr td {
+  outline: none !important;
+}
+.menu-select-modal .modal-body-left button {
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+.menu-select-modal .modal-body-left .modal-foot button:nth-child(1) {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 118px;
+  height: 36px;
+  background: #007dff;
+  box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 3px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* menu select modal ====== */
 @media screen and (min-width: 768px) and (max-width: 1187px) {
 
   /* login starts ==== */
