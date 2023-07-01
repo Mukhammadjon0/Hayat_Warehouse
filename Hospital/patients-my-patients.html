@@ -1,307 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Hayat Medical</title>
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../assets/css/style.css" />
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-   <title>Hayat Medical</title>
-</head>
-
-<body>
-
-   <!-- header starts ==== -->
-   <header>
+  <body>
+    <!-- header starts ==== -->
+    <header>
       <div class="header-left">
-         <div class="logo">
-            <a href="./index.html">
-               <img src="/assets/icons/logo.svg" alt="logo" />
-            </a>
-         </div>
-         <div class="header-links">
-            <div class="header-link">
-               <a href="">Регистрация</a>
-            </div>
-            <div class="header-link header-link-active">
-               <a href="./patients-my-patients.html">Пациенты</a>
-            </div>
-            <div class="header-link ">
-               <a href="">События</a>
-            </div>
-            <div class="header-link">
-               <a href="">Диспетчеризация</a>
-            </div>
-            <div class="header-link">
-               <a href="">Лаборатория</a>
-            </div>
-            <div class="header-link">
-               <a href="">Касса</a>
-            </div>
-         </div>
+        <div class="logo">
+          <a href="">
+            <img src="/assets/icons/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link">
+            <a href="">Регистрация</a>
+          </div>
+          <div class="header-link header-link-active">
+            <a href="./patients-my-patients.html">Пациенты</a>
+          </div>
+          <div class="header-link">
+            <a href="">События</a>
+          </div>
+          <div class="header-link">
+            <a href="dispatching-my-patients.html">Диспетчеризация</a>
+          </div>
+        </div>
       </div>
       <div class="header-right">
-         <div class="dropdown">
-            <button class="dropdown-toggle profile-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Mухиддинов
-            </button>
-            <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
-            </ul>
-         </div>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Mухиддинов
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
+          </ul>
+        </div>
       </div>
-   </header>
+    </header>
 
-   <!-- patients tabs-->
-   <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <!-- patients tabs-->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-         <a href="./patients-my-patients.html">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-               type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-               Мои пациенты
-            </button>
-         </a>
+        <a href="./patients-my-patients.html">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            Мои пациенты
+          </button>
+        </a>
       </li>
       <li class="nav-item" role="presentation">
-         <a href="./patients-accounts.html">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-               type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-               Счета
-            </button>
-         </a>
+        <a href="./patients-accounts.html">
+          <button
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            Счета
+          </button>
+        </a>
       </li>
       <li class="nav-item" role="presentation">
-         <a href="./patients-search.html">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-               type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
-               Поиск пациентов
-            </button>
-         </a>
+        <a href="./patients-search.html">
+          <button
+            class="nav-link"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            Поиск пациентов
+          </button>
+        </a>
       </li>
-   </ul>
+    </ul>
 
-   <!-- patients search input box -->
-   <div class="patients-my-patients__search-box">
-      <input class="patients-my-patients__search-input" type="text" placeholder="Искать в таблице">
-      <button class="patients-my-patients__search-btn"> Экспорт в Excel</button>
-   </div>
+    <!-- patients search input box -->
+    <div class="patients-my-patients__search-box">
+      <input
+        class="patients-my-patients__search-input"
+        type="text"
+        placeholder="Искать в таблице"
+      />
+      <button class="patients-my-patients__search-btn">Экспорт в Excel</button>
+    </div>
 
-   <!-- My patients table -->
-   <table>
+    <!-- My patients table -->
+    <table>
       <thead>
-         <tr>
-            <th>
-               <input type="checkbox" name="" id="">
-            </th>
-            <th></th>
-            <th>№</th>
-            <th>Пациент</th>
-            <th>Возраст</th>
-            <th>Комната</th>
-            <th>Основной диагноз</th>
-            <th>Дата приезда</th>
-            <th>Дата отъезда</th>
-            <th></th>
-         </tr>
+        <tr>
+          <th>
+            <input type="checkbox" name="" id="" />
+          </th>
+          <th></th>
+          <th>№</th>
+          <th>Пациент</th>
+          <th>Возраст</th>
+          <th>Комната</th>
+          <th>Основной диагноз</th>
+          <th>Дата приезда</th>
+          <th>Дата отъезда</th>
+          <th></th>
+        </tr>
       </thead>
 
       <tbody>
-         <tr>
-            <td>
-               <input type="checkbox" name="" id="">
-            </td>
-            <td></td>
-            <td style="text-align: end;">776/2023</td>
-            <td style="color: #0B79D0;">Choriyev Muzaffar</td>
-            <td style="text-align: end;">26</td>
-            <td style="text-align: end;">311(Корпус1)</td>
-            <td></td>
-            <td style="text-align: end;">10.06.2023</td>
-            <td style="text-align: end;">17.06.2023</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>
-               <input type="checkbox" name="" id="">
-            </td>
-            <td></td>
-            <td style="text-align: end;">776/2023</td>
-            <td style="color: #0B79D0;">Choriyev Muzaffar</td>
-            <td style="text-align: end;">26</td>
-            <td style="text-align: end;">311(Корпус1)</td>
-            <td>
-               -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
-               напряжения ФК II.
-            </td>
-            <td style="text-align: end;">10.06.2023</td>
-            <td style="text-align: end;">17.06.2023</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>
-               <input type="checkbox" name="" id="">
-            </td>
-            <td></td>
-            <td style="text-align: end;">776/2023</td>
-            <td style="color: #0B79D0;">Choriyev Muzaffar</td>
-            <td style="text-align: end;">26</td>
-            <td style="text-align: end;">311(Корпус1)</td>
-            <td>
-               -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
-               напряжения ФК II.
-            </td>
-            <td style="text-align: end;">10.06.2023</td>
-            <td style="text-align: end;">17.06.2023</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>
-               <input type="checkbox" name="" id="">
-            </td>
-            <td>
-               <img src="../assets/icons/info-circle.svg" alt="">
-            </td>
-            <td style="text-align: end;">776/2023</td>
-            <td style="color: #0B79D0;">Choriyev Muzaffar</td>
-            <td style="text-align: end;">26</td>
-            <td style="text-align: end;">311(Корпус1)</td>
-            <td>
-               G20 - Паркинсона касаллиги. Титрок формаси.
-            </td>
-            <td style="text-align: end;">10.06.2023</td>
-            <td style="text-align: end;">17.06.2023</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>
-               <input type="checkbox" name="" id="">
-            </td>
-            <td></td>
-            <td style="text-align: end;">776/2023</td>
-            <td style="color: #0B79D0;">Choriyev Muzaffar</td>
-            <td style="text-align: end;">26</td>
-            <td style="text-align: end;">311(Корпус1)</td>
-            <td>
-               -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
-               напряжения ФК II.
-            </td>
-            <td style="text-align: end;">10.06.2023</td>
-            <td style="text-align: end;">17.06.2023</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>
-               <input type="checkbox" name="" id="">
-            </td>
-            <td></td>
-            <td style="text-align: end;">776/2023</td>
-            <td style="color: #0B79D0;">Choriyev Muzaffar</td>
-            <td style="text-align: end;">26</td>
-            <td style="text-align: end;">311(Корпус1)</td>
-            <td>
-               -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
-               напряжения ФК II.
-            </td>
-            <td style="text-align: end;">10.06.2023</td>
-            <td style="text-align: end;">17.06.2023</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>
-               <input type="checkbox" name="" id="">
-            </td>
-            <td></td>
-            <td style="text-align: end;">776/2023</td>
-            <td style="color: #0B79D0;">Choriyev Muzaffar</td>
-            <td style="text-align: end;">26</td>
-            <td style="text-align: end;">311(Корпус1)</td>
-            <td>
-               -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
-               напряжения ФК II.
-            </td>
-            <td style="text-align: end;">10.06.2023</td>
-            <td style="text-align: end;">17.06.2023</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>
-               <input type="checkbox" name="" id="">
-            </td>
-            <td></td>
-            <td style="text-align: end;">776/2023</td>
-            <td style="color: #0B79D0;">Choriyev Muzaffar</td>
-            <td style="text-align: end;">26</td>
-            <td style="text-align: end;">311(Корпус1)</td>
-            <td>
-               -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
-               напряжения ФК II.
-            </td>
-            <td style="text-align: end;">10.06.2023</td>
-            <td style="text-align: end;">17.06.2023</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>
-               <input type="checkbox" name="" id="">
-            </td>
-            <td></td>
-            <td style="text-align: end;">776/2023</td>
-            <td style="color: #0B79D0;">Choriyev Muzaffar</td>
-            <td style="text-align: end;">26</td>
-            <td style="text-align: end;">311(Корпус1)</td>
-            <td>
-               -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
-               напряжения ФК II.
-            </td>
-            <td style="text-align: end;">10.06.2023</td>
-            <td style="text-align: end;">17.06.2023</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>
-               <input type="checkbox" name="" id="">
-            </td>
-            <td></td>
-            <td style="text-align: end;">776/2023</td>
-            <td style="color: #0B79D0;">Choriyev Muzaffar</td>
-            <td style="text-align: end;">26</td>
-            <td style="text-align: end;">311(Корпус1)</td>
-            <td>
-               -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
-               напряжения ФК II.
-            </td>
-            <td style="text-align: end;">10.06.2023</td>
-            <td style="text-align: end;">17.06.2023</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>
-               <input type="checkbox" name="" id="">
-            </td>
-            <td></td>
-            <td style="text-align: end;">776/2023</td>
-            <td style="color: #0B79D0;">Choriyev Muzaffar</td>
-            <td style="text-align: end;">26</td>
-            <td style="text-align: end;">311(Корпус1)</td>
-            <td>
-               -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
-               напряжения ФК II.
-            </td>
-            <td style="text-align: end;">10.06.2023</td>
-            <td style="text-align: end;">17.06.2023</td>
-            <td></td>
-         </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td></td>
+          <td style="text-align: end">776/2023</td>
+          <td style="color: #0b79d0">Choriyev Muzaffar</td>
+          <td style="text-align: end">26</td>
+          <td style="text-align: end">311(Корпус1)</td>
+          <td></td>
+          <td style="text-align: end">10.06.2023</td>
+          <td style="text-align: end">17.06.2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td></td>
+          <td style="text-align: end">776/2023</td>
+          <td style="color: #0b79d0">Choriyev Muzaffar</td>
+          <td style="text-align: end">26</td>
+          <td style="text-align: end">311(Корпус1)</td>
+          <td>
+            -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
+            напряжения ФК II.
+          </td>
+          <td style="text-align: end">10.06.2023</td>
+          <td style="text-align: end">17.06.2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td></td>
+          <td style="text-align: end">776/2023</td>
+          <td style="color: #0b79d0">Choriyev Muzaffar</td>
+          <td style="text-align: end">26</td>
+          <td style="text-align: end">311(Корпус1)</td>
+          <td>
+            -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
+            напряжения ФК II.
+          </td>
+          <td style="text-align: end">10.06.2023</td>
+          <td style="text-align: end">17.06.2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td>
+            <img src="../assets/icons/info-circle.svg" alt="" />
+          </td>
+          <td style="text-align: end">776/2023</td>
+          <td style="color: #0b79d0">Choriyev Muzaffar</td>
+          <td style="text-align: end">26</td>
+          <td style="text-align: end">311(Корпус1)</td>
+          <td>G20 - Паркинсона касаллиги. Титрок формаси.</td>
+          <td style="text-align: end">10.06.2023</td>
+          <td style="text-align: end">17.06.2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td></td>
+          <td style="text-align: end">776/2023</td>
+          <td style="color: #0b79d0">Choriyev Muzaffar</td>
+          <td style="text-align: end">26</td>
+          <td style="text-align: end">311(Корпус1)</td>
+          <td>
+            -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
+            напряжения ФК II.
+          </td>
+          <td style="text-align: end">10.06.2023</td>
+          <td style="text-align: end">17.06.2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td></td>
+          <td style="text-align: end">776/2023</td>
+          <td style="color: #0b79d0">Choriyev Muzaffar</td>
+          <td style="text-align: end">26</td>
+          <td style="text-align: end">311(Корпус1)</td>
+          <td>
+            -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
+            напряжения ФК II.
+          </td>
+          <td style="text-align: end">10.06.2023</td>
+          <td style="text-align: end">17.06.2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td></td>
+          <td style="text-align: end">776/2023</td>
+          <td style="color: #0b79d0">Choriyev Muzaffar</td>
+          <td style="text-align: end">26</td>
+          <td style="text-align: end">311(Корпус1)</td>
+          <td>
+            -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
+            напряжения ФК II.
+          </td>
+          <td style="text-align: end">10.06.2023</td>
+          <td style="text-align: end">17.06.2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td></td>
+          <td style="text-align: end">776/2023</td>
+          <td style="color: #0b79d0">Choriyev Muzaffar</td>
+          <td style="text-align: end">26</td>
+          <td style="text-align: end">311(Корпус1)</td>
+          <td>
+            -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
+            напряжения ФК II.
+          </td>
+          <td style="text-align: end">10.06.2023</td>
+          <td style="text-align: end">17.06.2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td></td>
+          <td style="text-align: end">776/2023</td>
+          <td style="color: #0b79d0">Choriyev Muzaffar</td>
+          <td style="text-align: end">26</td>
+          <td style="text-align: end">311(Корпус1)</td>
+          <td>
+            -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
+            напряжения ФК II.
+          </td>
+          <td style="text-align: end">10.06.2023</td>
+          <td style="text-align: end">17.06.2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td></td>
+          <td style="text-align: end">776/2023</td>
+          <td style="color: #0b79d0">Choriyev Muzaffar</td>
+          <td style="text-align: end">26</td>
+          <td style="text-align: end">311(Корпус1)</td>
+          <td>
+            -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
+            напряжения ФК II.
+          </td>
+          <td style="text-align: end">10.06.2023</td>
+          <td style="text-align: end">17.06.2023</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="" id="" />
+          </td>
+          <td></td>
+          <td style="text-align: end">776/2023</td>
+          <td style="color: #0b79d0">Choriyev Muzaffar</td>
+          <td style="text-align: end">26</td>
+          <td style="text-align: end">311(Корпус1)</td>
+          <td>
+            -- - Гипертоническая болезнь III АГIII. риск IV. ИБС-стенокардия
+            напряжения ФК II.
+          </td>
+          <td style="text-align: end">10.06.2023</td>
+          <td style="text-align: end">17.06.2023</td>
+          <td></td>
+        </tr>
       </tbody>
-   </table>
+    </table>
 
-   <p class="patients-my-patients__text">Лечащий врач, количество пациентов: 67</p>
+    <p class="patients-my-patients__text">
+      Лечащий врач, количество пациентов: 67
+    </p>
 
-   <!-- script ============= -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    <!-- script ============= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"></script>
-   <script src="../assets/js/script.js"></script>
-</body>
-
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
 </html>
