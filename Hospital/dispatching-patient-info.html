@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Hayat Medical</title>
+  </head>
+  <body>
+    <!-- header starts ==== -->
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="">
+            <img src="/assets/icons/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link">
+            <a href="">Регистрация</a>
+          </div>
+          <div class="header-link">
+            <a href="patients-my-patients.html">Пациенты</a>
+          </div>
+          <div class="header-link">
+            <a href="">События</a>
+          </div>
+          <div class="header-link header-link-active">
+            <a href="dispatching-my-patients.html">Диспетчеризация</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Mухиддинов
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="login.html">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- patients tabs-->
+    <div class="p-2 h-100">
+      <ul class="nav nav-tabs m-0 p-0" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a href="dispatching-my-patients.html">
+            <button
+              class="nav-link"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="home-tab-pane"
+              aria-selected="true"
+            >
+              Мои пациенты
+            </button>
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+            style="display: flex; flex-direction: row; align-items: center"
+          >
+            776/2023 CHORIYEV М. (10 ИЮНЯ - 17 ИЮНЯ)
+            <a
+              style="width: 18px; height: 18px"
+              href="dispatching-my-patients.html"
+              ><img
+                style="width: 18px; height: 18px; margin-bottom: 0px"
+                src="/assets/icons/x-mark-red.svg"
+                alt="icon"
+            /></a>
+          </button>
+        </li>
+      </ul>
+      <div class="d-flex p-2" style="background: #f5f5f5">
+        <section class="d-flex flex-column gap-1">
+          <button class="dispatching-side__btn">Титульная страница</button>
+          <button class="dispatching-side__btn">Счета и документы</button>
+          <button class="dispatching-side__btn">Расписание лечения</button>
+          <button class="dispatching-side__btn dispatching-side__btn-active">
+            Основной лист назначений
+          </button>
+          <button class="dispatching-side__btn">Журнал изменений</button>
+        </section>
+        <main class="dispatching__main">
+          <strong>История болезни № <span>776/2023</span></strong>
+          <div class="dispatching__main-div">
+            <div class="dispatching__main-div">
+              <strong>Пациент</strong>
+            </div>
+            <div class="dispatching__main-div">
+              <strong>Консультации и исследования</strong>
+              <div class="dispatching__main-div__btn-group">
+                <button class="green__btn">Добавить</button>
+                <button class="blue__btn-disabled">Приостановить</button>
+                <button class="blue__btn-disabled">Возобновить</button>
+                <button class="blue__btn-disabled">Отменить</button>
+                <button class="blue__btn-disabled">Диспетчеризовать</button>
+                <button class="blue__btn-disabled">Удалить</button>
+              </div>
+              <table class="my-1">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Назначение</th>
+                    <th>К врачу</th>
+                    <th>Cito?</th>
+                    <th>Назначил</th>
+                    <th>Дата</th>
+                    <th>Способ оплаты</th>
+                    <th>Цена</th>
+                    <th>Комментарий (цель исследования)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="range">
+                        <div class="range-rate active"></div>
+                        <div class="range-rate"></div>
+                        <div class="range-rate"></div>
+                        <div class="range-rate"></div>
+                      </div>
+                    </td>
+                    <td>Первичный прием лечащего врача</td>
+                    <td>Абдурахимов Ш.А.</td>
+                    <td>нет</td>
+                    <td>Абдурахимов Ш.А.</td>
+                    <td>10.06.2023</td>
+                    <td>Оплата изпрограммы</td>
+                    <td class="text-end">сум 0</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="dispatching__main-div">
+              <strong>Лечебные процедуры</strong>
+              <div class="d-flex gap-2">
+                <span>Лечебные процедуры не назначены.</span>
+                <button class="green__btn">Добавить</button>
+              </div>
+            </div>
+            <div class="dispatching__main-div">
+              <strong>Медикаменты</strong>
+              <div class="d-flex gap-2">
+                <span>Медикаменты не назначены.</span>
+                <button class="green__btn">Добавить</button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- script ============= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
