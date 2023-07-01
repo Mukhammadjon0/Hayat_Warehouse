@@ -1110,15 +1110,18 @@ input[type="number"] {
 .menu-select-modal .modal {
   --bs-modal-width: 700px !important;
 }
+
 .menu-select-modal .modal table tbody tr td {
   outline: none !important;
 }
+
 .menu-select-modal .modal-body-left button {
   padding: 8px;
   background: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.23);
   border-radius: 4px;
 }
+
 .menu-select-modal .modal-body-left .modal-foot button:nth-child(1) {
   border: none;
   display: flex;
@@ -1360,18 +1363,22 @@ input[type="number"] {
 
 .account-patient__search-btn {
   padding-left: 30px !important;
-  background-image: url("../icons/search-normal-white.svg");
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  background-size: 18px 18px;
+  background: #2196F3 !important;
+  background-image: url('../icons/search-normal-white.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: 8px center !important;
+  background-size: 18px 18px !important;
+  border: none !important;
 }
 
 .account-patient__close-btn {
   padding-left: 30px !important;
-  background-image: url("../icons/xmark.svg");
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  background-size: 18px 18px;
+  background: #2196F3 !important;
+  background-image: url('../icons/xmark.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: 10px center !important;
+  background-size: 18px 18px !important;
+  border: none !important;
 }
 
 .account-patient__btn-box {
@@ -1401,7 +1408,147 @@ input[type="number"] {
 }
 
 .btn-color {
-  background: #2196f3;
-  border: none;
-  color: #fff;
+  background: #2196F3 !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+/* ===== SEARCH PATIENT ===== */
+
+.search-patients__search-details {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background: #F5F5F5;
+}
+
+.search-patients__search-advanced-details {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background: #F5F5F5;
+}
+
+.hidden {
+  display: none;
+}
+
+.search-details__title-box {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.search-details__title {
+  display: block;
+  margin: 0;
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+
+.search-details__input-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.search-details__input-box .form-control {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.search-details__input-box .form-select {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.search-details__form-select {
+  display: flex;
+  align-items: center;
+}
+
+.search-details__form-select .form-select {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.search-details__select-title {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+}
+
+.search__box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+}
+
+.search__input-box {
+  display: flex;
+  width: 100%;
+  max-width: 860px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search__input__title {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.search__btn-box {
+  display: flex;
+  width: 100%;
+  max-width: 520px;
+  justify-content: space-between;
 }
