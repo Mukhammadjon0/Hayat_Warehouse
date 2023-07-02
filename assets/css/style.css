@@ -156,6 +156,33 @@ header {
   color: white;
 }
 
+.header-link--display {
+  display: flex;
+}
+
+.header-link span {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  border: 1px solid #FFF;
+  background: #F88078;
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+}
+
 .logo {
   padding: 18px 50px 18px 0;
   cursor: pointer;
@@ -894,7 +921,7 @@ input[type="number"] {
   height: calc(var(--vh, 1vh) * 23);
 }
 
-.navigation > section > section > button {
+.navigation>section>section>button {
   padding: 10px;
   background: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.23);
@@ -904,7 +931,7 @@ input[type="number"] {
   margin-left: 15px;
 }
 
-.navigation > section > section > button > img {
+.navigation>section>section>button>img {
   margin-right: 8px;
   width: 30px;
 }
@@ -936,7 +963,7 @@ input[type="number"] {
   justify-content: space-between;
 }
 
-.navigation > section {
+.navigation>section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1140,6 +1167,7 @@ input[type="number"] {
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
+
 /* menu select modal ====== */
 /* inscurence-modal starts ======== */
 .insurence-modal .modal {
@@ -1164,6 +1192,7 @@ input[type="number"] {
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
+
 .insurence-modal .modal-foot button:nth-child(2) {
   border: none;
   display: flex;
@@ -1194,13 +1223,16 @@ input[type="number"] {
   border-radius: 4px;
   color: black;
 }
+
 /* inscurence-modal starts ======== */
 /* number-modal ===================-- */
 .number-modal .modal {
   --bs-modal-width: 710px !important;
 }
+
 /* number-modal ===================-- */
 @media screen and (min-width: 768px) and (max-width: 1187px) {
+
   /* login starts ==== */
   .login-right {
     display: none;
@@ -1316,9 +1348,9 @@ input[type="number"] {
   color: rgba(0, 0, 0, 0.38);
 }
 
-.form-check-input:checked ~ .form-check-label {
+/* .form-check-input:checked~.form-check-label {
   color: rgba(0, 0, 0, 0.87);
-}
+} */
 
 .account-patient__filter {
   display: flex;
@@ -1553,6 +1585,60 @@ input[type="number"] {
   justify-content: space-between;
 }
 
+.patient__box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.patient__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+
+.patient__select-box {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.patient__radio-box {
+  padding: 4px 13px !important;
+  padding-left: 30px !important;
+  border-radius: 4px;
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.23));
+}
+
+.patient__radio-box .form-check-label {
+  font-size: 12px !important;
+  font-family: 'Roboto' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: 0.4px !important;
+}
+
+.checked:checked~.patient__radio-box {
+  background-color: #4CAF50 !important;
+}
+
+.search-advance_details__form-select {
+  display: flex;
+  align-items: center;
+}
+
+.search-advance_details__form-select .form-select {
+  width: 550px;
+  margin-left: 5px;
+}
+
 /* dispatch-side */
 .dispatching-side__btn {
   border-radius: 0.25rem;
@@ -1562,6 +1648,7 @@ input[type="number"] {
   text-align: start;
   white-space: nowrap;
 }
+
 .dispatching-side__btn-active {
   border-radius: 0.25rem;
   background: var(--05-info-main, #2196f3);
@@ -1577,6 +1664,7 @@ input[type="number"] {
   gap: 4px;
   font-size: 0.875rem;
 }
+
 .dispatching__main strong {
   font-weight: 600;
   line-height: 1.375rem;
@@ -1584,11 +1672,13 @@ input[type="number"] {
   font-size: 0.875rem;
   color: var(--text-color-light-mode-primary, rgba(0, 0, 0, 0.87));
 }
+
 .dispatching__main strong span {
   background: var(--01-primary-light, #3397ff);
   color: white;
   padding: 2px;
 }
+
 .dispatching__main-div {
   padding: 2px;
   border: 1px solid var(--border, rgba(0, 0, 0, 0.23));
@@ -1597,6 +1687,7 @@ input[type="number"] {
   flex-direction: column;
   gap: 2px;
 }
+
 .dispatching__main-div__btn-group {
   display: flex;
   align-items: center;
@@ -1614,6 +1705,7 @@ input[type="number"] {
   padding: 2px 12px;
   border: none;
 }
+
 .blue__btn {
   border-radius: 0.25rem;
   background: var(--05-info-main, #2196f3);
@@ -1625,6 +1717,7 @@ input[type="number"] {
   padding: 2px 12px;
   border: none;
 }
+
 .blue__btn-disabled {
   border-radius: 0.25rem;
   background: var(--05-info-light, #64b6f7);
@@ -1643,14 +1736,17 @@ input[type="number"] {
   background: var(--divider, #e0e0e0);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2) inset;
 }
+
 .range {
   display: flex;
   align-items: center;
   gap: 3px;
 }
+
 .range .active {
   background: var(--06-success-main, #4caf50);
 }
+
 .dispatching__main-div span {
   color: var(--text-color-light-mode-secondary, rgba(0, 0, 0, 0.54));
   font-size: 14px;
@@ -1658,4 +1754,47 @@ input[type="number"] {
   font-weight: 500;
   line-height: 1.25rem;
   letter-spacing: 0.00938rem;
+}
+
+/* EVENT */
+
+.form-control--width {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  color: var(--text-color-light-mode-disabled, rgba(0, 0, 0, 0.38));
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+}
+
+.evetn__filter__text {
+  display: block;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+}
+
+.filter__form-check .form-check-label {
+  color: #212B36;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+}
+
+.event__search-input{
+  display: block;
+  width: 100% !important;
+  max-width: 900px !important;
 }

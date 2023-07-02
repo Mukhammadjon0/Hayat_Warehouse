@@ -1,488 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <title>Hayat Medical</title>
-  </head>
-
-  <body>
-    <!-- header starts ==== -->
-    <header>
-      <div class="header-left">
-        <div class="logo">
-          <a href="">
-            <img src="/assets/icons/logo.svg" alt="logo" />
-          </a>
-        </div>
-        <div class="header-links">
-          <div class="header-link">
-            <a href="">Регистрация</a>
-          </div>
-          <div class="header-link header-link-active">
-            <a href="./patients-my-patients.html">Пациенты</a>
-          </div>
-          <div class="header-link">
-            <a href="">События</a>
-          </div>
-          <div class="header-link">
-            <a href="dispatching-my-patients.html">Диспетчеризация</a>
-          </div>
-        </div>
-      </div>
-      <div class="header-right">
-        <div class="dropdown">
-          <button
-            class="dropdown-toggle profile-btn"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Mухиддинов
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <!-- patients tabs-->
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <a href="./patients-my-patients.html">
-          <button
-            class="nav-link"
-            id="home-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#home-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="home-tab-pane"
-            aria-selected="true"
-          >
-            Мои пациенты
-          </button>
-        </a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a href="./patients-accounts.html">
-          <button
-            class="nav-link"
-            id="profile-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#profile-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="profile-tab-pane"
-            aria-selected="false"
-          >
-            Счета
-          </button>
-        </a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a href="./patients-search.html">
-          <button
-            class="nav-link active"
-            id="contact-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#contact-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="contact-tab-pane"
-            aria-selected="false"
-          >
-            Поиск пациентов
-          </button>
-        </a>
-      </li>
-    </ul>
-
-    <div class="search-patients__search-details">
-      <div class="search-details__title-box">
-        <button
-          class="btn"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseWidthExample"
-          aria-expanded="false"
-          aria-controls="collapseWidthExample"
-        >
-          <img src="../assets/icons/arrow-drop-down.svg" alt="icon" />
-        </button>
-        <h2 class="search-details__title">Параметры поиска:</h2>
-      </div>
-
-      <div class="collapse search-details__box" id="collapseWidthExample">
-        <div class="search-details__input-box">
-          <input
-            class="form-control"
-            type="text"
-            placeholder="ФИО пациента"
-            aria-label="ФИО пациента example"
-          />
-          <input
-            class="form-control"
-            type="text"
-            placeholder="№ Истории"
-            aria-label="№ Истории input example"
-          />
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Тип карты</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-
-        <div class="search-details__input-box" style="max-width: 1300px">
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="search_archive"
-            />
-            <label class="form-check-label" for="search_archive">
-              Искать в архиве
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="search_patient"
-            />
-            <label class="form-check-label" for="search_patient">
-              Искать в пациентах моих подчинённых
-            </label>
-          </div>
-          <div class="search-details__form-select">
-            <p class="search-details__select-title">Был в учреждении с:</p>
-            <select
-              class="form-select"
-              style="width: 150px"
-              aria-label="Default select example"
-            >
-              <option selected>Выберите дату</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="search-details__form-select">
-            <p class="search-details__select-title">по:</p>
-            <select
-              class="form-select"
-              style="width: 150px"
-              aria-label="Default select example"
-            >
-              <option selected>Выберите дату</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="search-details__form-select">
-            <p class="search-details__select-title">Был на приёме:</p>
-            <select
-              class="form-select"
-              style="width: 150px"
-              aria-label="Default select example"
-            >
-              <option selected>Выберите дату</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="search-patients__search-advanced-details">
-      <div class="search-details__title-box">
-        <button
-          class="btn"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#search_advance_details"
-          aria-expanded="false"
-          aria-controls="search_advance_details"
-        >
-          <img src="../assets/icons/arrow-drop-down.svg" alt="icon" />
-        </button>
-        <h2 class="search-details__title">Расширенные параметры поиска</h2>
-      </div>
-
-      <div class="collapse search-details__box" id="search_advance_details">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, amet
-        dolores! Ex, et. Consectetur reprehenderit veritatis inventore sequi
-        exercitationem, explicabo dicta quae soluta ullam veniam maxime iste,
-        maiores, velit mollitia.
-      </div>
-    </div>
-
-    <div class="search__box">
-      <div class="search__input-box">
-        <p class="search__input__title">Найдено записей: 373</p>
-        <input
-          class="patients-my-patients__search-input"
-          style="width: 700px"
-          type="text"
-          placeholder="Искать в таблице"
-        />
-      </div>
-
-      <div class="search__btn-box">
-        <button class="btn account-patient__btn account-patient__btn--active">
-          Выбор колонок
-        </button>
-        <button class="patients-my-patients__search-btn">Excel</button>
-        <button
-          type="button"
-          class="btn btn-primary account-patient__search-btn"
-        >
-          Поиск
-        </button>
-        <button
-          type="button"
-          class="btn btn-primary account-patient__close-btn"
-        >
-          Очистить фильтр
-        </button>
-      </div>
-    </div>
-
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th>№ ИБ</th>
-          <th>Пациент</th>
-          <th>Возраст</th>
-          <th>Комната</th>
-          <th>Основной диагноз</th>
-          <th>Лечащий врач</th>
-          <th>Дата приезда</th>
-          <th>Дата отъезда</th>
-          <th></th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">амбулаторно</td>
-          <td></td>
-          <td></td>
-          <td>28.05.2022</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">амбулаторно</td>
-          <td></td>
-          <td></td>
-          <td>28.05.2022</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">амбулаторно</td>
-          <td></td>
-          <td></td>
-          <td>28.05.2022</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">215.1 (Корпус 1)</td>
-          <td></td>
-          <td>Хусанов Р.А.</td>
-          <td>28.05.2022</td>
-          <td>07.01.2023</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">215.1 (Корпус 1)</td>
-          <td></td>
-          <td>Хусанов Р.А.</td>
-          <td>28.05.2022</td>
-          <td>07.01.2023</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">215.1 (Корпус 1)</td>
-          <td></td>
-          <td>Хусанов Р.А.</td>
-          <td>28.05.2022</td>
-          <td>07.01.2023</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">215.1 (Корпус 1)</td>
-          <td></td>
-          <td>Хусанов Р.А.</td>
-          <td>28.05.2022</td>
-          <td>07.01.2023</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">215.1 (Корпус 1)</td>
-          <td></td>
-          <td>Хусанов Р.А.</td>
-          <td>28.05.2022</td>
-          <td>07.01.2023</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">215.1 (Корпус 1)</td>
-          <td></td>
-          <td>Хусанов Р.А.</td>
-          <td>28.05.2022</td>
-          <td>07.01.2023</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">215.1 (Корпус 1)</td>
-          <td></td>
-          <td>Хусанов Р.А.</td>
-          <td>28.05.2022</td>
-          <td>07.01.2023</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">амбулаторно</td>
-          <td></td>
-          <td></td>
-          <td>28.05.2022</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">амбулаторно</td>
-          <td></td>
-          <td></td>
-          <td>28.05.2022</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">амбулаторно</td>
-          <td></td>
-          <td></td>
-          <td>28.05.2022</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">амбулаторно</td>
-          <td></td>
-          <td></td>
-          <td>28.05.2022</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">амбулаторно</td>
-          <td></td>
-          <td></td>
-          <td>28.05.2022</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>86/2022 Амб.</td>
-          <td style="color: #0b79d0">Щербаков Василий</td>
-          <td>39</td>
-          <td style="text-align: end">амбулаторно</td>
-          <td></td>
-          <td></td>
-          <td>28.05.2022</td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- script ============= -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../assets/js/script.js"></script>
-  </body>
-</html>
 
 <head>
    <meta charset="UTF-8">
@@ -509,11 +26,12 @@
             <div class="header-link header-link-active">
                <a href="./patients-my-patients.html">Пациенты</a>
             </div>
-            <div class="header-link ">
-               <a href="">События</a>
+            <div class="header-link header-link--display">
+               <a href="./events.html">События</a>
+               <span>7</span>
             </div>
             <div class="header-link">
-               <a href="">Диспетчеризация</a>
+               <a href="dispatching-my-patients.html">Диспетчеризация</a>
             </div>
             <div class="header-link">
                <a href="">Лаборатория</a>
@@ -644,9 +162,300 @@
       </div>
 
       <div class="collapse search-details__box" id="search_advance_details">
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, amet dolores! Ex, et. Consectetur
-         reprehenderit veritatis inventore sequi exercitationem, explicabo dicta quae soluta ullam veniam maxime iste,
-         maiores, velit mollitia.
+         <div class="patient__box">
+            <div style="width: 100%; max-width: 700px; padding: 4px; background: #fff;">
+               <h6 class="patient__title">
+                  Пациент
+               </h6>
+               <div class="patient__select-box">
+                  <div class="search-details__form-select">
+                     <p class="search-details__select-title">
+                        Возраст от:
+                     </p>
+                     <input class="form-control" type="number" style="width: 70px; margin-left: 19px;" name='age'
+                        max="100" min="1">
+                  </div>
+                  <div class="search-details__form-select" style="margin-left: 10px;">
+                     <p class="search-details__select-title">
+                        до:
+                     </p>
+                     <input class="form-control" type="number" style="width: 70px; margin-left: 10px;" name='age'
+                        max="100" min="1">
+                  </div>
+                  <div class="search-details__form-select" style="margin-left: 30px;">
+                     <p class="search-details__select-title">
+                        Приезд с:
+                     </p>
+                     <select class="form-select" style="width: 130px;" aria-label="Default select example">
+                        <option selected>Выберите дату</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+                  <div class="search-details__form-select" style="margin-left: 13px;">
+                     <p class="search-details__select-title">
+                        по:
+                     </p>
+                     <select class="form-select" style="width: 130px;" aria-label="Default select example">
+                        <option selected>Выберите дату</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+               </div>
+
+               <div class="patient__select-box">
+                  <div class="search-details__form-select">
+                     <p class="search-details__select-title">
+                        Вес(кг) от:
+                     </p>
+                     <input class="form-control" type="number" style="width: 70px; margin-left: 24px;" name='age'
+                        max="100" min="1">
+                  </div>
+                  <div class="search-details__form-select" style="margin-left: 10px;">
+                     <p class="search-details__select-title">
+                        до:
+                     </p>
+                     <input class="form-control" type="number" style="width: 70px; margin-left: 10px;" name='age'
+                        max="100" min="1">
+                  </div>
+                  <div class="search-details__form-select" style="margin-left: 30px;">
+                     <p class="search-details__select-title">
+                        Отъезд с:
+                     </p>
+                     <select class="form-select" style="width: 130px;" aria-label="Default select example">
+                        <option selected>Выберите дату</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+                  <div class="search-details__form-select" style="margin-left: 13px;">
+                     <p class="search-details__select-title">
+                        по:
+                     </p>
+                     <select class="form-select" style="width: 130px;" aria-label="Default select example">
+                        <option selected>Выберите дату</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
+               </div>
+
+               <div class="patient__select-box">
+                  <div class="search-details__form-select">
+                     <p class="search-details__select-title">
+                        Рост(см) от.
+                     </p>
+                     <input class="form-control" type="number" style="width: 70px; margin-left: 13px;" name='age'
+                        max="100" min="1">
+                  </div>
+                  <div class="search-details__form-select" style="margin-left: 10px;">
+                     <p class="search-details__select-title">
+                        до:
+                     </p>
+                     <input class="form-control" type="number" style="width: 70px; margin-left: 10px;" name='age'
+                        max="100" min="1">
+                  </div>
+               </div>
+
+               <div class="patient__select-box" style="margin: 0;">
+                  <div class="search-details__form-select">
+                     <p class="search-details__select-title">
+                        Пол:
+                     </p>
+                     <div class="form-check patient__radio-box" style="margin-left: 60px;">
+                        <input class="form-check-input checked" type="radio" name="exampleRadios" id="exampleRadios1"
+                           value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                           [М] Мужской
+                        </label>
+                     </div>
+                     <div class="form-check patient__radio-box" style="margin-left: 10px;">
+                        <input class="form-check-input checked" type="radio" name="exampleRadios" id="exampleRadios1"
+                           value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                           [Ж] Женский
+                        </label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="">
+               <div style="width: 100%; max-width: 690px; margin-bottom: 10px; padding: 4px; background: #fff;">
+                  <h6 class="patient__title">
+                     Медицинский персонал
+                  </h6>
+
+                  <div style="display:flex; padding-bottom: 30px;">
+                     <div class="search-details__form-select">
+                        <p class="search-details__select-title">
+                           Лечащий врач:
+                        </p>
+                        <select class="form-select" style="width: 200px;" aria-label="Default select example">
+                           <option selected></option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                     <div class="search-details__form-select" style="margin-left: 15px;">
+                        <p class="search-details__select-title">
+                           Палатная сестра:
+                        </p>
+                        <select class="form-select" style="width: 200px;" aria-label="Default select example">
+                           <option selected></option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div style="width: 100%; max-width: 690px; padding: 4px; background: #fff;">
+                  <h6 class="patient__title">
+                     Программа
+                  </h6>
+
+                  <div style="display:flex; padding-bottom: 30px;">
+                     <div class="search-details__form-select">
+                        <p class="search-details__select-title">
+                           Лечащий врач:
+                        </p>
+                        <select class="form-select" style="width: 200px;" aria-label="Default select example">
+                           <option selected></option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                     <div class="search-details__form-select" style="margin-left: 15px;">
+                        <p class="search-details__select-title">
+                           Палатная сестра:
+                        </p>
+                        <select class="form-select" style="width: 200px;" aria-label="Default select example">
+                           <option selected></option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div style="margin-bottom: 10px; padding: 4px; background: #fff;">
+            <h6 class="patient__title">
+               Диагностика/ Методы лечения
+            </h6>
+
+            <div style="display: flex; margin-bottom: 10px;">
+               <div class="search-advance_details__form-select">
+                  <p class="search-details__select-title" style="width: 100px;">
+                     Метки:
+                  </p>
+                  <select class="form-select" aria-label="Default select example">
+                     <option selected></option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+               </div>
+               <div class="search-advance_details__form-select" style="margin-left: 12px;">
+                  <p class="search-details__select-title" style="width: 150px;">
+                     Консультации
+                  </p>
+                  <select class="form-select" aria-label="Default select example">
+                     <option selected></option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+               </div>
+            </div>
+
+            <div style="display: flex; margin-bottom: 10px;">
+               <div class="search-advance_details__form-select">
+                  <p class="search-details__select-title" style="width: 100px;">
+                     Диагноз:
+                  </p>
+                  <select class="form-select" aria-label="Default select example">
+                     <option selected></option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+               </div>
+               <div class="search-advance_details__form-select" style="margin-left: 12px;">
+                  <p class="search-details__select-title" style="width: 150px;">
+                     Исследования
+                  </p>
+                  <select class="form-select" aria-label="Default select example">
+                     <option selected></option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+               </div>
+            </div>
+
+            <div style="display: flex; margin-bottom: 10px;">
+               <div class="search-advance_details__form-select">
+                  <p class="search-details__select-title" style="width: 100px;">
+                     Медикаменты
+                  </p>
+                  <select class="form-select" aria-label="Default select example">
+                     <option selected></option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+               </div>
+               <div class="search-advance_details__form-select" style="margin-left: 12px;">
+                  <p class="search-details__select-title" style="width: 150px;">
+                     Лечебные процедуры
+                  </p>
+                  <select class="form-select" aria-label="Default select example">
+                     <option selected></option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+
+         <div style="padding: 4px; background: #fff;">
+            <h6 class="patient__title">
+               Для санаторно—курортного лечения
+            </h6>
+
+            <div style="display: flex;">
+               <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="shown">
+                  <label class="form-check-label" for="shown">
+                     Показан
+                  </label>
+               </div>
+               <div class="form-check" style="margin-left: 20px;">
+                  <input class="form-check-input" type="checkbox" value="" id="not_shown">
+                  <label class="form-check-label" for="not_shown">
+                     Не показан
+                  </label>
+               </div>
+               <div class="form-check" style="margin-left: 20px;">
+                  <input class="form-check-input" type="checkbox" value="" id="Contraindicated">
+                  <label class="form-check-label" for="Contraindicated">
+                     Противопоказан
+                  </label>
+               </div>
+            </div>
+         </div>
       </div>
    </div>
 
@@ -685,7 +494,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">амбулаторно</td>
             <td></td>
@@ -697,7 +508,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">амбулаторно</td>
             <td></td>
@@ -709,7 +522,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">амбулаторно</td>
             <td></td>
@@ -721,7 +536,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">215.1 (Корпус 1)</td>
             <td></td>
@@ -733,7 +550,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">215.1 (Корпус 1)</td>
             <td></td>
@@ -745,7 +564,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">215.1 (Корпус 1)</td>
             <td></td>
@@ -757,7 +578,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">215.1 (Корпус 1)</td>
             <td></td>
@@ -769,7 +592,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">215.1 (Корпус 1)</td>
             <td></td>
@@ -781,7 +606,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">215.1 (Корпус 1)</td>
             <td></td>
@@ -793,7 +620,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">215.1 (Корпус 1)</td>
             <td></td>
@@ -805,7 +634,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">амбулаторно</td>
             <td></td>
@@ -817,7 +648,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">амбулаторно</td>
             <td></td>
@@ -829,7 +662,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">амбулаторно</td>
             <td></td>
@@ -841,7 +676,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">амбулаторно</td>
             <td></td>
@@ -853,19 +690,9 @@
          <tr>
             <td></td>
             <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
-            <td>39</td>
-            <td style="text-align: end;">амбулаторно</td>
-            <td></td>
-            <td></td>
-            <td>28.05.2022</td>
-            <td></td>
-            <td></td>
-         </tr>
-         <tr>
-            <td></td>
-            <td>86/2022 Амб.</td>
-            <td style="color: #0B79D0;">Щербаков Василий</td>
+            <td>
+               <a href="" style="color: #0B79D0;">Щербаков Василий</a>
+            </td>
             <td>39</td>
             <td style="text-align: end;">амбулаторно</td>
             <td></td>
