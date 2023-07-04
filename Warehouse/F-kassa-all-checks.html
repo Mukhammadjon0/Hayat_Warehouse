@@ -172,14 +172,14 @@
             <img src="/assets/icons/mail-arrow-right.svg" alt="icon" />
             отправить
           </button>
-          <button data-bs-target="#exampleModalToggle11" data-bs-toggle="modal">
+          <!-- <button data-bs-target="#exampleModalToggle11" data-bs-toggle="modal">
             <img src="/assets/icons/pen-square.svg" alt="icon" />
             редактировать
           </button>
           <button>
             <img src="/assets/icons/close-circle.svg" alt="icon" />
             удалить
-          </button>
+          </button> -->
         </section>
         <div class="income-top-right">
           <div class="form-floating">
@@ -221,18 +221,11 @@
               <th rowspan="2">Документ</th>
               <th rowspan="2">Организация</th>
               <th rowspan="2">Сумма</th>
-              <th colspan="6">Оплата</th>
+              <th rowspan="2">Итого</th>
+              <th rowspan="2">Оплата</th>
               <th rowspan="2">Дата ввода</th>
               <th rowspan="2">Смена</th>
               <th rowspan="2">Пользователь</th>
-            </tr>
-            <tr>
-              <th>Итого</th>
-              <th>Наличные</th>
-              <th>Моб. Опл.</th>
-              <th>Det</th>
-              <th>Click</th>
-              <th>OnLIne</th>
             </tr>
           </thead>
           <tbody>
@@ -244,23 +237,37 @@
                   alt=""
                 />
               </td>
-              <td style="width: 35px" class="text-center">
-                <img
+              <td style="width: 100px" class="text-center">
+                <div class=" d-flex align-items-center justify-content-between">
+                <button class="bg-transparent border border-0">
+                  <img
                   class="more-icon"
                   src="/assets/icons/document-text.svg"
                   alt=""
-                />
+                  />
+                </button>
+                <button class="bg-transparent border border-0">
+                  <img
+                  class="more-icon"
+                  src="/assets/icons/pen-square.svg"
+                  alt=""
+                  />
+                </button>
+                <button class="bg-transparent border border-0">
+                  <img
+                  class="more-icon"
+                  src="/assets/icons/close-circle.svg"
+                  alt=""
+                  />
+                </button>
+              </div>
               </td>
               <td class="text-end">1958</td>
               <td class="text-start">27.03.2023</td>
               <td class="text-start">РОЗНЕЧНАЯ ПРОДАЖА</td>
               <td class="text-start">ЧАСТНОЕ ЛИЦО</td>
               <td class="text-end">0.00</td>
-              <td class="text-end">0.00</td>
-              <td class="text-end">0.00</td>
-              <td class="text-end">0.00</td>
-              <td class="text-end">0.00</td>
-              <td class="text-end">0.00</td>
+              <td class="text-end">0</td>
               <td class="text-end">0.00</td>
               <td class="text-start">27.03.2023 10:34:03</td>
               <td class="text-end">411</td>
@@ -274,53 +281,43 @@
                   alt=""
                 />
               </td>
-              <td style="width: 35px" class="text-center">
-                <img
+              <td style="width: 100px" class="text-center">
+                <div class=" d-flex align-items-center justify-content-between">
+                <button class="bg-transparent border border-0">
+                  <img
                   class="more-icon"
                   src="/assets/icons/document-text.svg"
                   alt=""
-                />
+                  />
+                </button>
+                <button class="bg-transparent border border-0">
+                  <img
+                  class="more-icon"
+                  src="/assets/icons/pen-square.svg"
+                  alt=""
+                  />
+                </button>
+                <button class="bg-transparent border border-0">
+                  <img
+                  class="more-icon"
+                  src="/assets/icons/close-circle.svg"
+                  alt=""
+                  />
+                </button>
+              </div>
               </td>
               <td class="text-end">1958</td>
               <td class="text-start">27.03.2023</td>
               <td class="text-start">РОЗНЕЧНАЯ ПРОДАЖА</td>
               <td class="text-start">ЧАСТНОЕ ЛИЦО</td>
               <td class="text-end">0.00</td>
-              <td class="text-end">0.00</td>
-              <td class="text-end">0.00</td>
-              <td class="text-end">0.00</td>
-              <td class="text-end">0.00</td>
-              <td class="text-end">0.00</td>
+              <td class="text-end">0</td>
               <td class="text-end">0.00</td>
               <td class="text-start">27.03.2023 10:34:03</td>
               <td class="text-end">411</td>
               <td class="text-start">АДМИНИСТРАТ</td>
             </tr>
 
-            <tr class="s">
-              <td style="width: 35px" class="text-center">
-                <img
-                  class="more-icon"
-                  src="/assets/icons/row-left-mini.svg"
-                  alt=""
-                />
-              </td>
-              <td class="text-start">50000341</td>
-              <td class="text-start">ЦЕФИДОК 2,0%.C. INTERNATIONAL</td>
-              <td class="text-start">FSEA-005A</td>
-              <td class="text-start">01.02.2023</td>
-              <td class="text-start">20</td>
-              <td class="text-end">1.00</td>
-              <td class="text-start">14 000.00</td>
-              <td class="text-start">280 000.00</td>
-              <td class="text-end">Приходная</td>
-              <td class="text-end">280 000.00</td>
-              <td class="text-end">14 000,00</td>
-              <td class="text-end">0.00</td>
-              <td class="text-start">14 000,00</td>
-              <td class="text-start">14 000,00</td>
-              <td class="text-start">14 000,00</td>
-            </tr>
           </tbody>
 
           <tfoot>
@@ -331,13 +328,9 @@
               <td></td>
               <td></td>
               <td></td>
-              <td class="text-end">00</td>
-              <td class="text-end">00</td>
-              <td class="text-end">00</td>
-              <td class="text-end">00</td>
-              <td class="text-end">00</td>
-              <td class="text-end">00</td>
-              <td class="text-end">00</td>
+              <td class="text-end">0.00</td>
+              <td class="text-end">0</td>
+              <td class="text-end">0.00</td>
               <td></td>
               <td></td>
               <td></td>
