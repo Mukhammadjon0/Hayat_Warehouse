@@ -1798,3 +1798,11 @@ input[type="number"] {
   width: 100% !important;
   max-width: 900px !important;
 }
+
+/* REGISTER PATIENTS */
+.btn-bg-image{
+  padding-left: 40px !important;
+  background-image: url('../../assets//icons/printer-white.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: 10px center !important; 
+ }
