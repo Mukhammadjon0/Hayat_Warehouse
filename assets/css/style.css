@@ -1843,3 +1843,18 @@ input[type="number"] {
   padding: 2px 12px;
   cursor: pointer;
 }
+/* REGISTER */
+.register__btn-bg {
+  padding: 8px 16px !important;
+  padding-left: 30px !important;
+  background-image: url('../icons/book-user.svg');
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
