@@ -1800,9 +1800,25 @@ input[type="number"] {
 }
 
 /* REGISTER PATIENTS */
-.btn-bg-image{
+.btn-bg-image {
   padding-left: 40px !important;
   background-image: url('../../assets//icons/printer-white.svg') !important;
   background-repeat: no-repeat !important;
-  background-position: 10px center !important; 
- }
+  background-position: 10px center !important;
+}
+
+/* REGISTER */
+.register__btn-bg {
+  padding: 8px 16px !important;
+  padding-left: 30px !important;
+  background-image: url('../icons/book-user.svg');
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
