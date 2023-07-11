@@ -1862,7 +1862,7 @@ input[type="number"] {
   border: none;
 }
 
-.healing_collapse {
+.healing_collapse{
   display: block;
   margin: 0;
   margin-bottom: 5px;
@@ -1880,10 +1880,10 @@ input[type="number"] {
 .register__btn-bg {
   padding: 8px 16px !important;
   padding-left: 30px !important;
-  background-image: url("../icons/book-user.svg");
+  background-image: url('../icons/book-user.svg');
   background-repeat: no-repeat;
   background-position: 8px center;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
