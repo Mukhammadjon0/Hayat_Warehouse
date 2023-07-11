@@ -1708,14 +1708,14 @@ input[type="number"] {
 
 .blue__btn {
   border-radius: 0.25rem;
-  background: var(--05-info-main, #2196f3);
-  color: white;
-  font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.00938rem;
-  font-size: 0.875rem;
+  background: var(--05-info-main, #2196f3) !important;
+  color: white !important;
+  font-weight: 400 !important;
+  line-height: 1.25rem !important;
+  letter-spacing: 0.00938rem !important;
+  font-size: 0.875rem !important;
   padding: 2px 12px;
-  border: none;
+  border: none !important;
 }
 
 .blue__btn-disabled {
@@ -1805,6 +1805,39 @@ input[type="number"] {
   background-image: url('../../assets//icons/printer-white.svg') !important;
   background-repeat: no-repeat !important;
   background-position: 10px center !important;
+}
+
+.healing__modal-collapse-btn {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 30px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  background-image: url('../icons/caret-right.svg');
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-color: transparent !important;
+  border: none;
+}
+
+.healing_collapse{
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+  padding-left: 25px;
+}
+
+.medicines__modal-box {
+  display: block;
+  padding: 3px;
+  background: #F5F5F5;
+  border: 1px solid rgba(0, 0, 0, 0.23);
 }
 
 /* REGISTER */
