@@ -170,12 +170,12 @@ header {
   align-items: center;
   gap: 10px;
   border-radius: 40px;
-  border: 1px solid #FFF;
-  background: #F88078;
-  color: #FFF;
+  border: 1px solid #fff;
+  background: #f88078;
+  color: #fff;
   text-align: center;
   font-size: 12px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
@@ -921,7 +921,7 @@ input[type="number"] {
   height: calc(var(--vh, 1vh) * 23);
 }
 
-.navigation>section>section>button {
+.navigation > section > section > button {
   padding: 10px;
   background: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.23);
@@ -931,7 +931,7 @@ input[type="number"] {
   margin-left: 15px;
 }
 
-.navigation>section>section>button>img {
+.navigation > section > section > button > img {
   margin-right: 8px;
   width: 30px;
 }
@@ -963,7 +963,7 @@ input[type="number"] {
   justify-content: space-between;
 }
 
-.navigation>section {
+.navigation > section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1232,7 +1232,6 @@ input[type="number"] {
 
 /* number-modal ===================-- */
 @media screen and (min-width: 768px) and (max-width: 1187px) {
-
   /* login starts ==== */
   .login-right {
     display: none;
@@ -1424,14 +1423,14 @@ input[type="number"] {
 
 .account-patient__btn {
   display: block !important;
-  background: #64B6F7 !important;
+  background: #64b6f7 !important;
   font-size: 14px !important;
   font-family: "Roboto" !important;
   font-style: normal !important;
   font-weight: 400 !important;
   line-height: 20px !important;
   letter-spacing: 0.15px !important;
-  color: rgba(255, 255, 255, 0.50) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .account-patient__btn--active {
@@ -1451,7 +1450,7 @@ input[type="number"] {
   display: block;
   margin-bottom: 10px;
   padding: 10px 20px;
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 .search-patients__search-advanced-details {
@@ -1597,7 +1596,7 @@ input[type="number"] {
   margin: 0;
   margin-bottom: 13px;
   font-size: 14px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
@@ -1618,15 +1617,15 @@ input[type="number"] {
 
 .patient__radio-box .form-check-label {
   font-size: 12px !important;
-  font-family: 'Roboto' !important;
+  font-family: "Roboto" !important;
   font-style: normal !important;
   font-weight: 400 !important;
   line-height: 20px !important;
   letter-spacing: 0.4px !important;
 }
 
-.checked:checked~.patient__radio-box {
-  background-color: #4CAF50 !important;
+.checked:checked ~ .patient__radio-box {
+  background-color: #4caf50 !important;
 }
 
 .search-advance_details__form-select {
@@ -1641,12 +1640,14 @@ input[type="number"] {
 
 /* dispatch-side */
 .dispatching-side__btn {
+  display: flex;
+  align-items: center;
   border-radius: 0.25rem;
   background: var(--white, #fff);
   padding: 5px 24px;
   border: none;
   text-align: start;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .dispatching-side__btn-active {
@@ -1680,12 +1681,11 @@ input[type="number"] {
 }
 
 .dispatching__main-div {
-  padding: 2px;
+  padding: 4px;
   border: 1px solid var(--border, rgba(0, 0, 0, 0.23));
   background: var(--white, #fff);
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 }
 
 .dispatching__main-div__btn-group {
@@ -1715,6 +1715,7 @@ input[type="number"] {
   letter-spacing: 0.00938rem !important;
   font-size: 0.875rem !important;
   padding: 2px 12px;
+  cursor: pointer;
   border: none !important;
 }
 
@@ -1764,7 +1765,7 @@ input[type="number"] {
   max-width: 300px;
   color: var(--text-color-light-mode-disabled, rgba(0, 0, 0, 0.38));
   font-size: 14px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -1784,9 +1785,9 @@ input[type="number"] {
 }
 
 .filter__form-check .form-check-label {
-  color: #212B36;
+  color: #212b36;
   font-size: 14px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -1802,16 +1803,51 @@ input[type="number"] {
 /* REGISTER PATIENTS */
 .btn-bg-image {
   padding-left: 40px !important;
-  background-image: url('../../assets//icons/printer-white.svg') !important;
+  background-image: url("../../assets//icons/printer-white.svg") !important;
   background-repeat: no-repeat !important;
   background-position: 10px center !important;
 }
 
+.naming__inp {
+  display: flex;
+  align-items: center;
+  padding: 3px 6px;
+  border-radius: 4px;
+  gap: 4px;
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.23));
+  background: var(--white, #fff);
+  margin-left: 4px;
+}
+.dispatching__main-top__btn {
+  border-radius: 3px;
+  background: var(--05-info-main, #2196f3);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  color: var(--text-color-dark-mode-primary, #fff);
+  border: none;
+  padding: 2px 4px;
+}
+
+.check__btn {
+  border-radius: 4px;
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.23));
+  background: var(--text-color-dark-mode-primary, #fff);
+  color: black;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.00938rem;
+  font-size: 0.875rem;
+  padding: 2px 12px;
+  cursor: pointer;
+}
 .healing__modal-collapse-btn {
   display: block;
   margin-bottom: 5px;
   padding-left: 30px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1819,7 +1855,7 @@ input[type="number"] {
   letter-spacing: 0.4px;
   color: rgba(0, 0, 0, 0.87);
   text-decoration: none;
-  background-image: url('../icons/caret-right.svg');
+  background-image: url("../icons/caret-right.svg");
   background-repeat: no-repeat;
   background-position: 5px center;
   background-color: transparent !important;
@@ -1836,7 +1872,7 @@ input[type="number"] {
 .medicines__modal-box {
   display: block;
   padding: 3px;
-  background: #F5F5F5;
+  background: #f5f5f5;
   border: 1px solid rgba(0, 0, 0, 0.23);
 }
 
