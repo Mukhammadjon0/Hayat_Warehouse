@@ -1843,6 +1843,32 @@ input[type="number"] {
   padding: 2px 12px;
   cursor: pointer;
 }
+
+.dropdown-item--bg1 {
+  display: block;
+  padding-left: 40px !important;
+  background-image: url('../icons/file-pencil-alt.svg');
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+.dropdown-item--bg2 {
+  display: block;
+  padding-left: 40px !important;
+  background-image: url('../icons/vial.svg');
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+.dropend-box:hover .droplist {
+  left: 100%;
+  display: block !important;
+}
+
+.btn-padding {
+  padding-left: 30px;
+}
+
 .healing__modal-collapse-btn {
   display: block;
   margin-bottom: 5px;
@@ -1862,7 +1888,7 @@ input[type="number"] {
   border: none;
 }
 
-.healing_collapse{
+.healing_collapse {
   display: block;
   margin: 0;
   margin-bottom: 5px;

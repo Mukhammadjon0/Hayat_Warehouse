@@ -200,13 +200,39 @@
                <div class="dispatching__main-div flex-column">
                   <strong>Консультации и исследования</strong>
                   <div class="dispatching__main-div__btn-group">
-                     <button class="green__btn">Добавить</button>
+                     <button class="green__btn" data-bs-toggle="dropdown" aria-expanded="false">Добавить</button>
                      <button class="blue__btn-disabled" style="color: rgba(255, 255, 255, 0.50);">Приостановить</button>
                      <button class="blue__btn-disabled" style="color: rgba(255, 255, 255, 0.50);">Возобновить</button>
                      <button class="blue__btn-disabled" style="color: rgba(255, 255, 255, 0.50);">Отменить</button>
                      <button class="blue__btn-disabled"
                         style="color: rgba(255, 255, 255, 0.50);">Диспетчеризовать</button>
                      <button class="blue__btn-disabled" style="color: rgba(255, 255, 255, 0.50);">Удалить</button>
+
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-item--bg1" href="#">Консультацию</a></li>
+                        <li>
+                           <a class="dropdown-item dropdown-item--bg2" data-bs-toggle="modal"
+                              data-bs-target="#exploration" href="#exploration">
+                              Исследование
+                           </a>
+                        </li>
+                        <li>
+                           <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                           <div class="btn-group btn-padding dropend dropend-box">
+                              <button class="btn dropdown-toggle">
+                                 Мой приём
+                              </button>
+                              <ul class="dropdown-menu droplist">
+                                 <li><a class="dropdown-item" href="#">Заключительный прием лечащего врача</a></li>
+                                 <li><a class="dropdown-item" href="#">Осмотр дежурного врача при поступлении</a></li>
+                                 <li><a class="dropdown-item" href="#">Повторный приём лечащего врача</a></li>
+                                 <li><a class="dropdown-item" href="#">Прием дежурного врача</a></li>
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
                   </div>
 
                   <table class="my-1" style="background: #f5f5f5">
@@ -277,11 +303,12 @@
       </div>
    </div>
 
-   <!--Treatment programs Modal -->
-   <div class="modal fade w-100" id="Treatment" aria-hidden="true">
+   <!-- exploration Modal -->
+   <div class="modal fade w-100" id="exploration" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
          <div class="modal-content">
-            <div class="modal-header">
+
+            <div class="modal-header" style="margin-bottom: 0px;">
                <h1 class="modal-title fs-5" id="Treatment">
                   Выбор назначений
                </h1>
@@ -290,10 +317,173 @@
                </button>
             </div>
 
-            <div class="modal-body">
-               <div>
+            <div class="modal-body" style="padding-top: 0;">
+               <div class="medicines__modal-box">
+                  <h6>Доступные назначения</h6>
+                  <input class="patients-my-patients__search-input" style="width: 100%; max-width: 100%;" type="text"
+                     placeholder="Искать в таблице" />
+
+                  <div style="background-color: #fff; padding: 5px;">
+
+                     <div>
+                        <a class="healing__modal-collapse-btn" data-bs-toggle="collapse" href="#collapseExample1"
+                           role="button" aria-expanded="false" aria-controls="collapseExample">
+                           Лабораторные исследования
+                        </a>
+                        <div class="collapse healing_collapse" id="collapseExample1">
+                           <div>
+                              <a class="healing__modal-collapse-btn" data-bs-toggle="collapse" href="#collapseExample2"
+                                 role="button" aria-expanded="false" aria-controls="collapseExample">
+                                 TORCH - инфекции
+                              </a>
+                              <div class="collapse healing_collapse" id="collapseExample2">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                       Скрывать неактивные
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div>
+                              <a class="healing__modal-collapse-btn" data-bs-toggle="collapse" href="#collapseExample3"
+                                 role="button" aria-expanded="false" aria-controls="collapseExample">
+                                 Бактериологические исследования
+                              </a>
+                              <div class="collapse healing_collapse" id="collapseExample3">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                       Скрывать неактивные
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div>
+                              <a class="healing__modal-collapse-btn" data-bs-toggle="collapse" href="#collapseExample4"
+                                 role="button" aria-expanded="false" aria-controls="collapseExample">
+                                 Биохимия (комплексы)
+                              </a>
+                              <div class="collapse healing_collapse" id="collapseExample4">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                       Скрывать неактивные
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div>
+                              <a class="healing__modal-collapse-btn" data-bs-toggle="collapse" href="#collapseExample5"
+                                 role="button" aria-expanded="false" aria-controls="collapseExample">
+                                 Биохимия (отдельные показатели)
+                              </a>
+                              <div class="collapse healing_collapse" id="collapseExample5">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                       Скрывать неактивные
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div>
+                              <a class="healing__modal-collapse-btn" data-bs-toggle="collapse" href="#collapseExample6"
+                                 role="button" aria-expanded="false" aria-controls="collapseExample">
+                                 Витамины
+                              </a>
+                              <div class="collapse healing_collapse" id="collapseExample6">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                       Скрывать неактивные
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div>
+                              <a class="healing__modal-collapse-btn" data-bs-toggle="collapse" href="#collapseExample7"
+                                 role="button" aria-expanded="false" aria-controls="collapseExample">
+                                 Гормоны
+                              </a>
+                              <div class="collapse healing_collapse" id="collapseExample7">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                       Скрывать неактивные
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div>
+                              <a class="healing__modal-collapse-btn" data-bs-toggle="collapse" href="#collapseExample8"
+                                 role="button" aria-expanded="false" aria-controls="collapseExample">
+                                 Диагностика аллергии
+                              </a>
+                              <div class="collapse healing_collapse" id="collapseExample8">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                       Скрывать неактивные
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div>
+                              <a class="healing__modal-collapse-btn" data-bs-toggle="collapse" href="#collapseExample9"
+                                 role="button" aria-expanded="false" aria-controls="collapseExample">
+                                 Другие ИФА-исследования
+                              </a>
+                              <div class="collapse healing_collapse" id="collapseExample9">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                       Скрывать неактивные
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+
+                  <div class="modal-footer">
+                     <button type="button" class="btn blue__btn" style="padding: 8px 16px !important;"
+                        data-bs-dismiss="modal">ОК</button>
+                     <button type="button" class="btn" data-bs-dismiss="modal"
+                        style="background: rgba(0, 0, 0, 0.1) !important;">Отмена</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!--Treatment programs Modal -->
+   <div class="modal fade w-100" id="Treatment" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header" style="margin-bottom: 0px;">
+               <h1 class="modal-title fs-5" id="Treatment">
+                  Выбор назначений
+               </h1>
+               <button class="bg-transparent border-0" type="button" data-bs-dismiss="modal">
+                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+               </button>
+            </div>
+
+            <div class="modal-body" style="padding-top: 0;">
+               <div style="margin-bottom: 10px;">
                   <div class="medicines__modal-box">
                      <h6>Доступные назначения</h6>
+
+                     <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                           Скрывать сделанные назначения
+                        </label>
+                     </div>
 
                      <input class="patients-my-patients__search-input" style="width: 100%; max-width: 100%;" type="text"
                         placeholder="Искать в таблице" />
@@ -366,12 +556,12 @@
                      </div>
                   </div>
                </div>
-            </div>
-            <div class="modal-footer">
-               <button type="button" class="btn blue__btn" style="padding: 8px 16px !important;"
-                  data-bs-dismiss="modal">ОК</button>
-               <button type="button" class="btn" data-bs-dismiss="modal"
-                  style="background: rgba(0, 0, 0, 0.1) !important;">Отмена</button>
+               <div class="modal-footer">
+                  <button type="button" class="btn blue__btn" style="padding: 8px 16px !important;"
+                     data-bs-dismiss="modal">ОК</button>
+                  <button type="button" class="btn" data-bs-dismiss="modal"
+                     style="background: rgba(0, 0, 0, 0.1) !important;">Отмена</button>
+               </div>
             </div>
          </div>
       </div>
