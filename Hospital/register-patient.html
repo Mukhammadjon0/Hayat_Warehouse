@@ -131,7 +131,9 @@
                   <strong>Лечебные программы</strong>
                   <div style="display: flex; justify-content: space-between;">
                      <div>
-                        <button class="green__btn">Назначить из лечебной программы</button>
+                        <button class="green__btn" data-bs-toggle="modal" data-bs-target="#Treatment">
+                           Назначить из лечебной программы
+                        </button>
                         <button class="green__btn">Добавить программу в ИБ</button>
                      </div>
                      <div class="form-check">
@@ -289,14 +291,14 @@
                   <strong>Лечебные процедуры</strong>
                   <div class="d-flex gap-2">
                      <span>Лечебные процедуры не назначены.</span>
-                     <button class="green__btn">Добавить</button>
+                     <button class="green__btn" data-bs-toggle="modal" data-bs-target="#Healing">Добавить</button>
                   </div>
                </div>
                <div class="dispatching__main-div flex-column">
                   <strong>Медикаменты</strong>
                   <div class="d-flex gap-2">
                      <span>Медикаменты не назначены.</span>
-                     <button class="green__btn">Добавить</button>
+                     <button class="green__btn" data-bs-toggle="modal" data-bs-target="#Medicines">Добавить</button>
                   </div>
                </div>
          </main>
@@ -309,7 +311,7 @@
          <div class="modal-content">
 
             <div class="modal-header" style="margin-bottom: 0px;">
-               <h1 class="modal-title fs-5" id="Treatment">
+               <h1 class="modal-title fs-5" id="exploration">
                   Выбор назначений
                </h1>
                <button class="bg-transparent border-0" type="button" data-bs-dismiss="modal">
