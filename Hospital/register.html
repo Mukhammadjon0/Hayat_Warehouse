@@ -9,181 +9,184 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
    <title>Hayat Medical</title>
 </head>
-<!-- header starts ==== -->
-<header>
-   <div class="header-left">
-      <div class="logo">
-         <a href="">
-            <img src="/assets/icons/logo.svg" alt="logo" />
-         </a>
-      </div>
-      <div class="header-links">
-         <div class="header-link header-link-active">
-            <a href="./register.html">Регистрация</a>
-         </div>
-         <div class="header-link">
-            <a href="./patients-my-patients.html">Пациенты</a>
-         </div>
-         <div class="header-link header-link--display">
-            <a href="./events.html">События</a>
-            <span>7</span>
-         </div>
-         <div class="header-link">
-            <a href="dispatching-my-patients.html">Диспетчеризация</a>
-         </div>
-      </div>
-   </div>
-   <div class="header-right">
-      <div class="dropdown">
-         <button class="dropdown-toggle profile-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Mухиддинов
-         </button>
-         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
-         </ul>
-      </div>
-   </div>
-</header>
-
-<ul class="nav nav-tabs" style="margin-bottom: 10px;" id="myTab" role="tablist">
-   <li class="nav-item" role="presentation">
-      <a href="./register.html">
-         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-            Поиск пациентов
-         </button>
-      </a>
-   </li>
-   <li class="nav-item" role="presentation">
-      <a href="">
-         <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
-            role="tab" aria-controls="home-tab-pane" aria-selected="true">
-            Забронированные
-         </button>
-      </a>
-   </li>
-</ul>
-
-<div class="search-details__input-box">
-   <input class="form-control" type="text" style="max-width: 620px;" placeholder="ФИО пациента"
-      aria-label="ФИО пациента example" />
-   <input class="form-control" type="text" style="max-width: 530px;" placeholder="№ Истории"
-      aria-label="№ Истории input example" />
-   <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-      <label class="form-check-label" for="flexCheckDefault">
-         Искать среди закрытых историй
-      </label>
-   </div>
-</div>
-
-<div class="search-details__input-box">
-   <div class="search-details__form-select">
-      <p class="search-details__select-title">
-         Приезд с:
-      </p>
-      <select class="form-select" style="width: 150px;" aria-label="Default select example">
-         <option selected>30.05.2023</option>
-         <option value="1">One</option>
-         <option value="2">Two</option>
-         <option value="3">Three</option>
-      </select>
-   </div>
-   <div class="search-details__form-select">
-      <p class="search-details__select-title">
-         по:
-      </p>
-      <select class="form-select" style="width: 150px;" aria-label="Default select example">
-         <option selected>Выберите дату</option>
-         <option value="1">One</option>
-         <option value="2">Two</option>
-         <option value="3">Three</option>
-      </select>
-   </div>
-   <select class="form-select" style="max-width: 70%;" aria-label="Default select example">
-      <option selected>Лечащий врач</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-   </select>
-</div>
-
-<div class="search-details__input-box">
-   <div class="search-details__form-select">
-      <p class="search-details__select-title">
-         Отьезд с:
-      </p>
-      <select class="form-select" style="width: 150px;" aria-label="Default select example">
-         <option selected>30.05.2023</option>
-         <option value="1">One</option>
-         <option value="2">Two</option>
-         <option value="3">Three</option>
-      </select>
-   </div>
-   <div class="search-details__form-select">
-      <p class="search-details__select-title">
-         по:
-      </p>
-      <select class="form-select" style="width: 150px;" aria-label="Default select example">
-         <option selected>Выберите дату</option>
-         <option value="1">One</option>
-         <option value="2">Two</option>
-         <option value="3">Three</option>
-      </select>
-   </div>
-
-   <select class="form-select" aria-label="Default select example">
-      <option selected>Программа</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-   </select>
-
-   <div class="search-details__form-select">
-      <p class="search-details__select-title">
-         Комната:
-      </p>
-      <input class="form-control" type="number" style="width: 100px; margin-left: 19px;" name='age' max="100" min="1">
-   </div>
-
-   <div class="search-details__form-select">
-      <p class="search-details__select-title">
-         Этаж:
-      </p>
-      <select class="form-select" style="width: 100px;" aria-label="Default select example">
-         <option selected></option>
-         <option value="1">One</option>
-         <option value="2">Two</option>
-         <option value="3">Three</option>
-      </select>
-   </div>
-
-   <div class="search-details__form-select">
-      <p class="search-details__select-title">
-         Тип:
-      </p>
-      <select class="form-select" style="width: 180px;" aria-label="Default select example">
-         <option selected></option>
-         <option value="1">One</option>
-         <option value="2">Two</option>
-         <option value="3">Three</option>
-      </select>
-   </div>
-</div>
-
-<div class="search-details__input-box" style="align-items: center;">
-   <div>
-      <button class="green__btn register__btn-bg">Добавить историю болезни</button>
-      <button class="green__btn register__btn-bg">Добавить амбулаторную карту</button>
-   </div>
-
-   <div>
-      <button type="button" class="btn btn-primary account-patient__search-btn">Поиск</button>
-      <button type="button" class="btn btn-primary account-patient__close-btn">Очистить фильтр</button>
-   </div>
-</div>
 
 <body>
+   <!-- header starts ==== -->
+   <header>
+      <div class="header-left">
+         <div class="logo">
+            <a href="">
+               <img src="/assets/icons/logo.svg" alt="logo" />
+            </a>
+         </div>
+         <div class="header-links">
+            <div class="header-link header-link-active">
+               <a href="./register.html">Регистрация</a>
+            </div>
+            <div class="header-link">
+               <a href="./patients-my-patients.html">Пациенты</a>
+            </div>
+            <div class="header-link header-link--display">
+               <a href="./events.html">События</a>
+               <span>7</span>
+            </div>
+            <div class="header-link">
+               <a href="dispatching-my-patients.html">Диспетчеризация</a>
+            </div>
+         </div>
+      </div>
+      <div class="header-right">
+         <div class="dropdown">
+            <button class="dropdown-toggle profile-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Mухиддинов
+            </button>
+            <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
+            </ul>
+         </div>
+      </div>
+   </header>
+
+   <ul class="nav nav-tabs" style="margin-bottom: 10px;" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+         <a href="./register.html">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+               type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+               Поиск пациентов
+            </button>
+         </a>
+      </li>
+      <li class="nav-item" role="presentation">
+         <a href="">
+            <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+               role="tab" aria-controls="home-tab-pane" aria-selected="true">
+               Забронированные
+            </button>
+         </a>
+      </li>
+   </ul>
+
+   <div class="search-details__input-box">
+      <input class="form-control" type="text" style="max-width: 620px;" placeholder="ФИО пациента"
+         aria-label="ФИО пациента example" />
+      <input class="form-control" type="text" style="max-width: 530px;" placeholder="№ Истории"
+         aria-label="№ Истории input example" />
+      <div class="form-check">
+         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+         <label class="form-check-label" for="flexCheckDefault">
+            Искать среди закрытых историй
+         </label>
+      </div>
+   </div>
+
+   <div class="search-details__input-box">
+      <div class="search-details__form-select">
+         <p class="search-details__select-title">
+            Приезд с:
+         </p>
+         <select class="form-select" style="width: 150px;" aria-label="Default select example">
+            <option selected>30.05.2023</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+         </select>
+      </div>
+      <div class="search-details__form-select">
+         <p class="search-details__select-title">
+            по:
+         </p>
+         <select class="form-select" style="width: 150px;" aria-label="Default select example">
+            <option selected>Выберите дату</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+         </select>
+      </div>
+      <select class="form-select" style="max-width: 70%;" aria-label="Default select example">
+         <option selected>Лечащий врач</option>
+         <option value="1">One</option>
+         <option value="2">Two</option>
+         <option value="3">Three</option>
+      </select>
+   </div>
+
+   <div class="search-details__input-box">
+      <div class="search-details__form-select">
+         <p class="search-details__select-title">
+            Отьезд с:
+         </p>
+         <select class="form-select" style="width: 150px;" aria-label="Default select example">
+            <option selected>30.05.2023</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+         </select>
+      </div>
+      <div class="search-details__form-select">
+         <p class="search-details__select-title">
+            по:
+         </p>
+         <select class="form-select" style="width: 150px;" aria-label="Default select example">
+            <option selected>Выберите дату</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+         </select>
+      </div>
+
+      <select class="form-select" aria-label="Default select example">
+         <option selected>Программа</option>
+         <option value="1">One</option>
+         <option value="2">Two</option>
+         <option value="3">Three</option>
+      </select>
+
+      <div class="search-details__form-select">
+         <p class="search-details__select-title">
+            Комната:
+         </p>
+         <input class="form-control" type="number" style="width: 100px; margin-left: 19px;" name='age' max="100"
+            min="1">
+      </div>
+
+      <div class="search-details__form-select">
+         <p class="search-details__select-title">
+            Этаж:
+         </p>
+         <select class="form-select" style="width: 100px;" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+         </select>
+      </div>
+
+      <div class="search-details__form-select">
+         <p class="search-details__select-title">
+            Тип:
+         </p>
+         <select class="form-select" style="width: 180px;" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+         </select>
+      </div>
+   </div>
+
+   <div class="search-details__input-box" style="align-items: center;">
+      <div>
+         <button class="green__btn register__btn-bg">Добавить историю болезни</button>
+         <a href="./register-outpatient.html">
+            <button class="green__btn register__btn-bg">Добавить амбулаторную карту</button>
+         </a>
+      </div>
+
+      <div>
+         <button type="button" class="btn btn-primary account-patient__search-btn">Поиск</button>
+         <button type="button" class="btn btn-primary account-patient__close-btn">Очистить фильтр</button>
+      </div>
+   </div>
 
    <!-- script ============= -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
