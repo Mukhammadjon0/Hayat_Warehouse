@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Hayat Medical</title>
+  </head>
+
+  <body>
+    <!-- header starts ==== -->
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="">
+            <img src="/assets/icons/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link">
+            <a href="./register.html">Регистрация</a>
+          </div>
+          <div class="header-link">
+            <a href="patients-my-patients.html">Пациенты</a>
+          </div>
+          <div class="header-link header-link--display">
+            <a href="./events.html">События</a>
+            <span>7</span>
+          </div>
+          <div class="header-link header-link-active">
+            <a href="dispatching-my-patients.html">Диспетчеризация</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Mухиддинов
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="login.html">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- patients tabs-->
+    <div class="p-2 h-100">
+      <ul class="nav nav-tabs m-0 p-0" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a href="dispatching-my-patients.html">
+            <button
+              class="nav-link"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="home-tab-pane"
+              aria-selected="true"
+            >
+              Мои пациенты
+            </button>
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+            style="display: flex; flex-direction: row; align-items: center"
+          >
+            776/2023 CHORIYEV М. (10 ИЮНЯ - 17 ИЮНЯ)
+            <a
+              style="width: 18px; height: 18px"
+              href="dispatching-my-patients.html"
+              ><img
+                style="width: 18px; height: 18px; margin-bottom: 0px"
+                src="/assets/icons/x-mark-red.svg"
+                alt="icon"
+            /></a>
+          </button>
+        </li>
+      </ul>
+      <div class="d-flex p-2" style="background: #f5f5f5">
+        <section class="d-flex flex-column gap-1">
+          <button class="dispatching-side__btn">
+            <a
+              style="text-decoration: none; color: black"
+              href="dispatching-patient-info.html"
+              >Титульная страница</a
+            >
+          </button>
+          <button class="dispatching-side__btn">
+            <a
+              style="text-decoration: none; color: black"
+              href="dispatching-patient-schedule.html"
+              >Расписание лечения</a
+            >
+          </button>
+          <button class="dispatching-side__btn">
+            Автоматическая диспетчеризация
+          </button>
+          <button
+            class="dispatching-side__btn dispatching-side__btn-active flex-column align-items-start"
+            style="padding: 0"
+          >
+            <div
+              class="dispatching-side__btn dispatching-side__btn-active text-black"
+              style="padding-left: 6px"
+            >
+              <img src="/assets/icons/caret-right-down.svg" alt="icon" />
+              Назначения
+              <div class="naming__inp">
+                <img
+                  width="16px"
+                  height="16px"
+                  src="/assets/icons/search-normal.svg"
+                  alt="icon"
+                />
+                <input
+                  style="border: none; outline: none; width: 75%"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div
+              class="dispatching-side__btn dispatching-side__btn-active p-0 mx-3"
+              style="
+                padding-left: 6px;
+                color: var(
+                  --text-color-light-mode-secondary,
+                  rgba(0, 0, 0, 0.54)
+                );
+              "
+            >
+              <img src="/assets/icons/caret-right-down.svg" alt="icon" />
+              Процедуры
+            </div>
+            <div class="d-flex gap-2 px-2 py-1 w-100">
+              <span
+                style="
+                  white-space: nowrap;
+                  color: var(
+                    --text-color-light-mode-secondary,
+                    rgba(0, 0, 0, 0.54)
+                  );
+                "
+                >0 из 5</span
+              >
+              <a href="dispatching-patient-hydrobaths.html" style="text-decoration: none;" class="w-100">
+                <div
+                  class="border-bottom border-1 border-secondary d-flex gap-2 pb-1 w-100"
+                  style="background-color: #007dff"
+                >
+                  <div
+                    class="new__label"
+                    style="color: white; border-color: white"
+                  >
+                    new
+                  </div>
+                  <label for="" style="text-decoration: none; color: white;">Гидрованны</label>
+                </div>
+              </a>
+            </div>
+            <div class="d-flex gap-2 px-2 py-1">
+              <span
+                style="
+                  white-space: nowrap;
+                  color: var(
+                    --text-color-light-mode-secondary,
+                    rgba(0, 0, 0, 0.54)
+                  );
+                "
+                >0 из 5</span
+              >
+              <a
+                href="dispatching-patient-gidrokolonoterapiya.html"
+                style="text-decoration: none"
+              >
+                <div
+                  class="border-bottom border-1 border-secondary d-flex gap-2 pb-1 align-items-center"
+                >
+                  <div
+                    class="new__label"
+                    style="color: white; border-color: white"
+                  >
+                    new
+                  </div>
+                  <label for="" class="text-black text-decoration-none"
+                    >Гидроколонотерапия (орошение кишечника)</label
+                  >
+                </div>
+              </a>
+            </div>
+          </button>
+        </section>
+
+        <main class="dispatching__main bg-white" style="margin-left: 10px">
+          <div class="d-flex align-items-center gap-2">
+            <button
+              style="
+                border: none;
+                border-radius: 50%;
+                fill: var(
+                  --action-states-light-mode-selected,
+                  rgba(0, 0, 0, 0.08)
+                );
+                padding: 3px;
+              "
+            >
+              <img src="/assets/icons/arrow-left-2.svg" alt="icon" />
+            </button>
+            <button
+              style="
+                border: none;
+                border-radius: 4px;
+                fill: var(
+                  --action-states-light-mode-selected,
+                  rgba(0, 0, 0, 0.08)
+                );
+                padding: 3px;
+              "
+            >
+              <img src="/assets/icons/apps.svg" alt="icon" />
+            </button>
+            <button
+              style="
+                border: none;
+                border-radius: 50%;
+                fill: var(
+                  --action-states-light-mode-selected,
+                  rgba(0, 0, 0, 0.08)
+                );
+                padding: 3px;
+              "
+            >
+              <img src="/assets/icons/arrow-right-2.svg" alt="icon" />
+            </button>
+            <label for="">10.06.2023</label>
+            <button class="green__btn" disabled="disabled">
+              <img src="/assets/icons/pin.svg" alt="icon" />
+              Назначить на выделенное время
+            </button>
+            <button class="green__btn" disabled="disabled">
+              <img src="/assets/icons/pin.svg" alt="icon" />
+              Назначить вместе
+            </button>
+            <button class="blue__btn-disabled">
+              Отменить выбранную запись
+            </button>
+          </div>
+          <div class="d-flex align-items-center gap-1">
+            <label for="">Специалист:</label>
+            <select
+              style="
+                border-radius: 4px;
+                border: 1px solid var(--border, rgba(0, 0, 0, 0.23));
+                background: var(--text-color-dark-mode-primary, #fff);
+                padding: 3px 4px 3px 8px;
+                width: 35%;
+              "
+              name=""
+              id=""
+            >
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <button class="blue__btn">Сбросить фильтр</button>
+          </div>
+          <div class="dispatching__main-div">
+            <!-- ------------------- -->
+            <table>
+              <thead style="position: unset">
+                <tr>
+                  <th style="background: transparent; outline: none"></th>
+                  <th
+                    style="
+                      background: var(--background, #f5f5f5);
+                      color: var(--01-primary-main, #007dff);
+                    "
+                  >
+                    124 (Гидрованна с ПДМ)
+                  </th>
+                  <th
+                    style="
+                      background: var(--background, #f5f5f5);
+                      color: var(--01-primary-main, #007dff);
+                    "
+                  >
+                    124 (Гидрованна с ПДМ)
+                  </th>
+                </tr>
+                <tr>
+                  <th style="background: transparent; outline: none"></th>
+                  <th style="background: var(--background, #f5f5f5)">
+                    <span style="color: var(--01-primary-main, #007dff)"
+                      >10</span
+                    >
+                    <label for="">суббота</label>
+                  </th>
+                  <th style="background: var(--background, #f5f5f5)">
+                    <span style="color: var(--01-primary-main, #007dff)"
+                      >10</span
+                    >
+                    <label for="">суббота</label>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>08 00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>08 30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>09 00</td>
+                  <td style="background: var(--05-info-light, #64b6f7)">
+                    Choriyev M.
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>09 30</td>
+                  <td style="background: var(--05-info-light, #64b6f7)">
+                    Хасанов С.
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10 00</td>
+                  <td style="background: var(--05-info-light, #64b6f7)">
+                    Артикова И.
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10 30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11 00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11 30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12 00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12 30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>13 00</td>
+                  <td style="background: var(--divider, #e0e0e0)"></td>
+                  <td style="background: var(--divider, #e0e0e0)"></td>
+                </tr>
+                <tr>
+                  <td>14 00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>14 30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>15 00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>15 30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>16 00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- ------------------- -->
+            <table>
+              <thead style="position: unset">
+                <tr>
+                  <th style="background: transparent; outline: none"></th>
+                  <th
+                    style="
+                      background: var(--background, #f5f5f5);
+                      color: var(--01-primary-main, #007dff);
+                    "
+                  >
+                    124 (Гидрованна с ПДМ)
+                  </th>
+                  <th
+                    style="
+                      background: var(--background, #f5f5f5);
+                      color: var(--01-primary-main, #007dff);
+                    "
+                  >
+                    124 (Гидрованна с ПДМ)
+                  </th>
+                </tr>
+                <tr>
+                  <th style="background: transparent; outline: none"></th>
+                  <th style="background: var(--background, #f5f5f5)">
+                    <span style="color: var(--01-primary-main, #007dff)"
+                      >10</span
+                    >
+                    <label for="">суббота</label>
+                  </th>
+                  <th style="background: var(--background, #f5f5f5)">
+                    <span style="color: var(--01-primary-main, #007dff)"
+                      >10</span
+                    >
+                    <label for="">суббота</label>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>08 00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>08 40</td>
+                  <td style="background: var(--03-error-light, #f79e98)"></td>
+                  <td style="background: var(--03-error-light, #f79e98)"></td>
+                </tr>
+                <tr>
+                  <td>09 20</td>
+                  <td style="background: var(--03-error-light, #f79e98)"></td>
+                  <td style="background: var(--03-error-light, #f79e98)"></td>
+                </tr>
+                <tr>
+                  <td>10 00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10 40</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11 20</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12 00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12 40</td>
+                  <td style="background: var(--divider, #e0e0e0)"></td>
+                  <td style="background: var(--divider, #e0e0e0)"></td>
+                </tr>
+                <tr>
+                  <td>14 00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>14 40</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>15 20</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>16 00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="dispatching__main-div flex-column">
+            <label for="">Расписание выбранного кабинета на 9:00</label>
+            <div class="d-flex align-items-center gap-2">
+              <span class="dispatching__main__bottom-span">10 июн</span>
+              <span class="dispatching__main__bottom-span">12 июн</span>
+              <span class="dispatching__main__bottom-span">13 июн</span>
+              <span class="dispatching__main__bottom-span">14 июн</span>
+              <span class="dispatching__main__bottom-span">15 июн</span>
+              <span class="dispatching__main__bottom-span">16 июн</span>
+              <span class="dispatching__main__bottom-span">17 июн</span>
+              <span class="dispatching__main__bottom-span2">19 июн</span>
+              <span class="dispatching__main__bottom-span2">20 июн</span>
+              <span class="dispatching__main__bottom-span2">21 июн</span>
+              <span class="dispatching__main__bottom-span2">22 июн</span>
+              <span class="dispatching__main__bottom-span2">23 июн</span>
+              <span class="dispatching__main__bottom-span2">24 июн</span>
+              <span class="dispatching__main__bottom-span2">26 июн</span>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- script ============= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
