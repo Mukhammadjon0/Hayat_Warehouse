@@ -70,7 +70,7 @@
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"
                style="display: flex; flex-direction: row; align-items: center">
-               Новая Амб. карта
+               Новая ИБ
                <a style="width: 18px; height: 18px" href="./register.html"><img
                      style="width: 18px; height: 18px; margin-bottom: 0px" src="/assets/icons/x-mark-red.svg"
                      alt="icon" /></a>
@@ -364,10 +364,73 @@
                            </select>
                         </div>
                      </div>
+
+                     <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-column">
+                           <label for="">Серия</label>
+                           <input type="text" style="width: 60px;">
+                        </div>
+
+                        <div class="d-flex flex-column">
+                           <label for="">Номер</label>
+                           <input type="text" style="width: 100px;">
+                        </div>
+
+                        <div class="d-flex flex-column">
+                           <label for="">Дата выдачи</label>
+                           <select class="form-select-sm" style="width: 120px; border: 1px solid rgba(0, 0, 0, 0.23)">
+                              <option value="">Выберите дату</option>
+                              <option value=""></option>
+                           </select>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                           <label for="">Код подразделения</label>
+                           <input type="text" style="width: 130px;">
+                        </div>
+                     </div>
+
+                     <div class="d-flex align-items-center justify-content-between">
+                        <div style="width: 30%">
+                           <label for="">Кем выдан</label>
+                        </div>
+                        <input type="text" style="width: 70%" />
+                     </div>
+
+                     <div class="d-flex align-items-center justify-content-between">
+                        <div style="width: 30%">
+                           <label for="">СНИЛС</label>
+                        </div>
+                        <input type="text" style="width: 70%" />
+                     </div>
+
+                  </div>
+
+                  <strong>Данные полиса</strong>
+
+                  <div class="d-flex justify-content-between">
+                     <div class="d-flex flex-column">
+                        <label for="">Тип полиса</label>
+                        <select class="form-select-sm" style="width: 140px; border: 1px solid rgba(0, 0, 0, 0.23)">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
+                     </div>
+
+                     <div class="d-flex flex-column">
+                        <label for="">Серия</label>
+                        <input type="text" style="width: 140px;">
+                     </div>
+
+
+                     <div class="d-flex flex-column">
+                        <label for="">Номер</label>
+                        <input type="text" style="width: 140px;">
+                     </div>
                   </div>
 
                   <div class="d-flex flex-column">
-                     <div style="width: 30%">
+                     <div style="width: 40%">
                         <label for="">Наименование СМО</label>
                      </div>
                      <input type="text" style="width: 100%" />
@@ -376,6 +439,27 @@
 
                <div class="dispatching__main-div flex-column gap-2 w-100">
                   <strong>Путёвка</strong>
+
+                  <div class="d-flex">
+                     <div class="d-flex justify-content-between">
+                        <label for="" style="width: 40%;">Дата заказа:</label>
+                        <select class="form-select-sm"
+                           style="width: 140px; margin-left: 45px; border: 1px solid rgba(0, 0, 0, 0.23)">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
+                     </div>
+
+                     <div class="d-flex justify-content-between" style="margin-left: 40px;">
+                        <label for="">Ожидаемое время заезда:</label>
+                        <select class="form-select-sm"
+                           style="width: 140px; margin-left: 20px; border: 1px solid rgba(0, 0, 0, 0.23)">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
+                     </div>
+                  </div>
+
                   <div class="d-flex gap-2">
                      <div class="d-flex w-25">
                         <label for="">Программа:</label>
@@ -435,9 +519,42 @@
                      </select>
                   </div>
 
+                  <div class="d-flex">
+                     <div class="d-flex justify-content-between">
+                        <label for="" style="width: 145px;">Категория путёвки:</label>
+                        <select class="form-select-sm" style="width: 140px;  border: 1px solid rgba(0, 0, 0, 0.23)">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
+                     </div>
+
+                     <div class="d-flex justify-content-between w-100" style="margin-left: 10px;">
+                        <label for="">Плательщик:</label>
+                        <input class="" type="text" style="width: 260px;">
+                        <button class="blue__btn">
+                           <img src="../assets/icons/files.svg" alt="icon" width="20px" height="20px">
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="d-flex">
+                     <div class="d-flex justify-content-between">
+                        <label for="" style="width: 145px;">Номер путёвки:</label>
+                        <select class="form-select-sm" style="width: 140px;  border: 1px solid rgba(0, 0, 0, 0.23)">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
+                     </div>
+
+                     <div class="d-flex w-100" style="margin-left: 10px;">
+                        <label for="">Стоимость:</label>
+                        <input class="" type="text" style="width: 150px; margin-left: 20px;">
+                     </div>
+                  </div>
+
                   <div class="d-flex align-items-center">
                      <div class="d-flex w-25">
-                        <label for="">Срок</label>
+                        <label for="">Срок лечения по путёвке:</label>
                      </div>
                      <div class="d-flex gap-1 align-items-center">
                         <input type="date" name="" id="" style="
@@ -495,6 +612,22 @@
                            <option value=""></option>
                         </select>
                         <button class="blue__btn">Синхронизировать</button>
+                     </div>
+                  </div>
+
+                  <div class="dispatching__main-div flex-column">
+                     <strong>Метки</strong>
+                     <div class="d-flex ">
+                        <select name="" id="" style="
+                           width: 100%;
+                           border: 1px solid rgba(0, 0, 0, 0.23);
+                           background-color: transparent;
+                           padding: 2px 4px;
+                           border-radius: 4px;
+                         ">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
                      </div>
                   </div>
 
