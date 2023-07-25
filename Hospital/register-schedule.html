@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
    <!-- header starts ==== -->
    <header>
       <div class="header-left">
@@ -137,13 +136,13 @@
                   Титульная страница
                </a>
             </button>
-            <button class="dispatching-side__btn dispatching-side__btn-active">
-               <a href="./register-document.html" style="text-decoration: none; color: #fff;">
+            <button class="dispatching-side__btn">
+               <a href="./register-document.html" style="text-decoration: none; color: #000;">
                   Счета и документы
                </a>
             </button>
-            <button class="dispatching-side__btn">
-               <a href="./register-schedule.html" style="text-decoration: none; color: #000;">
+            <button class="dispatching-side__btn dispatching-side__btn-active">
+               <a href="./register-schedule.html" style="text-decoration: none; color: #fff;">
                   Расписание лечения
                </a>
             </button>
@@ -153,90 +152,104 @@
             <button class="dispatching-side__btn">Журнал изменений</button>
          </section>
 
-         <main class="dispatching__main" style="gap: 0px !important;">
-            <div class="dispatching__main-div" style="flex-direction: column; border: none; height: 100%;">
-               <strong>Счета и документы</strong>
-            </div>
-
-            <ul class="nav nav-tabs p-0 m-0"
-               style="padding-top: 5px !important; padding-left: 5px !important; background: #fff; border-radius: 5px 5px 0px 0px;"
-               id="myTab" role="tablist">
-               <li class="nav-item" role="presentation">
-                  <a href="./register-count.html">
-                     <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-                        Счета
-                     </button>
-                  </a>
-               </li>
-               <li class="nav-item" role="presentation">
-                  <a href="./register-document.html">
-                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-                        Документы
-                     </button>
-                  </a>
-               </li>
-            </ul>
-
-            <div class="dispatching__main-div"
-               style=" padding: 5px; flex-direction: column; border: none; height: 100%;">
-               <strong style="display: block; margin-bottom: 10px;">Документы</strong>
-
-               <div class="dispatching__main-div flex-column" style="margin-bottom: 10px; padding: 5px;">
-                  <strong>Файлы</strong>
-
-                  <div class="d-flex gap-3">
-                     <button class="green__btn" data-bs-toggle="modal" data-bs-target="#factor">
-                        Добавить файлы автоматически
-                     </button>
-                     <button type="button" class="blue__btn dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Добавить файл
-                     </button>
-                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Анализы</a></li>
-                        <li><a class="dropdown-item" href="#">Прочие документы</a></li>
-                        <li><a class="dropdown-item" href="#">УЗИ</a></li>
-                     </ul>
-                     <button type="button" class="blue__btn dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Сканировать
-                     </button>
-                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li>
-                           <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
-                     </ul>
+         <main class="dispatching__main">
+            <div class="search-patients__search-details m-0 p-0 bg-white">
+               <div class="search-details__title-box m-0" data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+                     aria-expanded="false" aria-controls="collapseWidthExample">
+                     <img src="/assets/icons/arrow-drop-down.svg" alt="icon" />
+                  </button>
+                  <h2 class="search-details__title">Параметры расписания</h2>
+               </div>
+               <div class="collapse search-details__box px-3 py-1 d-flex align-items-center justify-content-between"
+                  id="collapseWidthExample">
+                  <div class="d-flex gap-2 align-items-center">
+                     <input type="date" name="" id="" style="
+                      border: 1px solid rgba(0, 0, 0, 0.23);
+                      background-color: transparent;
+                      padding: 4px 8px;
+                      border-radius: 4px;
+                    " />
+                     -
+                     <input type="date" name="" id="" style="
+                      border: 1px solid rgba(0, 0, 0, 0.23);
+                      background-color: transparent;
+                      padding: 4px 8px;
+                      border-radius: 4px;
+                    " />
                   </div>
-
-                  <p style="margin: 0;">
-                     Прикрепленные документы отсутствуют
-                  </p>
+                  <button class="blue__btn">Обновить расписание</button>
                </div>
-
-               <div class="dispatching__main-div flex-column" style="margin-bottom: 10px; padding: 5px;">
-                  <strong>Хранимые печатные формы</strong>
-
-                  <p style="margin: 0;">
-                     Прикрепленные документы отсутствуют
-                  </p>
-               </div>
-
-               <div class="dispatching__main-div flex-column" style="padding: 5px;">
-                  <strong>Файлы ЭЦП</strong>
-
-                  <p style="margin: 0;">
-                     Прикрепленные документы отсутствуют
-                  </p>
-               </div>
-
             </div>
-
+            <div class="bg-white px-3 py-1 d-flex gap-2 align-items-center">
+               <button style="
+                  display: flex;
+                  border-radius: 4px;
+                  border: 1px solid var(--border, rgba(0, 0, 0, 0.23));
+                  background: var(--background, #f5f5f5);
+                  gap: 4px;
+                  padding: 6px 14px;
+                ">
+                  <img src="/assets/icons/printer.svg" alt="icon" />
+                  Print
+               </button>
+               <button style="
+                  display: flex;
+                  border-radius: 4px;
+                  border: 1px solid var(--border, rgba(0, 0, 0, 0.23));
+                  background: var(--background, #f5f5f5);
+                  gap: 4px;
+                  padding: 6px 14px;
+                ">
+                  <img src="/assets/icons/save-2.svg" alt="icon" />
+                  Save
+               </button>
+            </div>
+            <!-- ---- DISPATCH LIST ---- -->
+            <div class="dispatch-list"></div>
+            <div class="dispatch-list-controler">
+               <div class="d-flex bg-white w-100">
+                  <div class="d-flex gap-2 p-2">
+                     <button class="border border-0 bg-transparent">
+                        <img src="/assets/icons/previous.svg" alt="icon" />
+                     </button>
+                     <button class="border border-0 bg-transparent">
+                        <img src="/assets/icons/arrow-left-bold.svg" alt="icon" />
+                     </button>
+                  </div>
+                  <span style="
+                    border-left: 2px solid var(--background, #f5f5f5);
+                    border-right: 2px solid var(--background, #f5f5f5);
+                    padding: 9px 10px;
+                    white-space: nowrap;
+                  ">Page 1 of 1</span>
+                  <div class="d-flex gap-2 p-2">
+                     <button class="border border-0 bg-transparent">
+                        <img src="/assets/icons/next.svg" alt="icon" />
+                     </button>
+                     <button class="border border-0 bg-transparent">
+                        <img src="/assets/icons/arrow-right.svg" alt="icon" />
+                     </button>
+                  </div>
+               </div>
+               <div class="d-flex bg-white">
+                  <div class="d-flex gap-2 p-2">
+                     <button class="border border-0 bg-transparent">
+                        <img src="/assets/icons/file(1).svg" alt="icon" /></button><button
+                        class="border border-0 bg-transparent">
+                        <img src="/assets/icons/file-2.svg" alt="icon" /></button><button
+                        class="border border-0 bg-transparent">
+                        <img src="/assets/icons/file-4.svg" alt="icon" />
+                     </button>
+                  </div>
+                  <div class="d-flex align-items-center p-2 gap-2"
+                     style="border-left: 2px solid var(--background, #f5f5f5)">
+                     <label for="">100%</label>
+                     <input type="range" name="" id="" />
+                  </div>
+               </div>
+            </div>
          </main>
 
       </div>
