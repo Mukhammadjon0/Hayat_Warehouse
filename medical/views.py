@@ -4,7 +4,4 @@ from django.shortcuts import render
 
 
 def index(requests):
-    ctx = {
-
-    }
-    return render(requests, 'Hospital/login.html', ctx)
+    return render(requests, 'Hospital/login.html', {})
