@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../assets/css/style.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+   <title>Hayat Medical</title>
+</head>
+
+<body>
+   <!-- header starts ==== -->
+   <header>
+      <div class="header-left">
+         <div class="logo">
+            <a href="">
+               <img src="/assets/icons/logo.svg" alt="logo" />
+            </a>
+         </div>
+         <div class="header-links">
+            <div class="header-link header-link-active">
+               <a href="./register.html">Регистрация</a>
+            </div>
+            <div class="header-link">
+               <a href="./patients-my-patients.html">Пациенты</a>
+            </div>
+            <div class="header-link header-link--display">
+               <a href="./events.html">События</a>
+               <span>7</span>
+            </div>
+            <div class="header-link">
+               <a href="dispatching-my-patients.html">Диспетчеризация</a>
+            </div>
+         </div>
+      </div>
+      <div class="header-right">
+         <div class="dropdown">
+            <button class="dropdown-toggle profile-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Mухиддинов
+            </button>
+            <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
+            </ul>
+         </div>
+      </div>
+   </header>
+
+   <!-- register tabs-->
+   <div class="p-2 h-100">
+      <ul class="nav nav-tabs p-0" style="margin-bottom: 10px;" id="myTab" role="tablist">
+         <li class="nav-item" role="presentation">
+            <a href="./register.html">
+               <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+                  role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                  Поиск пациентов
+               </button>
+            </a>
+         </li>
+         <li class="nav-item" role="presentation">
+            <a href="">
+               <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+                  role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                  Забронированные
+               </button>
+            </a>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+               type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"
+               style="display: flex; flex-direction: row; align-items: center">
+               Новая ИБ
+               <a style="width: 18px; height: 18px" href="./register.html"><img
+                     style="width: 18px; height: 18px; margin-bottom: 0px" src="/assets/icons/x-mark-red.svg"
+                     alt="icon" /></a>
+            </button>
+         </li>
+      </ul>
+
+
+      <div style="display: flex; width: 100%; justify-content: space-between; margin-bottom: 10px;">
+         <div class="d-flex justify-content-between" style="width: 900px;">
+            <button class="green__btn">Сохранить</button>
+            <button class="green__btn">Сохранить и добавить новую</button>
+            <button class="btn account-patient__btn account-patient__btn--active">Копировать с предыдущего
+               приезда</button>
+            <div class="btn-group">
+               <button type="button" class="btn-bg-image btn btn-color dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Распецатать
+               </button>
+               <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+               </ul>
+            </div>
+            <div class="btn-group">
+               <button type="button" class="btn btn-color dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Действия
+               </button>
+               <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <button style="
+            padding: 0 5px;
+            border: none;
+            background: #f5f5f5;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+         ">
+            <img src="../assets/icons/coins-alt.svg" alt="icon" width="16" height="18">
+            0,00 сум
+         </button>
+      </div>
+
+      <div class="d-flex p-2" style="background: #f5f5f5">
+         <section class="d-flex flex-column gap-1">
+            <button class="dispatching-side__btn dispatching-side__btn-active">Титульная страница</button>
+            <button class="dispatching-side__btn ">
+               <a href="./register-count.html" style="text-decoration: none; color: #000;">
+                  Счета и документы
+               </a>
+            </button>
+            <button class="dispatching-side__btn">
+               <a href="./register-schedule.html" style="text-decoration: none; color: #000;">
+                  Расписание лечения
+               </a>
+            </button>
+            <button class="dispatching-side__btn">
+               <a href="./register-appointment_sheet.html" style="text-decoration: none; color: #000;">
+                  Основной лист назначений
+               </a>
+            </button>
+            <button class="dispatching-side__btn">
+               <a href="./register-changelog.html" style="text-decoration: none; color: #000;">
+                  Журнал изменений
+               </a>
+            </button>
+         </section>
+
+         <main class="dispatching__main">
+            <div class="d-flex justify-content-between">
+               <div class=""></div>
+               <strong>Амбулаторная карта № <input type="text" style="width: 80px;"></strong>
+               <button class="dispatching__main-top__btn">новая</button>
+            </div>
+            <div class="dispatching__main-div">
+               <div class="dispatching__main-div flex-column">
+                  <strong>Пациент</strong>
+
+                  <div class="d-flex gap-1">
+                     <div class="d-flex flex-column">
+                        <label for="">Фамилия</label>
+                        <input style="width: 147px; border: 1px solid rgba(0, 0, 0, 0.23)" type="text" />
+                     </div>
+                     <div class="d-flex flex-column">
+                        <label for="">Имя</label>
+                        <input style="width: 147px; border: 1px solid rgba(0, 0, 0, 0.23)" type="text" />
+                     </div>
+                     <div class="d-flex flex-column">
+                        <label for="">Отчество</label>
+                        <input style="width: 147px; border: 1px solid rgba(0, 0, 0, 0.23)" type="text" />
+                     </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+                     <label for="">Обращение:</label>
+                     <input type="text" class="w-75" style="width: 147px; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                  </div>
+
+                  <div class="d-flex gap-2">
+                     <label for="">Пол:</label>
+                     <div class="form-check check__btn" id="label1" style="padding-left: 24px; margin-left: 76px">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                           onclick="handleChange(1)" />
+                        <label for="flexRadioDefault1">[М] Мужской</label>
+                     </div>
+                     <div class="form-check green__btn" id="label2" style="padding-left: 24px">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                           onclick="handleChange(2)" checked />
+                        <label for="flexRadioDefault2">[Ж] Женский</label>
+                     </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-3">
+                     <label for="">Дата рождения:</label>
+                     <input type="date" style="width: 147px; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                     <p class="m-0">Возраст: 26 лет</p>
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+                     <label for="">Место работы:</label>
+                     <input type="text" style="width: 70%" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                     <label for="">Занимаемая должность:</label>
+                     <input type="text" style="width: 70%" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                  </div>
+
+                  <div class="dispatching__main-div flex-column">
+                     <strong>Домашний адрес</strong>
+                     <div class="d-flex flex-column">
+                        <label for="">Быстрый ввод адреса</label>
+                        <input type="text" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                     </div>
+                     <div class="" style="
+                         display: grid;
+                         grid-template-columns: repeat(3, 1fr);
+                         gap: 5px;
+                       ">
+                        <div class="d-flex flex-column">
+                           <label for="">Страна</label>
+                           <select name="" id="" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)">
+                              <option value=""></option>
+                              <option value=""></option>
+                           </select>
+                        </div>
+                        <div class="d-flex flex-column">
+                           <label for="">Область</label>
+                           <input type="text" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                        </div>
+                        <div class="d-flex flex-column">
+                           <label for="">Район</label>
+                           <input type="text" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                        </div>
+                        <div class="d-flex flex-column">
+                           <label for="">Тип нас. пункта</label>
+                           <input type="text" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                        </div>
+                        <div class="d-flex flex-column">
+                           <label for="">Название нас. пункта</label>
+                           <input type="text" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                        </div>
+                        <div class="d-flex flex-column">
+                           <label for="">Улица</label>
+                           <input type="text" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                        </div>
+                        <div class="d-flex flex-column">
+                           <label for="">Дом</label>
+                           <input type="text" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                        </div>
+                        <div class="d-flex flex-column">
+                           <label for="">Корпус</label>
+                           <input type="text" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                        </div>
+                        <div class="d-flex flex-column">
+                           <label for="">Квартира</label>
+                           <input type="text" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)" />
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="dispatching__main-div flex-column align-items-baseline">
+                     <strong>Телефоны</strong>
+                     <button class="green__btn">Добавить</button>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                     <label for="">E-mail:</label>
+                     <input type="text" />
+                     <label for="">Язык:</label>
+                     <input type="text" />
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between">
+                     <div style="width: 35%">
+                        <label for="">Поликлиника:</label>
+                     </div>
+                     <input type="text" style="width: 44%" />
+                     <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                        <label class="form-check-label" for="flexCheckDefault">
+                           Без СКК
+                        </label>
+                     </div>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between">
+                     <div style="width: 35%">
+                        <label for="">Номер ИБ поликлиники:</label>
+                     </div>
+                     <input type="text" style="width: 62%" />
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                     <div style="width: 35%">
+                        <label for="">Диагноз из СКК</label>
+                     </div>
+                     <button class="green__btn">Добавить</button>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between">
+                     <div style="width: 35%">
+                        <label for="">Социальное положение:</label>
+                     </div>
+                     <select class="form-select-sm" style="width: 62%">
+                        <option value=""></option>
+                     </select>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between">
+                     <div style="width: 30%">
+                        <label for="">Комментарии</label>
+                     </div>
+                     <input type="text" style="width: 42%" />
+                     <button class="blue__btn">
+                        <img src="../assets/icons/files.svg" alt="icon" width="20px" height="20px">
+                     </button>
+                     <button class="blue__btn">
+                        <img src="../assets/icons/file-plus-alt.svg" alt="icon" width="20px" height="20px">
+                     </button>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between">
+                     <div style="width: 35%">
+                        <label for="">Направление от</label>
+                     </div>
+                     <select class="form-select-sm" style="width: 62%">
+                        <option value=""></option>
+                     </select>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between">
+                     <div style="width: 30%">
+                        <label for="">Рекомендации</label>
+                     </div>
+                     <input type="text" style="width: 42%" />
+                     <button class="blue__btn">
+                        <img src="../assets/icons/files.svg" alt="icon" width="20px" height="20px">
+                     </button>
+                     <button class="blue__btn">
+                        <img src="../assets/icons/file-plus-alt.svg" alt="icon" width="20px" height="20px">
+                     </button>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between">
+                     <div style="width: 30%">
+                        <label for="">Комментарии</label>
+                     </div>
+                     <input type="text" style="width: 70%" />
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between">
+                     <div style="width: 30%">
+                        <label for="">Направление от</label>
+                     </div>
+                     <input type="text" style="width: 70%" />
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between">
+                     <div style="width: 30%">
+                        <label for="">Рекомендации</label>
+                     </div>
+                     <input type="text" style="width: 70%" />
+                  </div>
+
+                  <div class="dispatching__main-div flex-column">
+                     <strong>Документы</strong>
+                     <div class="" style="
+                     display: grid;
+                     grid-template-columns: repeat(2, 1fr);
+                     gap: 5px;
+                   ">
+                        <div class="d-flex flex-column">
+                           <label for="">Страна</label>
+                           <select name="" id="" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)">
+                              <option value=""></option>
+                              <option value=""></option>
+                           </select>
+                        </div>
+                        <div class="d-flex flex-column">
+                           <label for="">Тип документа</label>
+                           <select name="" id="" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.23)">
+                              <option value=""></option>
+                              <option value=""></option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-column">
+                           <label for="">Серия</label>
+                           <input type="text" style="width: 60px;">
+                        </div>
+
+                        <div class="d-flex flex-column">
+                           <label for="">Номер</label>
+                           <input type="text" style="width: 100px;">
+                        </div>
+
+                        <div class="d-flex flex-column">
+                           <label for="">Дата выдачи</label>
+                           <select class="form-select-sm" style="width: 120px; border: 1px solid rgba(0, 0, 0, 0.23)">
+                              <option value="">Выберите дату</option>
+                              <option value=""></option>
+                           </select>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                           <label for="">Код подразделения</label>
+                           <input type="text" style="width: 130px;">
+                        </div>
+                     </div>
+
+                     <div class="d-flex align-items-center justify-content-between">
+                        <div style="width: 30%">
+                           <label for="">Кем выдан</label>
+                        </div>
+                        <input type="text" style="width: 70%" />
+                     </div>
+
+                     <div class="d-flex align-items-center justify-content-between">
+                        <div style="width: 30%">
+                           <label for="">СНИЛС</label>
+                        </div>
+                        <input type="text" style="width: 70%" />
+                     </div>
+
+                  </div>
+
+                  <strong>Данные полиса</strong>
+
+                  <div class="d-flex justify-content-between">
+                     <div class="d-flex flex-column">
+                        <label for="">Тип полиса</label>
+                        <select class="form-select-sm" style="width: 140px; border: 1px solid rgba(0, 0, 0, 0.23)">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
+                     </div>
+
+                     <div class="d-flex flex-column">
+                        <label for="">Серия</label>
+                        <input type="text" style="width: 140px;">
+                     </div>
+
+
+                     <div class="d-flex flex-column">
+                        <label for="">Номер</label>
+                        <input type="text" style="width: 140px;">
+                     </div>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                     <div style="width: 40%">
+                        <label for="">Наименование СМО</label>
+                     </div>
+                     <input type="text" style="width: 100%" />
+                  </div>
+               </div>
+
+               <div class="dispatching__main-div flex-column gap-2 w-100">
+                  <strong>Путёвка</strong>
+
+                  <div class="d-flex">
+                     <div class="d-flex justify-content-between">
+                        <label for="" style="width: 40%;">Дата заказа:</label>
+                        <select class="form-select-sm"
+                           style="width: 140px; margin-left: 45px; border: 1px solid rgba(0, 0, 0, 0.23)">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
+                     </div>
+
+                     <div class="d-flex justify-content-between" style="margin-left: 40px;">
+                        <label for="">Ожидаемое время заезда:</label>
+                        <select class="form-select-sm"
+                           style="width: 140px; margin-left: 20px; border: 1px solid rgba(0, 0, 0, 0.23)">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
+                     </div>
+                  </div>
+
+                  <div class="d-flex gap-2">
+                     <div class="d-flex w-25">
+                        <label for="">Программа:</label>
+                     </div>
+                     <select class="w-100" name="" id="" style="
+                         width: 100%;
+                         border: 1px solid rgba(0, 0, 0, 0.23);
+                         background-color: transparent;
+                         padding: 2px 4px;
+                       ">
+                        <option value="1">Стандарт</option>
+                        <option value="">2</option>
+                     </select>
+                  </div>
+
+                  <div class="d-flex gap-2">
+                     <div class="d-flex flex-column w-25">
+                        <label for="">Лечебные программы:</label>
+                        <button class="green__btn ">Добавить</button>
+                     </div>
+                     <table>
+                        <thead>
+                           <tr>
+                              <th></th>
+                              <th style="font-weight: 400">Название</th>
+                              <th style="font-weight: 400">Начало</th>
+                              <th style="font-weight: 400">Окончание</th>
+                              <th style="font-weight: 400">Лимит</th>
+                              <th style="font-weight: 400">Отпусков</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+
+                  <div class="d-flex gap-2">
+                     <div class="d-flex w-25">
+                        <label for="">Программа лояльности::</label>
+                     </div>
+                     <select class="w-100" name="" id="" style="
+                         width: 100%;
+                         border: 1px solid rgba(0, 0, 0, 0.23);
+                         background-color: transparent;
+                         padding: 2px 4px;
+                       ">
+                        <option value="1"></option>
+                        <option value="">2</option>
+                     </select>
+                  </div>
+
+                  <div class="d-flex">
+                     <div class="d-flex justify-content-between">
+                        <label for="" style="width: 145px;">Категория путёвки:</label>
+                        <select class="form-select-sm" style="width: 140px;  border: 1px solid rgba(0, 0, 0, 0.23)">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
+                     </div>
+
+                     <div class="d-flex justify-content-between w-100" style="margin-left: 10px;">
+                        <label for="">Плательщик:</label>
+                        <input class="" type="text" style="width: 260px;">
+                        <button class="blue__btn">
+                           <img src="../assets/icons/files.svg" alt="icon" width="20px" height="20px">
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="d-flex">
+                     <div class="d-flex justify-content-between">
+                        <label for="" style="width: 145px;">Номер путёвки:</label>
+                        <select class="form-select-sm" style="width: 140px;  border: 1px solid rgba(0, 0, 0, 0.23)">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
+                     </div>
+
+                     <div class="d-flex w-100" style="margin-left: 10px;">
+                        <label for="">Стоимость:</label>
+                        <input class="" type="text" style="width: 150px; margin-left: 20px;">
+                     </div>
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                     <div class="d-flex w-25">
+                        <label for="">Срок лечения по путёвке:</label>
+                     </div>
+                     <div class="d-flex gap-1 align-items-center">
+                        <input type="date" name="" id="" style="
+                           width: 100%;
+                           border: 1px solid rgba(0, 0, 0, 0.23);
+                           background-color: transparent;
+                           padding: 4px 8px;
+                           border-radius: 4px;
+                         " />
+                        -
+                        <input type="date" name="" id="" style="
+                           width: 100%;
+                           border: 1px solid rgba(0, 0, 0, 0.23);
+                           background-color: transparent;
+                           padding: 4px 8px;
+                           border-radius: 4px;
+                         " />
+                     </div>
+                  </div>
+
+                  <div class="dispatching__main-div flex-column">
+                     <strong>Пребывание в стационаре</strong>
+
+                     <div class="d-flex justify-content-between" style="align-items: baseline;">
+                        <div class="d-flex flex-column">
+                           <label for="">Кол-во</label>
+                           <input type="number" style="width: 50px;">
+                        </div>
+
+                        <div class="d-flex flex-column" style="width: 180px;">
+                           <span style="text-align: start;">Гости и размещение</span>
+
+                           <div class="d-flex justify-content-between">
+                              <label for="">Взрослых:</label>
+                              <input type="number" style="width: 100px;">
+                           </div>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                           <label for="">Период проживания</label>
+                           <select class="form-select-sm">
+                              <option value="">24.04.2023 0:00</option>
+                              <option value="">24.04.2023 0:00</option>
+                           </select>
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="width: 80px; align-self: self-end;">
+                           <input type="number" style="width: 40px;">
+                           <label for="">дней</label>
+                        </div>
+
+                        <div class="d-flex justify-content-between" style="width: 170px; align-self: self-end;">
+                           <label for="">по</label>
+                           <select class="form-select-sm">
+                              <option value="">24.04.2023 0:00</option>
+                              <option value="">24.04.2023 0:00</option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between" style="width: 320px;">
+                           <label for="">Лечащий врач:</label>
+                           <select class="form-select-sm" style="width: 200px;">
+                              <option value=""></option>
+                           </select>
+                        </div>
+                        <div class="d-flex justify-content-between" style="width: 300px;">
+                           <label for="">Медсестра:</label>
+                           <select class="form-select-sm" style="width: 200px;">
+                              <option value=""></option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between" style="width: 350px;">
+                           <label for="">Помещён в комнату.</label>
+                           <select class="form-select-sm" style="width: 200px;">
+                              <option value=""></option>
+                           </select>
+                        </div>
+                        <div class="d-flex justify-content-between" style="width: 300px;">
+                           <label for="">Отделение:</label>
+                           <select class="form-select-sm" style="width: 200px;">
+                              <option value=""></option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="d-flex justify-content-between" style="width: 300px;">
+                        <div class="form-check">
+                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                           <label class="form-check-label" for="flexCheckDefault">
+                              Дополнительное место
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                           <label class="form-check-label" for="flexCheckDefault">
+                              Член семьи
+                           </label>
+                        </div>
+                     </div>
+
+                  </div>
+
+                  <div class="search-patients__search-details m-0 p-0">
+                     <div class="search-details__title-box m-0">
+                        <button class="btn" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseWidthExample" aria-expanded="false"
+                           aria-controls="collapseWidthExample">
+                           <img src="/assets/icons/arrow-drop-down.svg" alt="icon" />
+                        </button>
+                        <h2 class="search-details__title">Комментарий</h2>
+                     </div>
+                     <div class="collapse search-details__box px-3 py-1" id="collapseWidthExample">
+                        <input type="text" class="p-1 w-100" />
+                     </div>
+                  </div>
+
+                  <div class="dispatching__main-div flex-column">
+                     <strong>Факторы вредности</strong>
+                     <div class="d-flex gap-3">
+                        <button class="green__btn" data-bs-toggle="modal" data-bs-target="#factor">
+                           Добавить фактор
+                        </button>
+                        <button class="green__btn" data-bs-toggle="modal" data-bs-target="#professional">Создать
+                           профосмотр</button>
+                        <button class="blue__btn">Отменить фактор</button>
+                     </div>
+                  </div>
+
+                  <div class="dispatching__main-div flex-column">
+                     <strong>Профессия</strong>
+                     <div class="d-flex gap-3">
+                        <select name="" id="" style="
+                           width: 100%;
+                           border: 1px solid rgba(0, 0, 0, 0.23);
+                           background-color: transparent;
+                           padding: 2px 4px;
+                           border-radius: 4px;
+                         ">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
+                        <button class="blue__btn">Синхронизировать</button>
+                     </div>
+                  </div>
+
+                  <div class="dispatching__main-div flex-column">
+                     <strong>Метки</strong>
+                     <div class="d-flex ">
+                        <select name="" id="" style="
+                           width: 100%;
+                           border: 1px solid rgba(0, 0, 0, 0.23);
+                           background-color: transparent;
+                           padding: 2px 4px;
+                           border-radius: 4px;
+                         ">
+                           <option value=""></option>
+                           <option value=""></option>
+                        </select>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="dispatching__main-div flex-column">
+               <strong>Связанные истории болезни</strong>
+               <button class="green__btn" style="width: 140px;" data-bs-toggle="modal"
+                  data-bs-target="#connection">Добавить связь</button>
+
+               <table>
+                  <thead>
+                     <tr>
+                        <th></th>
+                        <th style="font-weight: 400;">Текущая ИБ для связанной</th>
+                        <th style="font-weight: 400;">Связанная ИБ</th>
+                        <th style="font-weight: 400;">Связанная ИБ к текущей</th>
+                        <th></th>
+                     </tr>
+                  </thead>
+
+                  <tbody>
+                     <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </main>
+      </div>
+   </div>
+
+
+   <!-- Add connection Modal -->
+   <div class="modal fade w-100" id="connection" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header" style="margin-bottom: 0px;">
+               <h1 class="modal-title fs-5" id="connection">
+                  Добавление связи
+               </h1>
+               <button class="bg-transparent border-0" type="button" data-bs-dismiss="modal">
+                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+               </button>
+            </div>
+
+            <div class="modal-body" style="padding-top: 0;">
+               <div class="medicines__modal-box">
+                  <input class="patients-my-patients__search-input"
+                     style="width: 100%; max-width: 100%; margin-bottom: 10px;" type="text"
+                     placeholder="Искать в таблице" />
+
+                  <table>
+                     <thead>
+                        <tr>
+                           <th style="font-weight: 400;">ФИО</th>
+                           <th style="font-weight: 400;">Статус ИБ</th>
+                           <th style="font-weight: 400;">Номер комнаты</th>
+                           <th style="font-weight: 400;">Дата рождения</th>
+                           <th style="font-weight: 400;">Дата заезда</th>
+                           <th style="font-weight: 400;">Дата выезда</th>
+                        </tr>
+                     </thead>
+
+                     <tbody>
+                        <tr>
+                           <td>Назаров Абдуллох</td>
+                           <td>Открыта</td>
+                           <td></td>
+                           <td>01.04.2004</td>
+                           <td>02.03.2022</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Назаров Абдуллох</td>
+                           <td>Открыта</td>
+                           <td></td>
+                           <td>01.04.2004</td>
+                           <td>02.03.2022</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Назаров Абдуллох</td>
+                           <td>Открыта</td>
+                           <td></td>
+                           <td>01.04.2004</td>
+                           <td>02.03.2022</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Назаров Абдуллох</td>
+                           <td>Открыта</td>
+                           <td></td>
+                           <td>01.04.2004</td>
+                           <td>02.03.2022</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Назаров Абдуллох</td>
+                           <td>Открыта</td>
+                           <td></td>
+                           <td>01.04.2004</td>
+                           <td>02.03.2022</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Назаров Абдуллох</td>
+                           <td>Открыта</td>
+                           <td></td>
+                           <td>01.04.2004</td>
+                           <td>02.03.2022</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Назаров Абдуллох</td>
+                           <td>Открыта</td>
+                           <td></td>
+                           <td>01.04.2004</td>
+                           <td>02.03.2022</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+               </div>
+
+               <div class="modal-footer">
+                  <button type="button" class="btn blue__btn" style="padding: 8px 16px !important;"
+                     data-bs-dismiss="modal">ОК</button>
+                  <button type="button" class="btn" data-bs-dismiss="modal"
+                     style="background: rgba(0, 0, 0, 0.1) !important;">Отмена</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- ADD FACTOR Modal -->
+   <div class="modal fade w-100" id="factor" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header" style="margin-bottom: 0px;">
+               <h1 class="modal-title fs-5" id="factor">
+                  Добавление связи
+               </h1>
+               <button class="bg-transparent border-0" type="button" data-bs-dismiss="modal">
+                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+               </button>
+            </div>
+
+            <div class="modal-body" style="padding-top: 0;">
+
+               <div class="dispatching__main-div flex-column" style="background-color: #f5f5f5; margin-bottom: 10px;">
+                  <strong>Профессия</strong>
+                  <div class="d-flex ">
+                     <select name="" id="" style="
+                        width: 100%;
+                        border: 1px solid rgba(0, 0, 0, 0.23);
+                        background-color: #fff;
+                        padding: 2px 4px;
+                        border-radius: 4px;
+                      ">
+                        <option value=""></option>
+                        <option value=""></option>
+                     </select>
+                  </div>
+               </div>
+
+               <div class="medicines__modal-box">
+                  <input class="patients-my-patients__search-input"
+                     style="width: 100%; max-width: 100%; margin-bottom: 10px;" type="text"
+                     placeholder="Искать в таблице" />
+
+                  <table>
+                     <thead>
+                        <tr>
+                           <th style="font-weight: 400;"></th>
+                           <th style="font-weight: 400;">
+                              <input type="checkbox">
+                           </th>
+                           <th style="font-weight: 400;">Код</th>
+                           <th style="font-weight: 400;">Название</th>
+                        </tr>
+                     </thead>
+
+                     <tbody>
+                        <tr>
+                           <td style="outline: none !important;">
+                              <div class="search-details__title-box" style="margin: 0;">
+                                 <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#table"
+                                    aria-expanded="false" aria-controls="b" style="padding: 0 5px;">
+                                    <img src="../assets/icons/arrow-drop-down.svg" alt="icon">
+                                 </button>
+                                 <h2 class="search-details__title">№90 от 14.03.1996</h2>
+                              </div>
+                           </td>
+                        </tr>
+
+                        <tr id="table" style="background: #fff !important">
+                           <td></td>
+                           <td>
+                              <input type="checkbox">
+                           </td>
+                           <td>Пр. 1 п.1.1.1.</td>
+                           <td>
+                              Аллергены, "А"
+                           </td>
+                        </tr>
+
+                        <tr id="table" style="background: #fff !important">
+                           <td></td>
+                           <td>
+                              <input type="checkbox">
+                           </td>
+                           <td>Пр. 1 п.1.1.1.</td>
+                           <td>
+                              Аэрозоли преимущественно фиброгенногоФ и смешанного типа действия: Кремнийсодержащие
+                              аэрозоли: - с содержанием кристаллического диоксида
+                              кремнияк — с содержанием аморфного диоксида кремния в виде аэрозоля дезинтеграции и
+                              конденсации ' кремний карбид кремний нитрид, волокнистый карбид
+                              кремнияФА
+                           </td>
+                        </tr>
+
+                        <tr id="table" style="background: #fff !important">
+                           <td></td>
+                           <td>
+                              <input type="checkbox">
+                           </td>
+                           <td>Пр. 1 п.1.1.1.</td>
+                           <td>
+                              Аэрозоли преимущественно фиброгенногоФ и смешанного типа действия: Кремнийсодержащие
+                              аэрозоли: - с содержанием кристаллического диоксида
+                              кремнияк — с содержанием аморфного диоксида кремния в виде аэрозоля дезинтеграции и
+                              конденсации ' кремний карбид кремний нитрид, волокнистый карбид
+                              кремнияФА
+                           </td>
+                        </tr>
+
+                        <tr id="table" style="background: #fff !important">
+                           <td></td>
+                           <td>
+                              <input type="checkbox">
+                           </td>
+                           <td>Пр. 1 п.1.1.1.</td>
+                           <td>
+                              Аэрозоли преимущественно фиброгенногоФ и смешанного типа действия: Кремнийсодержащие
+                              аэрозоли: - с содержанием кристаллического диоксида
+                              кремнияк — с содержанием аморфного диоксида кремния в виде аэрозоля дезинтеграции и
+                              конденсации ' кремний карбид кремний нитрид, волокнистый карбид
+                              кремнияФА
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+               </div>
+
+               <div class="modal-footer">
+                  <button type="button" class="btn blue__btn" style="padding: 8px 16px !important;"
+                     data-bs-dismiss="modal">ОК</button>
+                  <button type="button" class="btn" data-bs-dismiss="modal"
+                     style="background: rgba(0, 0, 0, 0.1) !important;">Отмена</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Creating a professional route Modal -->
+   <div class="modal fade w-100" id="professional" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header" style="margin-bottom: 0px;">
+               <h1 class="modal-title fs-5" id="professional">
+                  Создание профмаршрута
+               </h1>
+               <button class="bg-transparent border-0" type="button" data-bs-dismiss="modal">
+                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+               </button>
+            </div>
+
+            <div class="modal-body" style="padding-top: 0;">
+
+               <div class="medicines__modal-box">
+                  <div class="d-flex justify-content-between" style="margin-bottom: 10px;">
+                     <label for="" style="width: 250px;">Программа профосмотра</label>
+                     <select class="form-select-sm" style="width: 100%;">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                     </select>
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+
+                     <div style="width: 43%;">
+                        <h6 style="font-weight: 400; text-align: center;">Факторы</h6>
+
+                        <table style="background-color: #fff;">
+                           <thead>
+                              <th style="font-weight: 400;"></th>
+                              <th style="font-weight: 400;">
+                                 <input type="checkbox">
+                              </th>
+                              <th style="font-weight: 400;">Код</th>
+                              <th style="font-weight: 400;">Название</th>
+                           </thead>
+
+                           <tbody>
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <div style="width: 55%;">
+                        <h6 style="font-weight: 400; text-align: center;">Назначения</h6>
+
+                        <table style="background-color: #fff;">
+                           <thead>
+                              <th style="font-weight: 400;"></th>
+                              <th style="font-weight: 400;">
+                                 <input type="checkbox">
+                              </th>
+                              <th style="font-weight: 400;">Название</th>
+                              <th style="font-weight: 400;">Услуга</th>
+                              <th style="font-weight: 400;">Обязательно</th>
+                           </thead>
+
+                           <tbody>
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="modal-footer">
+                  <button type="button" class="btn blue__btn" style="padding: 8px 16px !important;"
+                     data-bs-dismiss="modal">ОК</button>
+                  <button type="button" class="btn" data-bs-dismiss="modal"
+                     style="background: rgba(0, 0, 0, 0.1) !important;">Отмена</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- script ============= -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+   <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

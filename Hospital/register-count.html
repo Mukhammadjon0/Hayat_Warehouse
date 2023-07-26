@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../assets/css/style.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+   <title>Hayat Medical</title>
+</head>
+
+<body>
+   <!-- header starts ==== -->
+   <header>
+      <div class="header-left">
+         <div class="logo">
+            <a href="">
+               <img src="/assets/icons/logo.svg" alt="logo" />
+            </a>
+         </div>
+         <div class="header-links">
+            <div class="header-link header-link-active">
+               <a href="./register.html">Регистрация</a>
+            </div>
+            <div class="header-link">
+               <a href="./patients-my-patients.html">Пациенты</a>
+            </div>
+            <div class="header-link header-link--display">
+               <a href="./events.html">События</a>
+               <span>7</span>
+            </div>
+            <div class="header-link">
+               <a href="dispatching-my-patients.html">Диспетчеризация</a>
+            </div>
+         </div>
+      </div>
+      <div class="header-right">
+         <div class="dropdown">
+            <button class="dropdown-toggle profile-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Mухиддинов
+            </button>
+            <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
+            </ul>
+         </div>
+      </div>
+   </header>
+
+   <div class="p-2 h-100">
+      <ul class="nav nav-tabs p-0" style="margin-bottom: 10px;" id="myTab" role="tablist">
+         <li class="nav-item" role="presentation">
+            <a href="./register.html">
+               <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+                  role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                  Поиск пациентов
+               </button>
+            </a>
+         </li>
+         <li class="nav-item" role="presentation">
+            <a href="">
+               <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+                  role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                  Забронированные
+               </button>
+            </a>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+               type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"
+               style="display: flex; flex-direction: row; align-items: center">
+               Новая ИБ
+               <a style="width: 18px; height: 18px" href="./register.html"><img
+                     style="width: 18px; height: 18px; margin-bottom: 0px" src="/assets/icons/x-mark-red.svg"
+                     alt="icon" /></a>
+            </button>
+         </li>
+      </ul>
+
+      <div style="display: flex; width: 100%; justify-content: space-between; margin-bottom: 10px;">
+         <div class="d-flex justify-content-between" style="width: 900px;">
+            <button class="green__btn">Сохранить</button>
+            <button class="green__btn">Сохранить и добавить новую</button>
+            <button class="btn account-patient__btn account-patient__btn--active">Копировать с предыдущего
+               приезда</button>
+            <div class="btn-group">
+               <button type="button" class="btn-bg-image btn btn-color dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Распецатать
+               </button>
+               <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+               </ul>
+            </div>
+            <div class="btn-group">
+               <button type="button" class="btn btn-color dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Действия
+               </button>
+               <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <button style="
+            padding: 0 5px;
+            border: none;
+            background: #f5f5f5;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+         ">
+            <img src="../assets/icons/coins-alt.svg" alt="icon" width="16" height="18">
+            0,00 сум
+         </button>
+      </div>
+
+      <div class="d-flex p-2" style="background: #f5f5f5">
+         <section class="d-flex flex-column gap-1">
+            <button class="dispatching-side__btn">
+               <a href="./register-medical-history.html" style="text-decoration: none; color: #000;">
+                  Титульная страница
+               </a>
+            </button>
+            <button class="dispatching-side__btn dispatching-side__btn-active">
+               <a href="./register-document.html" style="text-decoration: none; color: #fff;">
+                  Счета и документы
+               </a>
+            </button>
+            <button class="dispatching-side__btn">
+               <a href="./register-schedule.html" style="text-decoration: none; color: #000;">
+                  Расписание лечения
+               </a>
+            </button>
+            <button class="dispatching-side__btn" style="color: rgba(0, 0, 0, 0.87);">
+               <a href="./register-appointment_sheet.html" style="text-decoration: none; color: #000;">
+                  Основной лист назначений
+               </a>
+            </button>
+            <button class="dispatching-side__btn">
+               <a href="./register-changelog.html" style="text-decoration: none; color: #000;">
+                  Журнал изменений
+               </a>
+            </button>
+         </section>
+
+         <main class="dispatching__main" style="gap: 0px !important;">
+            <div class="dispatching__main-div" style="flex-direction: column; border: none;">
+               <strong>Счета и документы</strong>
+            </div>
+
+            <ul class="nav nav-tabs p-0 m-0"
+               style="padding-top: 5px !important; padding-left: 5px !important; background: #fff; border-radius: 5px 5px 0px 0px;"
+               id="myTab" role="tablist">
+               <li class="nav-item" role="presentation">
+                  <a href="./register-count.html">
+                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                        Счета
+                     </button>
+                  </a>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <a href="./register-document.html">
+                     <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                        Документы
+                     </button>
+                  </a>
+               </li>
+            </ul>
+
+            <div class="dispatching__main-div"
+               style=" padding: 5px; flex-direction: column; border: none; height: 100%;">
+
+               <button class="green__btn" style="width: 200px; margin-bottom: 8px; background-color: #9FD5A1;">
+                  Добавить счёт
+               </button>
+
+               <p style="margin: 0;">Нет созданных счетов.</p>
+            </div>
+
+         </main>
+      </div>
+   </div>
+
+   <!-- script ============= -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+   <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
