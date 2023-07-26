@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
+   {% load static %}
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../assets/css/style.css" />
+   <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
    <title>Hayat Medical</title>
@@ -15,43 +16,48 @@
    <!-- header starts ==== -->
    <header>
       <div class="header-left">
-         <div class="logo">
-            <a href="">
-               <img src="/assets/icons/logo.svg" alt="logo" />
-            </a>
-         </div>
-         <div class="header-links">
-            <div class="header-link header-link-active">
-               <a href="./register.html">Регистрация</a>
-            </div>
-            <div class="header-link">
-               <a href="./patients-my-patients.html">Пациенты</a>
-            </div>
-            <div class="header-link header-link--display">
-               <a href="./events.html">События</a>
-               <span>7</span>
-            </div>
-            <div class="header-link">
-               <a href="dispatching-my-patients.html">Диспетчеризация</a>
-            </div>
-         </div>
+        <div class="logo">
+          <a href="">
+            <img src="{% static 'assets/icons/logo.svg' %}" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link">
+            <a href="{% url 'register' %}">Регистрация</a>
+          </div>
+          <div class="header-link">
+            <a href="{% url 'dispatching_m_p' %}">Пациенты</a>
+          </div>
+          <div class="header-link header-link--display">
+            <a href="{% url 'events' %}">События</a>
+            <span>7</span>
+          </div>
+          <div class="header-link header-link-active">
+            <a href="{% url 'dispatching_m_p' %}">Диспетчеризация</a>
+          </div>
+        </div>
       </div>
       <div class="header-right">
-         <div class="dropdown">
-            <button class="dropdown-toggle profile-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Mухиддинов
-            </button>
-            <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
-            </ul>
-         </div>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Mухиддинов
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'login' %}">Выйти</a></li>
+          </ul>
+        </div>
       </div>
-   </header>
+    </header>
 
    <div class="p-2 h-100">
       <ul class="nav nav-tabs p-0" style="margin-bottom: 10px;" id="myTab" role="tablist">
          <li class="nav-item" role="presentation">
-            <a href="./register.html">
+            <a href="{% url 'register' %}">
                <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
                   role="tab" aria-controls="home-tab-pane" aria-selected="true">
                   Поиск пациентов
@@ -71,8 +77,8 @@
                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"
                style="display: flex; flex-direction: row; align-items: center">
                Новая ИБ
-               <a style="width: 18px; height: 18px" href="./register.html"><img
-                     style="width: 18px; height: 18px; margin-bottom: 0px" src="/assets/icons/x-mark-red.svg"
+               <a style="width: 18px; height: 18px" href="{% url 'register' %}"><img
+                     style="width: 18px; height: 18px; margin-bottom: 0px" src="{% static 'assets/icons/x-mark-red.svg' %}"
                      alt="icon" /></a>
             </button>
          </li>
@@ -125,7 +131,7 @@
             font-style: normal;
             font-weight: 400;
          ">
-            <img src="../assets/icons/coins-alt.svg" alt="icon" width="16" height="18">
+            <img src="{% static 'assets/icons/coins-alt.svg' %}" alt="icon" width="16" height="18">
             0,00 сум
          </button>
       </div>
@@ -133,27 +139,27 @@
       <div class="d-flex p-2" style="background: #f5f5f5">
          <section class="d-flex flex-column gap-1">
             <button class="dispatching-side__btn">
-               <a href="./register-medical-history.html" style="text-decoration: none; color: #000;">
+               <a href="{% url 'register_m_h' %}" style="text-decoration: none; color: #000;">
                   Титульная страница
                </a>
             </button>
             <button class="dispatching-side__btn">
-               <a href="./register-document.html" style="text-decoration: none; color: #000;">
+               <a href="{% url 'register_d' %}" style="text-decoration: none; color: #000;">
                   Счета и документы
                </a>
             </button>
             <button class="dispatching-side__btn">
-               <a href="./register-schedule.html" style="text-decoration: none; color: #000;">
+               <a href="{% url  'register_s' %}" style="text-decoration: none; color: #000;">
                   Расписание лечения
                </a>
             </button>
             <button class="dispatching-side__btn dispatching-side__btn-active">
-               <a href="./register-appointment_sheet.html" style="text-decoration: none; color: #fff;">
+               <a href="{% url  'register_a_sh' %}" style="text-decoration: none; color: #fff;">
                   Основной лист назначений
                </a>
             </button>
             <button class="dispatching-side__btn">
-               <a href="./register-changelog.html" style="text-decoration: none; color: #000;">
+               <a href="{% url 'register_ch' %}" style="text-decoration: none; color: #000;">
                   Журнал изменений
                </a>
             </button>
@@ -209,7 +215,7 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"></script>
-   <script src="../assets/js/script.js"></script>
+   <script src="{% static 'assets/js/script.js' %}"></script>
 </body>
 
 </html>

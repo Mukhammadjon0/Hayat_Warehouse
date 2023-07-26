@@ -15,42 +15,47 @@
    <!-- header starts ==== -->
    <header>
       <div class="header-left">
-         <div class="logo">
-            <a href="">
-               <img src="{% static 'assets/icons/logo.svg' %}" alt="logo" />
-            </a>
-         </div>
-         <div class="header-links">
-            <div class="header-link header-link-active">
-               <a href="./register.html">Регистрация</a>
-            </div>
-            <div class="header-link">
-               <a href="./patients-my-patients.html">Пациенты</a>
-            </div>
-            <div class="header-link header-link--display">
-               <a href="./events.html">События</a>
-               <span>7</span>
-            </div>
-            <div class="header-link">
-               <a href="dispatching-my-patients.html">Диспетчеризация</a>
-            </div>
-         </div>
+        <div class="logo">
+          <a href="">
+            <img src="{% static 'assets/icons/logo.svg' %}" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link">
+            <a href="{% url 'register' %}">Регистрация</a>
+          </div>
+          <div class="header-link">
+            <a href="{% url 'dispatching_m_p' %}">Пациенты</a>
+          </div>
+          <div class="header-link header-link--display">
+            <a href="{% url 'events' %}">События</a>
+            <span>7</span>
+          </div>
+          <div class="header-link header-link-active">
+            <a href="{% url 'dispatching_m_p' %}">Диспетчеризация</a>
+          </div>
+        </div>
       </div>
       <div class="header-right">
-         <div class="dropdown">
-            <button class="dropdown-toggle profile-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Mухиддинов
-            </button>
-            <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
-            </ul>
-         </div>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Mухиддинов
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'login' %}">Выйти</a></li>
+          </ul>
+        </div>
       </div>
-   </header>
+    </header>
 
    <ul class="nav nav-tabs" style="margin-bottom: 10px;" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-         <a href="./register.html">
+         <a href="{% url 'register' %}">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
                Поиск пациентов
@@ -177,10 +182,10 @@
 
    <div class="search-details__input-box" style="align-items: center;">
       <div>
-         <a href="./register-medical-history.html" style="text-decoration: none;">
+         <a href="{% url 'register_m_h' %}" style="text-decoration: none;">
             <button class="green__btn register__btn-bg">Добавить историю болезни</button>
          </a>
-         <a href="./register-outpatient.html" style="text-decoration: none;">
+         <a href="{% url 'register_o' %}" style="text-decoration: none;">
             <button class="green__btn register__btn-bg">Добавить амбулаторную карту</button>
          </a>
       </div>

@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
+   {% load static %}
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../assets/css/style.css" />
+   <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
    <title>Hayat Medical</title>
@@ -14,44 +15,49 @@
    <!-- header starts ==== -->
    <header>
       <div class="header-left">
-         <div class="logo">
-            <a href="">
-               <img src="/assets/icons/logo.svg" alt="logo" />
-            </a>
-         </div>
-         <div class="header-links">
-            <div class="header-link header-link-active">
-               <a href="./register.html">Регистрация</a>
-            </div>
-            <div class="header-link">
-               <a href="./patients-my-patients.html">Пациенты</a>
-            </div>
-            <div class="header-link header-link--display">
-               <a href="./events.html">События</a>
-               <span>7</span>
-            </div>
-            <div class="header-link">
-               <a href="dispatching-my-patients.html">Диспетчеризация</a>
-            </div>
-         </div>
+        <div class="logo">
+          <a href="">
+            <img src="{% static 'assets/icons/logo.svg' %}" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link">
+            <a href="{% url 'register' %}">Регистрация</a>
+          </div>
+          <div class="header-link">
+            <a href="{% url 'dispatching_m_p' %}">Пациенты</a>
+          </div>
+          <div class="header-link header-link--display">
+            <a href="{% url 'events' %}">События</a>
+            <span>7</span>
+          </div>
+          <div class="header-link header-link-active">
+            <a href="{% url 'dispatching_m_p' %}">Диспетчеризация</a>
+          </div>
+        </div>
       </div>
       <div class="header-right">
-         <div class="dropdown">
-            <button class="dropdown-toggle profile-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Mухиддинов
-            </button>
-            <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
-            </ul>
-         </div>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Mухиддинов
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'login' %}">Выйти</a></li>
+          </ul>
+        </div>
       </div>
-   </header>
+    </header>
 
    <!-- register tabs-->
    <div class="p-2 h-100">
       <ul class="nav nav-tabs p-0" style="margin-bottom: 10px;" id="myTab" role="tablist">
          <li class="nav-item" role="presentation">
-            <a href="./register.html">
+            <a href="{% url 'register'%}">
                <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
                   role="tab" aria-controls="home-tab-pane" aria-selected="true">
                   Поиск пациентов
@@ -71,8 +77,8 @@
                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"
                style="display: flex; flex-direction: row; align-items: center">
                CHORIYEV М.
-               <a style="width: 18px; height: 18px" href="./register.html"><img
-                     style="width: 18px; height: 18px; margin-bottom: 0px" src="/assets/icons/x-mark-red.svg"
+               <a style="width: 18px; height: 18px" href="{% url 'register'%}"><img
+                     style="width: 18px; height: 18px; margin-bottom: 0px" src="{% static 'assets/icons/x-mark-red.svg' %}"
                      alt="icon" /></a>
             </button>
          </li>
@@ -125,7 +131,7 @@
             font-style: normal;
             font-weight: 400;
          ">
-            <img src="../assets/icons/coins-alt.svg" alt="icon" width="16" height="18">
+            <img src="{% static 'assets/icons/coins-alt.svg' %}" alt="icon" width="16" height="18">
             0,00 сум
          </button>
       </div>
@@ -176,7 +182,7 @@
                      <tbody>
                         <tr style="background-color: #F8ED8D;">
                            <td style="text-align: center; opacity: 0.7;">
-                              <img src="../assets/icons/x-mark-red.svg" alt="">
+                              <img src="{% static 'assets/icons/x-mark-red.svg' %}" alt="">
                            </td>
                            <td style="width: 50%;">
                               Стандарт
@@ -275,7 +281,7 @@
                               <div class="search-details__title-box" style="margin: 0;">
                                  <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#b"
                                     aria-expanded="false" aria-controls="b" style="padding: 0 5px;">
-                                    <img src="../assets/icons/arrow-drop-down.svg" alt="icon">
+                                    <img src="{% static 'assets/icons/arrow-drop-down.svg' %}" alt="icon">
                                  </button>
                                  <h2 class="search-details__title">Консультации</h2>
                               </div>
@@ -338,7 +344,7 @@
                                  <div class="search-details__title-box" style="margin: 0;">
                                     <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#b"
                                        aria-expanded="false" aria-controls="b" style="padding: 0 5px;">
-                                       <img src="../assets/icons/arrow-drop-down.svg" alt="icon">
+                                       <img src="{% static 'assets/icons/arrow-drop-down.svg' %}" alt="icon">
                                     </button>
                                     <h2 class="search-details__title">Процедуры</h2>
                                  </div>
@@ -416,10 +422,10 @@
                               <input type="text" style="width: 85%;">
                               <div class="d-flex flex-column">
                                  <button class="blue__btn-disabled" style="margin-bottom: 5px;">
-                                    <img src="../assets/icons/files.svg" alt="icon" />
+                                    <img src="{% static 'assets/icons/files.svg' %}" alt="icon" />
                                  </button>
                                  <button class="blue__btn-disabled">
-                                    <img src="../assets/icons/file-plus-alt.svg" alt="icon" />
+                                    <img src="{% static 'assets/icons/file-plus-alt.svg' %}" alt="icon" />
                                  </button>
                               </div>
                            </div>
@@ -474,7 +480,7 @@
                                  <div class="search-details__title-box" style="margin: 0;">
                                     <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#b"
                                        aria-expanded="false" aria-controls="b" style="padding: 0 5px;">
-                                       <img src="../assets/icons/arrow-drop-down.svg" alt="icon">
+                                       <img src="{% static 'assets/icons/arrow-drop-down.svg' %}" alt="icon">
                                     </button>
                                     <!-- <h2 class="search-details__title"></h2> -->
                                  </div>
@@ -576,10 +582,10 @@
                               <input type="text" style="width: 85%;">
                               <div class="d-flex flex-column">
                                  <button class="blue__btn-disabled" style="margin-bottom: 5px;">
-                                    <img src="../assets/icons/files.svg" alt="icon" />
+                                    <img src="{% static 'assets/icons/files.svg' %}" alt="icon" />
                                  </button>
                                  <button class="blue__btn-disabled">
-                                    <img src="../assets/icons/file-plus-alt.svg" alt="icon" />
+                                    <img src="{% static 'assets/icons/file-plus-alt.svg' %}" alt="icon" />
                                  </button>
                               </div>
                            </div>
@@ -605,7 +611,7 @@
                   Выбор назначений
                </h1>
                <button class="bg-transparent border-0" type="button" data-bs-dismiss="modal">
-                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+                  <img src="{% static 'assets/icons/close-circle.svg' %}" alt="icon" />
                </button>
             </div>
 
@@ -761,7 +767,7 @@
                   Выбор назначений
                </h1>
                <button class="bg-transparent border-0" type="button" data-bs-dismiss="modal">
-                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+                  <img src="{% static 'assets/icons/close-circle.svg' %}" alt="icon" />
                </button>
             </div>
 
@@ -869,7 +875,7 @@
                   Выбор назначений
                </h1>
                <button class="bg-transparent border-0" type="button" data-bs-dismiss="modal">
-                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+                  <img src="{% static 'assets/icons/close-circle.svg' %}" alt="icon" />
                </button>
             </div>
 
@@ -1023,7 +1029,7 @@
                   Медикаменты
                </h1>
                <button class="bg-transparent border-0" type="button" data-bs-dismiss="modal">
-                  <img src="/assets/icons/close-circle.svg" alt="icon" />
+                  <img src="{% static 'assets/icons/close-circle.svg' %}" alt="icon" />
                </button>
             </div>
             <div class="modal-body">
@@ -1188,7 +1194,7 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
          crossorigin="anonymous"></script>
-      <script src="../assets/js/script.js"></script>
+      <script src="{% static 'assets/js/script.js' %}"></script>
 </body>
 
 </html>

@@ -16,43 +16,48 @@
    <!-- header starts ==== -->
    <header>
       <div class="header-left">
-         <div class="logo">
-            <a href="">
-               <img src="/assets/icons/logo.svg" alt="logo" />
-            </a>
-         </div>
-         <div class="header-links">
-            <div class="header-link">
-               <a href="./register.html">Регистрация</a>
-            </div>
-            <div class="header-link header-link-active">
-               <a href="./patients-my-patients.html">Пациенты</a>
-            </div>
-            <div class="header-link header-link--display">
-               <a href="./events.html">События</a>
-               <span>7</span>
-            </div>
-            <div class="header-link">
-               <a href="dispatching-my-patients.html">Диспетчеризация</a>
-            </div>
-         </div>
-         <div class="header-right">
-            <div class="dropdown">
-               <button class="dropdown-toggle profile-btn" type="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Mухиддинов
-               </button>
-               <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
-               </ul>
-            </div>
-         </div>
-   </header>
+        <div class="logo">
+          <a href="">
+            <img src="{% static 'assets/icons/logo.svg' %}" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link">
+            <a href="{% url 'register' %}">Регистрация</a>
+          </div>
+          <div class="header-link">
+            <a href="{% url 'dispatching_m_p' %}">Пациенты</a>
+          </div>
+          <div class="header-link header-link--display">
+            <a href="{% url 'events' %}">События</a>
+            <span>7</span>
+          </div>
+          <div class="header-link header-link-active">
+            <a href="{% url 'dispatching_m_p' %}">Диспетчеризация</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Mухиддинов
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'login' %}">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
    <!-- patients tabs-->
    <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-         <a href="./patients-my-patients.html">
+         <a href="{% url 'patients_m_p' %}">
             <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
                role="tab" aria-controls="home-tab-pane" aria-selected="true">
                Мои пациенты
@@ -60,7 +65,7 @@
          </a>
       </li>
       <li class="nav-item" role="presentation">
-         <a href="./patients-accounts.html">
+         <a href="{% url 'patients_a'%}">
             <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
                Счета
@@ -68,7 +73,7 @@
          </a>
       </li>
       <li class="nav-item" role="presentation">
-         <a href="./patients-search.html">
+         <a href="{% url 'patients_s'%}">
             <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
                Поиск пациентов
