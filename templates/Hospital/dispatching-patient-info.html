@@ -8,7 +8,7 @@
     <div class="p-2 h-100">
       <ul class="nav nav-tabs m-0 p-0" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <a href="dispatching-my-patients.html">
+          <a href="{% url 'dispatching_m_p' %}">
             <button
               class="nav-link"
               id="home-tab"
@@ -38,10 +38,10 @@
             776/2023 CHORIYEV М. (10 ИЮНЯ - 17 ИЮНЯ)
             <a
               style="width: 18px; height: 18px"
-              href="dispatching-my-patients.html"
+              href="{% url 'dispatching_m_p' %}"
               ><img
                 style="width: 18px; height: 18px; margin-bottom: 0px"
-                src="/assets/icons/x-mark-red.svg"
+                src="{% static 'assets/icons/x-mark-red.svg' %}"
                 alt="icon"
             /></a>
           </button>
@@ -52,14 +52,14 @@
           <button class="dispatching-side__btn dispatching-side__btn-active">
             <a
               style="text-decoration: none; color: white"
-              href="dispatching-patient-info.html"
+              href="{% url 'dispatching_p_i' %}"
               >Титульная страница</a
             >
           </button>
           <button class="dispatching-side__btn">
             <a
               style="text-decoration: none; color: black"
-              href="dispatching-patient-schedule.html"
+              href="{% url 'dispatching_p_s' %}"
               >Расписание лечения</a
             >
           </button>
@@ -71,13 +71,13 @@
             style="padding: 0"
           >
             <div class="dispatching-side__btn" style="padding-left: 6px">
-              <img src="/assets/icons/caret-right-down.svg" alt="icon" />
+              <img src="{% static 'assets/icons/caret-right-down.svg' %}" alt="icon" />
               Назначения
               <div class="naming__inp">
                 <img
                   width="16px"
                   height="16px"
-                  src="/assets/icons/search-normal.svg"
+                  src="{% static 'assets/icons/search-normal.svg' %}"
                   alt="icon"
                 />
                 <input
@@ -90,13 +90,13 @@
               class="dispatching-side__btn p-0 mx-3"
               style="padding-left: 6px"
             >
-              <img src="/assets/icons/caret-right-down.svg" alt="icon" />
+              <img src="{% static 'assets/icons/caret-right-down.svg' %}" alt="icon" />
               Процедуры
             </div>
             <div class="d-flex gap-2 px-2 py-1">
               <span style="white-space: nowrap">0 из 5</span>
               <a
-                href="dispatching-patient-hydrobaths.html"
+                href="{% url 'dispatching_p_h' %}"
                 class="text-decoration-none pointer-event"
               >
                 <div
@@ -110,7 +110,7 @@
             <div class="d-flex gap-2 px-2 py-1">
               <span style="white-space: nowrap">0 из 5</span>
               <a
-                href="dispatching-patient-gidrokolonoterapiya.html"
+                href="{% url 'dispatching_p_g' %}"
                 class="text-decoration-none pointer-event"
               >
                 <div
@@ -359,7 +359,7 @@
                     aria-expanded="false"
                     aria-controls="collapseWidthExample"
                   >
-                    <img src="/assets/icons/arrow-drop-down.svg" alt="icon" />
+                    <img src="{% static 'assets/icons/arrow-drop-down.svg' %}" alt="icon" />
                   </button>
                   <h2 class="search-details__title">Документы</h2>
                 </div>
@@ -430,7 +430,7 @@
                   <tbody>
                     <tr>
                       <td style="text-align: center; opacity: 0.7">
-                        <img src="../assets/icons/x-mark-red.svg" alt="" />
+                        <img src="{% static 'assets/icons/x-mark-red.svg' %}" alt="" />
                       </td>
                       <td style="width: 50%">Стандарт</td>
                       <td style="width: 150px">
@@ -682,7 +682,7 @@
                     aria-expanded="false"
                     aria-controls="collapseWidthExample"
                   >
-                    <img src="/assets/icons/arrow-drop-down.svg" alt="icon" />
+                    <img src="{% static 'assets/icons/arrow-drop-down.svg' %}" alt="icon" />
                   </button>
                   <h2 class="search-details__title">Комментарий</h2>
                 </div>
@@ -733,6 +733,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
   </body>
 </html>

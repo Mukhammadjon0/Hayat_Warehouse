@@ -9,7 +9,7 @@
     <div class="p-2 h-100">
       <ul class="nav nav-tabs m-0 p-0" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <a href="dispatching-my-patients.html">
+          <a href="{% url 'dispatching_m_p' %}">
             <button
               class="nav-link"
               id="home-tab"
@@ -39,7 +39,7 @@
             776/2023 CHORIYEV М. (10 ИЮНЯ - 17 ИЮНЯ)
             <a
               style="width: 18px; height: 18px"
-              href="dispatching-my-patients.html"
+              href="{% url 'dispatching_m_p' %}"
               ><img
                 style="width: 18px; height: 18px; margin-bottom: 0px"
                 src="{% static 'assets/icons/x-mark-red.svg' %}"
@@ -211,7 +211,7 @@
             </button>
             <label for="">10.06.2023</label>
             <button class="green__btn" disabled="disabled">
-              <img src="/assets/icons/pin.svg" alt="icon" />
+              <img src="{% static 'assets/icons/pin.svg' %}" alt="icon" />
               Назначить на выделенное время
             </button>
             <button class="green__btn" disabled="disabled">
