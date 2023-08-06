@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Hayat Medical</title>
+  </head>
+
+  <body>
+    <!-- header starts ==== -->
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="">
+            <img src="/assets/icons/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link header-link-active">
+            <a href="./register.html">Регистрация</a>
+          </div>
+          <div class="header-link">
+            <a href="./patients-my-patients.html">Пациенты</a>
+          </div>
+          <div class="header-link header-link--display">
+            <a href="./events.html">События</a>
+            <span>7</span>
+          </div>
+          <div class="header-link">
+            <a href="dispatching-my-patients.html">Диспетчеризация</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Mухиддинов
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./login.html">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- register tabs-->
+    <div class="p-2 h-100">
+      <ul
+        class="nav nav-tabs p-0"
+        style="margin-bottom: 10px"
+        id="myTab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <a href="./register.html">
+            <button
+              class="nav-link"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="home-tab-pane"
+              aria-selected="true"
+            >
+              Поиск пациентов
+            </button>
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a href="">
+            <button
+              class="nav-link"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="home-tab-pane"
+              aria-selected="true"
+            >
+              Забронированные
+            </button>
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+            style="display: flex; flex-direction: row; align-items: center"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 20C7 17.2386 9.23858 15 12 15C14.7614 15 17 17.2386 17 20M7.2 20H16.8C17.9201 20 18.4802 20 18.908 19.782C19.2843 19.5903 19.5903 19.2843 19.782 18.908C20 18.4802 20 17.9201 20 16.8V7.2C20 6.0799 20 5.51984 19.782 5.09202C19.5903 4.71569 19.2843 4.40973 18.908 4.21799C18.4802 4 17.9201 4 16.8 4H7.2C6.0799 4 5.51984 4 5.09202 4.21799C4.71569 4.40973 4.40973 4.71569 4.21799 5.09202C4 5.51984 4 6.07989 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.07989 20 7.2 20ZM14 10C14 11.1046 13.1046 12 12 12C10.8954 12 10 11.1046 10 10C10 8.89543 10.8954 8 12 8C13.1046 8 14 8.89543 14 10Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            919/2022 Холматов У.
+            <a style="width: 18px; height: 18px" href="./register.html"
+              ><img
+                style="width: 18px; height: 18px; margin-bottom: 0px"
+                src="/assets/icons/x-mark-red.svg"
+                alt="icon"
+            /></a>
+          </button>
+        </li>
+      </ul>
+
+      <div
+        style="
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          margin-bottom: 10px;
+        "
+      >
+        <div
+          class="d-flex justify-content-between gap-1"
+          style="margin-right: 12px"
+        >
+          <button class="green__btn">Сохранить</button>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn-bg-image btn btn-color dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Распецатать
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-color dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Экспортировать документы
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <button type="button" class="btn btn-color">
+            Закрыть историю болезни
+          </button>
+          <button type="button" class="btn btn-color">
+            Удалить историю болезни
+          </button>
+          <button type="button" class="btn btn-color">
+            ДИСПЕТЧЕРИЗОВаТЬ все
+          </button>
+          <button type="button" class="btn btn-color">
+            Отменить все диспетчеризации
+          </button>
+        </div>
+
+        <button
+          style="
+            padding: 0 5px;
+            border: none;
+            background: #f5f5f5;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+          "
+        >
+          <img
+            src="../assets/icons/coins-alt.svg"
+            alt="icon"
+            width="16"
+            height="18"
+          />
+          0,00 сум
+        </button>
+      </div>
+
+      <div class="d-flex p-2" style="background: #f5f5f5">
+        <section class="d-flex flex-column gap-1">
+          <button
+            class="dispatching-side__btn flex-column align-items-baseline"
+          >
+            <div
+              class="d-flex align-items-center"
+              style="margin-left: -24px; color: black"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.1343 5.86569L5.3804 11.6196C4.95203 12.048 4.73784 12.2622 4.72336 12.4461C4.71081 12.6056 4.77539 12.7615 4.8971 12.8655C5.03736 12.9853 5.34027 12.9853 5.94609 12.9853L11.7 12.9853C11.98 12.9853 12.12 12.9853 12.227 12.9308C12.3211 12.8829 12.3976 12.8064 12.4455 12.7123C12.5 12.6053 12.5 12.4653 12.5 12.1853L12.5 6.43137C12.5 5.82556 12.5 5.52265 12.3802 5.38238C12.2763 5.26068 12.1203 5.19609 11.9608 5.20865C11.7769 5.22312 11.5627 5.43731 11.1343 5.86569Z"
+                  fill="black"
+                  fill-opacity="0.54"
+                />
+              </svg>
+              Титульная страница
+            </div>
+
+            <div
+              class="d-flex flex-column"
+              style="
+                color: var(
+                  --text-color-light-mode-secondary,
+                  rgba(0, 0, 0, 0.54)
+                );
+              "
+            >
+              <span>Диагнозы</span>
+              <span>Особые отметки</span>
+            </div>
+          </button>
+          <button class="dispatching-side__btn">
+            <a
+              href="./register-count.html"
+              style="text-decoration: none; color: #000"
+            >
+              Счета и документы
+            </a>
+          </button>
+          <button class="dispatching-side__btn dispatching-side__btn-active">
+            <a
+              href="./register-schedule.html"
+              style="text-decoration: none; color: #000"
+            >
+              Питание
+            </a>
+          </button>
+          <button class="dispatching-side__btn">
+            <a
+              href="./register-appointment_sheet.html"
+              style="text-decoration: none; color: #000"
+            >
+              Основной лист назначений
+            </a>
+          </button>
+          <button class="dispatching-side__btn">
+            <a
+              href="./register-changelog.html"
+              style="text-decoration: none; color: #000"
+            >
+              Журнал изменений
+            </a>
+          </button>
+        </section>
+
+        <main class="dispatching__main">
+          <div class="dispatching__main-div flex-column">
+            <div
+              class="d-flex align-items-center justify-content-between w-100"
+            >
+              <div class="d-flex align-items-center gap-2">
+                <button class="green__btn">Добавить диету</button>
+                <button class="green__btn">Добавить дополнение</button>
+                <button class="green__btn">Добавить исключение</button>
+                <button class="green__btn">Добавить пищевой аллерген</button>
+              </div>
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-color dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Применить шаблон
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th class="text-start"></th>
+                  <th class="text-start">Диета</th>
+                  <th class="text-start">С</th>
+                  <th class="text-start">По</th>
+                  <th class="text-start">Назначил</th>
+                  <th class="text-start">Дата назначение</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-start"></td>
+                  <td class="text-start"></td>
+                  <td class="text-start"></td>
+                  <td class="text-start"></td>
+                  <td class="text-start"></td>
+                  <td class="text-start"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="dispatching__main-div flex-column"
+            style="background: var(--background, #f5f5f5)"
+          >
+            <strong>Комментарий</strong>
+            <input type="text" class="w-100" />
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- script ============= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
