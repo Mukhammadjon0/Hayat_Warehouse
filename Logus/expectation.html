@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <div class="header-left">
+        <div class="logo">
+          <a href="">
+            <img src="/assets/icons/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header-links">
+          <div class="header-link header-link-active">
+            <a href="">Служба приёма</a>
+          </div>
+          <div class="header-link">
+            <a href="">Задачи</a>
+          </div>
+          <div class="header-link">
+            <a href="">Гостиница</a>
+          </div>
+          <div class="header-link">
+            <a href="">Клиенты</a>
+          </div>
+          <div class="header-link">
+            <a href="">Oтчёты</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="header__search">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+              stroke="black"
+              stroke-opacity="0.38"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22 22L20 20"
+              stroke="black"
+              stroke-opacity="0.38"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <input
+            type="text"
+            placeholder="Быстрый поиск..."
+            style="outline: none; border: none"
+          />
+        </div>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle profile-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Mухиддинов
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="login.html">Выйти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="logus__body">
+      <!-- ==== LEFT SECTION  ======== -->
+      <section
+        class="d-flex flex-column gap-1"
+        style="
+          width: 20%;
+          height: 100vh;
+          padding: 10px;
+          background: var(--background, #f5f5f5);
+          position: sticky;
+          bottom: 0;
+          left: 0;
+          z-index: 99;
+        "
+      >
+        <div class="section__top">
+          <button>Создать бронь</button>
+          <button>Мастер разделения</button>
+          <button>Поселить без брони</button>
+        </div>
+        <button
+          class="dispatching-side__btn dispatching-side__btn-active"
+          style="display: flex; align-items: center; gap: 4px"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+          >
+            <g id="vuesax/linear/airplane">
+              <g id="airplane">
+                <path
+                  id="Vector"
+                  d="M6.77219 16.2675L8.51969 14.7975C8.78219 14.5725 9.21719 14.5725 9.47969 14.7975L11.2272 16.2675C11.6322 16.47 12.1272 16.2675 12.2772 15.8325L12.6072 14.835C12.6897 14.595 12.6072 14.2425 12.4272 14.0625L10.7247 12.3525C10.5972 12.2325 10.4997 11.9925 10.4997 11.82V9.68251C10.4997 9.36751 10.7322 9.21751 11.0247 9.33751L14.7072 10.9275C15.2847 11.175 15.7572 10.8675 15.7572 10.2375V9.27001C15.7572 8.76751 15.3822 8.19001 14.9172 7.99501L10.7247 6.18751C10.6047 6.13501 10.4997 5.97751 10.4997 5.84251V3.59251C10.4997 2.88751 9.98219 2.05501 9.35219 1.73251C9.12719 1.62001 8.86469 1.62001 8.63969 1.73251C8.00969 2.05501 7.49219 2.89501 7.49219 3.60001V5.85001C7.49219 5.98501 7.38719 6.14251 7.26719 6.19501L3.08219 8.00251C2.61719 8.19001 2.24219 8.76751 2.24219 9.27001V10.2375C2.24219 10.8675 2.71469 11.175 3.29219 10.9275L6.97469 9.33751C7.25969 9.21001 7.49969 9.36751 7.49969 9.68251V11.82C7.49969 11.9925 7.40219 12.2325 7.28219 12.3525L5.57969 14.0625C5.39969 14.2425 5.31719 14.5875 5.39969 14.835L5.72969 15.8325C5.86469 16.2675 6.35969 16.4775 6.77219 16.2675Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </g>
+          </svg>
+          Ожидаемый заезд
+        </button>
+        <button
+          class="dispatching-side__btn"
+          style="display: flex; align-items: center; gap: 4px"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.25 13.5029V12.75C14.25 11.9216 13.5784 11.25 12.75 11.25C11.9216 11.25 11.25 11.9216 11.25 12.75V13.5029M7.5 15.75H3C3 12.8505 5.35051 10.5 8.25 10.5C8.50464 10.5 8.75505 10.5181 9 10.5532M11.625 15.75H13.875C14.2245 15.75 14.3992 15.75 14.537 15.6929C14.7208 15.6168 14.8668 15.4708 14.9429 15.287C15 15.1492 15 14.9745 15 14.625C15 14.2755 15 14.1008 14.9429 13.963C14.8668 13.7792 14.7208 13.6332 14.537 13.5571C14.3992 13.5 14.2245 13.5 13.875 13.5H11.625C11.2755 13.5 11.1008 13.5 10.963 13.5571C10.7792 13.6332 10.6332 13.7792 10.5571 13.963C10.5 14.1008 10.5 14.2755 10.5 14.625C10.5 14.9745 10.5 15.1492 10.5571 15.287C10.6332 15.4708 10.7792 15.6168 10.963 15.6929C11.1008 15.75 11.2755 15.75 11.625 15.75ZM11.25 5.25C11.25 6.90685 9.90685 8.25 8.25 8.25C6.59315 8.25 5.25 6.90685 5.25 5.25C5.25 3.59315 6.59315 2.25 8.25 2.25C9.90685 2.25 11.25 3.59315 11.25 5.25Z"
+              stroke="black"
+              stroke-opacity="0.87"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Проживающие
+        </button>
+        <button
+          class="dispatching-side__btn"
+          style="display: flex; align-items: center; gap: 4px"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 5.25V4.65C6 3.80992 6 3.38988 6.16349 3.06901C6.3073 2.78677 6.53677 2.5573 6.81901 2.41349C7.13988 2.25 7.55992 2.25 8.4 2.25H9.6C10.4401 2.25 10.8601 2.25 11.181 2.41349C11.4632 2.5573 11.6927 2.78677 11.8365 3.06901C12 3.38988 12 3.80992 12 4.65V5.25M5.25 15.75V5.25127M12.75 15.75V5.25M5.25 5.25127C5.4328 5.25 5.63197 5.25 5.85 5.25H12M5.25 5.25127C4.3763 5.25734 3.87655 5.29243 3.47852 5.49524C3.05516 5.71095 2.71095 6.05516 2.49524 6.47852C2.25 6.95982 2.25 7.58988 2.25 8.85V12.15C2.25 13.4101 2.25 14.0402 2.49524 14.5215C2.71095 14.9448 3.05516 15.289 3.47852 15.5048C3.95982 15.75 4.58988 15.75 5.85 15.75H12.15C13.4101 15.75 14.0402 15.75 14.5215 15.5048C14.9448 15.289 15.289 14.9448 15.5048 14.5215C15.75 14.0402 15.75 13.4101 15.75 12.15V8.85C15.75 7.58988 15.75 6.95982 15.5048 6.47852C15.289 6.05516 14.9448 5.71095 14.5215 5.49524C14.0402 5.25 13.4101 5.25 12.15 5.25H12.75M12.75 5.25H12"
+              stroke="black"
+              stroke-opacity="0.87"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Ожидаемый выезд
+        </button>
+        <button
+          class="dispatching-side__btn"
+          style="display: flex; align-items: center; gap: 4px"
+          style="color: rgba(0, 0, 0, 0.87)"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.5 14.25H4.65C3.80992 14.25 3.38988 14.25 3.06901 14.0865C2.78677 13.9427 2.5573 13.7132 2.41349 13.431C2.25 13.1101 2.25 12.6901 2.25 11.85V6.15C2.25 5.30992 2.25 4.88988 2.41349 4.56901C2.5573 4.28677 2.78677 4.0573 3.06901 3.91349C3.38988 3.75 3.80992 3.75 4.65 3.75H13.35C14.1901 3.75 14.6101 3.75 14.931 3.91349C15.2132 4.0573 15.4427 4.28677 15.5865 4.56901C15.75 4.88988 15.75 5.30992 15.75 6.15V6.375M6.75 7.125V6.375M6.75 7.125H8.25007M6.75 7.125C5.9121 7.12498 5.25183 7.21962 5.25007 8.12439C5.24876 8.79962 5.25007 8.99997 6.75007 8.99997C8.25007 8.99997 8.25007 9.15413 8.25007 9.875C8.25007 10.4167 8.25 10.875 6.75 10.875M6.75 11.625V10.875M6.75 10.875L5.25007 10.875M10.5 7.5H12.75M10.5 15L12.0187 14.6963C12.1511 14.6698 12.2174 14.6565 12.2791 14.6323C12.3339 14.6108 12.386 14.5829 12.4343 14.5493C12.4887 14.5113 12.5364 14.4636 12.6319 14.3681L15.75 11.25C16.1642 10.8358 16.1642 10.1642 15.75 9.75C15.3358 9.33579 14.6642 9.33579 14.25 9.75L11.1319 12.8681C11.0364 12.9636 10.9887 13.0113 10.9507 13.0657C10.9171 13.114 10.8892 13.1661 10.8677 13.2209C10.8435 13.2826 10.8302 13.3489 10.8037 13.4813L10.5 15Z"
+              stroke="black"
+              stroke-opacity="0.87"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Неоплаченные
+        </button>
+        <button
+          class="dispatching-side__btn"
+          style="display: flex; align-items: center; gap: 4px"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.625 15.75C12.56 15.75 15.75 12.56 15.75 8.625C15.75 4.68997 12.56 1.5 8.625 1.5C4.68997 1.5 1.5 4.68997 1.5 8.625C1.5 12.56 4.68997 15.75 8.625 15.75Z"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16.5 16.5L15 15"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Поиск
+        </button>
+        <button
+          class="dispatching-side__btn"
+          style="display: flex; align-items: center; gap: 4px"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 15L13.7008 13.7008M13.7008 13.7008C14.0401 13.3615 14.25 12.8928 14.25 12.375C14.25 11.3395 13.4105 10.5 12.375 10.5C11.3395 10.5 10.5 11.3395 10.5 12.375C10.5 13.4105 11.3395 14.25 12.375 14.25C12.8928 14.25 13.3615 14.0401 13.7008 13.7008ZM11.7 7.5H13.8C14.22 7.5 14.4301 7.5 14.5905 7.41825C14.7316 7.34635 14.8463 7.23161 14.9183 7.09049C15 6.93006 15 6.72004 15 6.3V4.2C15 3.77996 15 3.56994 14.9183 3.40951C14.8463 3.26839 14.7316 3.15365 14.5905 3.08175C14.4301 3 14.22 3 13.8 3H11.7C11.28 3 11.0699 3 10.9095 3.08175C10.7684 3.15365 10.6537 3.26839 10.5817 3.40951C10.5 3.56994 10.5 3.77996 10.5 4.2V6.3C10.5 6.72004 10.5 6.93006 10.5817 7.09049C10.6537 7.23161 10.7684 7.34635 10.9095 7.41825C11.0699 7.5 11.28 7.5 11.7 7.5ZM4.2 7.5H6.3C6.72004 7.5 6.93006 7.5 7.09049 7.41825C7.23161 7.34635 7.34635 7.23161 7.41825 7.09049C7.5 6.93006 7.5 6.72004 7.5 6.3V4.2C7.5 3.77996 7.5 3.56994 7.41825 3.40951C7.34635 3.26839 7.23161 3.15365 7.09049 3.08175C6.93006 3 6.72004 3 6.3 3H4.2C3.77996 3 3.56994 3 3.40951 3.08175C3.26839 3.15365 3.15365 3.26839 3.08175 3.40951C3 3.56994 3 3.77996 3 4.2V6.3C3 6.72004 3 6.93006 3.08175 7.09049C3.15365 7.23161 3.26839 7.34635 3.40951 7.41825C3.56994 7.5 3.77996 7.5 4.2 7.5ZM4.2 15H6.3C6.72004 15 6.93006 15 7.09049 14.9183C7.23161 14.8463 7.34635 14.7316 7.41825 14.5905C7.5 14.4301 7.5 14.22 7.5 13.8V11.7C7.5 11.28 7.5 11.0699 7.41825 10.9095C7.34635 10.7684 7.23161 10.6537 7.09049 10.5817C6.93006 10.5 6.72004 10.5 6.3 10.5H4.2C3.77996 10.5 3.56994 10.5 3.40951 10.5817C3.26839 10.6537 3.15365 10.7684 3.08175 10.9095C3 11.0699 3 11.28 3 11.7V13.8C3 14.22 3 14.4301 3.08175 14.5905C3.15365 14.7316 3.26839 14.8463 3.40951 14.9183C3.56994 15 3.77996 15 4.2 15Z"
+              stroke="black"
+              stroke-opacity="0.87"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Наличие комнат
+        </button>
+      </section>
+
+      <!-- == MAIN SIDE ============= -->
+      <main class="expectation__main">
+        <div class="expect__top">
+          <div class="d-flex gap-5 align-items-center">
+            <strong>Ожидаемый заезд</strong>
+            <div class="d-flex gap-2">
+              <button>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.75 9H14.25M3.75 9L8.25 4.5M3.75 9L8.25 13.5"
+                    stroke="black"
+                    stroke-opacity="0.87"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <input type="date" name="" id="" />
+              <button>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5"
+                    stroke="black"
+                    stroke-opacity="0.87"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <button>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.6248 4.12551L13.7461 6.24683M9.75 15.75H15.75M2.25 15.7503L2.28559 15.5012C2.41152 14.6197 2.47449 14.1789 2.61772 13.7674C2.74481 13.4023 2.91843 13.055 3.13429 12.7342C3.37756 12.3728 3.69239 12.0579 4.32206 11.4283L13.0581 2.69227C13.6438 2.10648 14.5936 2.10648 15.1794 2.69227C15.7652 3.27806 15.7652 4.2278 15.1794 4.81359L6.28308 13.7099C5.71185 14.2811 5.42623 14.5667 5.1009 14.7939C4.81213 14.9955 4.50069 15.1625 4.17298 15.2915C3.80378 15.4368 3.40782 15.5167 2.61595 15.6765L2.25 15.7503Z"
+                  stroke="black"
+                  stroke-opacity="0.87"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.25 3.75V14.25M2.25 12H15.75M15.75 14.25V9.9C15.75 9.05992 15.75 8.63988 15.5865 8.31901C15.4427 8.03677 15.2132 7.8073 14.931 7.66349C14.6101 7.5 14.1901 7.5 13.35 7.5H8.25V11.7955M5.25 9H5.2575M6 9C6 9.41421 5.66421 9.75 5.25 9.75C4.83579 9.75 4.5 9.41421 4.5 9C4.5 8.58579 4.83579 8.25 5.25 8.25C5.66421 8.25 6 8.58579 6 9Z"
+                  stroke="black"
+                  stroke-opacity="0.87"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="expect__search">
+          <div class="d-flex align-items-center gap-4">
+            <div class="d-flex gap-2 align-items-center">
+              <label for="">Поиск по тексту</label>
+              <input type="text" />
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <label for="">Теги</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <button>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.625 15.75C12.56 15.75 15.75 12.56 15.75 8.625C15.75 4.68997 12.56 1.5 8.625 1.5C4.68997 1.5 1.5 4.68997 1.5 8.625C1.5 12.56 4.68997 15.75 8.625 15.75Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.5 16.5L15 15"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Найти
+            </button>
+            <button>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.5 4.5L13.5 13.5M13.5 4.5L4.5 13.5"
+                  stroke="black"
+                  stroke-opacity="0.87"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!--  EXPECTATION TABLE    -->
+        <div class="expectation__table">
+          <table>
+            <thead>
+              <tr>
+                <th><input type="checkbox" name="" id="" /></th>
+                <th>№</th>
+                <th>Имя гостя</th>
+                <th>Группа/Квота</th>
+                <th>Дата выезда</th>
+                <th>Тип комнаты</th>
+                <th>Комната</th>
+                <th>Кол-во гостей</th>
+                <th>Баланс</th>
+                <th>Время заезда</th>
+                <th>Оплачено</th>
+                <th>Длительность</th>
+                <th>Тариф</th>
+                <th>Скидка</th>
+                <th>Статус комнаты</th>
+                <th>Скидка (код)</th>
+                <th>Статуc</th>
+                <th>Примечания</th>
+                <th>Гарантия</th>
+                <th>Дата создании</th>
+                <th>Дата изменения</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <!-- script ============= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
