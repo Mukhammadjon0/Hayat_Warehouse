@@ -1647,6 +1647,7 @@ input[type="number"] {
   padding: 5px 24px;
   border: none;
   text-align: start;
+  text-decoration: none;
   /* white-space: nowrap; */
 }
 
@@ -2036,7 +2037,7 @@ input[type="number"] {
   justify-content: space-between;
   width: 100%;
 }
-.expect__search input {
+.expect__search input[type="text"] {
   border-radius: 4px;
   border: 1px solid var(--border, rgba(0, 0, 0, 0.23));
   background: var(--white, #fff);
@@ -2101,4 +2102,15 @@ input[type="number"] {
 
 .expectation__table::-webkit-scrollbar-thumb {
   background-color: var(--light, rgba(0, 0, 0, 0.1));
+}
+.expect__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid var(--light, rgba(0, 0, 0, 0.1));
+}
+.expectation__table table tbody tr td{
+  white-space: nowrap;
 }
