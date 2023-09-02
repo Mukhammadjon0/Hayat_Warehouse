@@ -921,7 +921,7 @@ input[type="number"] {
   height: calc(var(--vh, 1vh) * 23);
 }
 
-.navigation > section > section > button {
+.navigation>section>section>button {
   padding: 10px;
   background: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.23);
@@ -931,7 +931,7 @@ input[type="number"] {
   margin-left: 15px;
 }
 
-.navigation > section > section > button > img {
+.navigation>section>section>button>img {
   margin-right: 8px;
   width: 30px;
 }
@@ -963,7 +963,7 @@ input[type="number"] {
   justify-content: space-between;
 }
 
-.navigation > section {
+.navigation>section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1232,6 +1232,7 @@ input[type="number"] {
 
 /* number-modal ===================-- */
 @media screen and (min-width: 768px) and (max-width: 1187px) {
+
   /* login starts ==== */
   .login-right {
     display: none;
@@ -1624,7 +1625,7 @@ input[type="number"] {
   letter-spacing: 0.4px !important;
 }
 
-.checked:checked ~ .patient__radio-box {
+.checked:checked~.patient__radio-box {
   background-color: #4caf50 !important;
 }
 
@@ -2052,6 +2053,7 @@ input[type="number"] {
   justify-content: space-between;
   width: 100%;
 }
+
 .expect__search input[type="text"] {
   border-radius: 4px;
   border: 1px solid var(--border, rgba(0, 0, 0, 0.23));
@@ -2125,6 +2127,7 @@ input[type="number"] {
 .expectation__table::-webkit-scrollbar-thumb {
   background-color: var(--light, rgba(0, 0, 0, 0.1));
 }
+
 .expect__footer {
   display: flex;
   align-items: center;
@@ -2133,6 +2136,7 @@ input[type="number"] {
   width: 100%;
   border: 1px solid var(--light, rgba(0, 0, 0, 0.1));
 }
+
 .expectation__table table tbody tr td {
   white-space: nowrap;
 }
@@ -2208,6 +2212,7 @@ input[type="number"] {
   align-items: flex-start;
   gap: 10px;
 }
+
 .guest__pic {
   width: 40px;
   height: 40px;
@@ -2215,12 +2220,19 @@ input[type="number"] {
   border: 1px solid var(--border, rgba(0, 0, 0, 0.23));
   background: var(--white, #fff);
 }
+
 .guest__text {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
+
 .guest__text .guest__underline {
   width: 220px;
   border-bottom: 1px solid var(--border, rgba(0, 0, 0, 0.23));
+}
+
+/* ROOM */
+.room__table tbody tr:hover {
+  background-color: #9FD5A1;
 }
