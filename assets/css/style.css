@@ -2236,3 +2236,8 @@ input[type="number"] {
 .room__table tbody tr:hover {
   background-color: #9FD5A1;
 }
+
+/* ROOM TYPE */
+.type_room_table thead tr th {
+  background: #fff !important;
+}
